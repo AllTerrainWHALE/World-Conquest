@@ -3,7 +3,55 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Sector1
+  - Sector2
+  - Sector3
+  - Sector4
+  - Sector5
+  - Sector6
+  - Alaska
+  - Alberta
+  - CentralAmerica
+  - EasternUSA
+  - GreenLand
+  - NorthWestTerritory
+  - Ontario
+  - Quebec
+  - WesternUSA
+  - Argentina
+  - Brazil
+  - Peru
+  - Venezuela
+  - GreatBritain
+  - Iceland
+  - NorthernEurope
+  - Scandinavia
+  - SouthernEurope
+  - Ukraine
+  - WesternEurope
+  - Congo
+  - EastAfrica
+  - Egypt
+  - Madagascar
+  - NorthAfrica
+  - SouthAfrica
+  - Afganistan
+  - China
+  - India
+  - Irkutsk
+  - Japan
+  - Kamchatka
+  - MiddleEast
+  - Mongolia
+  - Siam
+  - Siberia
+  - Ural
+  - Yakutsk
+  - EasternAustralia
+  - Indonesia
+  - NewGuinea
+  - WesternAustralia
   layers:
   - Default
   - TransparentFX

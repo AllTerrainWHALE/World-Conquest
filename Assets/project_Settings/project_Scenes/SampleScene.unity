@@ -123,6 +123,71 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &1362457662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1362457664}
+  - component: {fileID: 1362457663}
+  m_Layer: 0
+  m_Name: Reflection Probe
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!215 &1362457663
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362457662}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 1
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 323.4638, y: 23.86065, z: 204.04898}
+  m_BoxOffset: {x: -31.452995, y: 6.9303246, z: 18.658554}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!4 &1362457664
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362457662}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 37, y: -1.5, z: -24.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1687146498393488817
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -131,6 +196,154 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 18260836977807896, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Sector4
+      objectReference: {fileID: 0}
+    - target: {fileID: 25664471509639738, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Irkutsk
+      objectReference: {fileID: 0}
+    - target: {fileID: 217388528022837946, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: EasternAustralia
+      objectReference: {fileID: 0}
+    - target: {fileID: 328477896035514417, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: India
+      objectReference: {fileID: 0}
+    - target: {fileID: 473229360920775207, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Madagascar
+      objectReference: {fileID: 0}
+    - target: {fileID: 818767466062643889, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Sector2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1376599319296353232, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: NorthAfrica
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436365207837037328, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: WesternAustralia
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644210436028922038, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: WesternEurope
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742612936280738628, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: SouthAfrica
+      objectReference: {fileID: 0}
+    - target: {fileID: 1971397236737612926, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Ural
+      objectReference: {fileID: 0}
+    - target: {fileID: 2186475328520501433, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Afganistan
+      objectReference: {fileID: 0}
+    - target: {fileID: 2370381765688332842, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Ukraine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2372464963976428876, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: NewGuinea
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506216973407346329, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: EasternUSA
+      objectReference: {fileID: 0}
+    - target: {fileID: 2683488369302429452, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Siberia
+      objectReference: {fileID: 0}
+    - target: {fileID: 2785780518613467120, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Alberta
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811056716062850285, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Sector1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966906589515067383, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: NorthernEurope
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992527681901964059, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Kamchatka
+      objectReference: {fileID: 0}
+    - target: {fileID: 3040079467166331556, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Japan
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155614079836617038, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: NorthWestTerritory
+      objectReference: {fileID: 0}
+    - target: {fileID: 3382513744724349401, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Egypt
+      objectReference: {fileID: 0}
+    - target: {fileID: 3586779716819877093, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Siam
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597117140622810393, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Alaska
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720788322504377809, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Argentina
+      objectReference: {fileID: 0}
+    - target: {fileID: 3777696720297098962, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Yakutsk
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254662667025292968, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: CentralAmerica
+      objectReference: {fileID: 0}
+    - target: {fileID: 4352018634915522782, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Scandinavia
+      objectReference: {fileID: 0}
+    - target: {fileID: 4418801132264794316, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: GreenLand
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700558886796892704, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Peru
+      objectReference: {fileID: 0}
+    - target: {fileID: 4804718413936243759, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Congo
+      objectReference: {fileID: 0}
+    - target: {fileID: 4966000564466670342, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Sector5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5195149542331684506, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Ontario
+      objectReference: {fileID: 0}
+    - target: {fileID: 5249498653145519141, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Sector3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5354435414097835514, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: MiddleEast
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419778225344948232, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Mongolia
+      objectReference: {fileID: 0}
     - target: {fileID: 5796035008664612008, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.943
@@ -171,9 +384,65 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6210319570881967046, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: SouthernEurope
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235826915984475565, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: WesternUSA
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281023473115349541, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Venezuela
+      objectReference: {fileID: 0}
     - target: {fileID: 6356964636633908095, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
       propertyPath: m_Name
       value: scene_Parent
+      objectReference: {fileID: 0}
+    - target: {fileID: 6401784449472831534, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: GreatBritain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519480765786360517, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Brazil
+      objectReference: {fileID: 0}
+    - target: {fileID: 7499178897173063044, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Sector6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705007990115821708, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 32.612663
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705007990115821708, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0257385
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705007990115821708, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 20.57578
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125011664584013457, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Indonesia
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534314212845879405, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Quebec
+      objectReference: {fileID: 0}
+    - target: {fileID: 8638413869989946682, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: China
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933762633614765263, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: EastAfrica
+      objectReference: {fileID: 0}
+    - target: {fileID: 9158577026921067010, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Iceland
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -190,3 +459,4 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1687146498393488817}
+  - {fileID: 1362457664}
