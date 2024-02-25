@@ -15,42 +15,54 @@ public class selectCountry : MonoBehaviour
 
     private Vector3 objectOriginalY = new Vector3(0,0,0);
     private Vector3 objectRaisedY= new Vector3(0,0,0);
-
+    //objectTargetY is used to lerp the object to the target position
     private Vector3 objectTargetY= new Vector3(0,0,0);
-    private void OnMouseDown()
-    {
-        
-        if (cameraController != null) {
+
+    private void OnMouseUp(){
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        //Check if the region is clicked
+        if (Physics.Raycast(ray, out hit) && hit.transform == transform)
+        {
             cameraController.targetPosition = transform.position;
+            //Set the selected country
             cameraController.selectedCountry = countryID;
         }
-        
     }
     void Start()
     {
+        //Initialise the object positions
         objectOriginalY = transform.position;
+        //Raise the object
         objectRaisedY = objectOriginalY + new Vector3(0, yRaise, 0);
+        // Set the target position to the original position
         objectTargetY = objectOriginalY;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        //Lerp the object to the target position
         if (cameraController != null){
+            //Check if the country is selected
             if (countryID == cameraController.selectedCountry) {
                 isSelected = true;
+                //Raise the object
                 objectTargetY = objectRaisedY;
             }
             else {
+                //Lower the object
                 isSelected = false;
                 objectTargetY = objectOriginalY;
             }
+            //Lerp the object to the target position
             if (isSelected){
                 float timeModifier = 2.5f;
                 float heightModifier = 0.15f;
+                //Move the object up and down
                 objectTargetY.y += Mathf.Sin(Time.time * timeModifier ) * heightModifier;
             }
+            //Raise the object if the country is selected
             if (countryID >= 0)
                 transform.position = Vector3.Lerp(transform.position, objectTargetY, Time.deltaTime * 5);
         }

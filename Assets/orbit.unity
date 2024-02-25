@@ -2173,7 +2173,8 @@ MonoBehaviour:
   distanceMin: 40
   zoomSpeed: 2
   mouseSpeed: 3
-  orbitDamping: 10
+  orbitDamping: 7
+  actualPosition: {x: 0, y: 0, z: 0}
   selectedCountry: -99
   localRotation: {x: -1.077893, y: 53.60004, z: 0}
 --- !u!1 &1637759438 stripped

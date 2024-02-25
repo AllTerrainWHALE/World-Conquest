@@ -18,7 +18,7 @@ public class OrbitalCamera : MonoBehaviour
     [SerializeField] float zoomSpeed = 2f;
     [SerializeField] float mouseSpeed = 3;
     [SerializeField] float orbitDamping = 10;
-
+    public Vector3 actualPosition = Vector3.zero;
     public int selectedCountry = -99;
     public Vector3 localRotation;
     void Start()
@@ -57,9 +57,15 @@ public class OrbitalCamera : MonoBehaviour
         }
         Quaternion QT = Quaternion.Euler(localRotation.y, localRotation.x, 0f);
             //Lerp the camera rotation
-        transform.rotation = Quaternion.Lerp(transform.rotation, QT, Time.deltaTime * orbitDamping);
-        Vector3 position = transform.rotation * new Vector3(0.0f, 0.0f, -distance) + targetPosition;
-        transform.position = Vector3.Lerp(transform.position, position,  Time.deltaTime * orbitDamping );
+        transform.rotation = Quaternion.Lerp(transform.rotation, QT, Time.deltaTime * orbitDamping );
+        Vector3 rotation = transform.rotation * new Vector3(0.0f, 0.0f, -distance) + actualPosition;
+        //Lerp the camera position
+        Vector3 rotpluspos = Vector3.Lerp(transform.position, rotation,  Time.deltaTime * orbitDamping);
+        transform.position =  rotpluspos;
+        //Set the target position
+        if (actualPosition != targetPosition){
+            actualPosition = Vector3.Lerp(actualPosition, targetPosition, Time.deltaTime * orbitDamping);
+        }
         
     }
 
