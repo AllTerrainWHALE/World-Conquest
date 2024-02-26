@@ -24,9 +24,11 @@ public class selectCountry : MonoBehaviour
         //Check if the region is clicked
         if (Physics.Raycast(ray, out hit) && hit.transform == transform)
         {
-            cameraController.targetPosition = transform.position;
-            //Set the selected country
-            cameraController.selectedCountry = countryID;
+            if (cameraController != null){
+                cameraController.targetPosition = transform.position;
+                //Set the selected country
+                cameraController.selectedCountry = countryID;
+            }
         }
     }
     void Start()

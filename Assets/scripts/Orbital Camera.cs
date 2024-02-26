@@ -17,10 +17,12 @@ public class OrbitalCamera : MonoBehaviour
     [SerializeField]  float distanceMin = 40.0f;
     [SerializeField] float zoomSpeed = 2f;
     [SerializeField] float mouseSpeed = 3;
-    [SerializeField] float orbitDamping = 10;
+    [SerializeField] float orbitDamping = 7;
     public Vector3 actualPosition = Vector3.zero;
     public int selectedCountry = -99;
     public Vector3 localRotation;
+    private Vector3 lastMousePosition;
+    
     void Start()
     { 
         //Initialise the camera position
@@ -31,6 +33,8 @@ public class OrbitalCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
         //Handle the camera orbiting and zooming
         var scroll = Input.GetAxis("Mouse ScrollWheel");
         if (scroll > 0f) {
@@ -54,6 +58,22 @@ public class OrbitalCamera : MonoBehaviour
             localRotation.y = Mathf.Clamp(localRotation.y, 0f, 80f);
             
             //Set the camera position
+        }
+        else if (Input.GetMouseButton(1))
+        {
+            Vector3 currentMousePosition = Input.mousePosition;
+
+            // Calculate the difference between the current and last mouse positions
+            Vector3 mouseDelta = currentMousePosition - lastMousePosition;
+
+            // Update the target position based on mouse drag
+            targetPosition.x -=  (mouseDelta.x / Screen.width) * 100;
+            targetPosition.z -=  (mouseDelta.y / Screen.height) * 100;
+            // Update the last mouse position for the next frame
+            lastMousePosition = currentMousePosition;
+        }
+        else {
+            lastMousePosition = Input.mousePosition; // Update last mouse position when not dragging
         }
         Quaternion QT = Quaternion.Euler(localRotation.y, localRotation.x, 0f);
             //Lerp the camera rotation
