@@ -51,5 +51,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "World-Conquest.sln"
+    "dotnet.defaultSolution": "World-Conquest.sln",
+    "dotnet.preferCSharpExtension": true
 }
