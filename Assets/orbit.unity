@@ -2173,7 +2173,8 @@ MonoBehaviour:
   distanceMin: 40
   zoomSpeed: 2
   mouseSpeed: 3
-  orbitDamping: 10
+  orbitDamping: 7
+  actualPosition: {x: 0, y: 0, z: 0}
   selectedCountry: -99
   localRotation: {x: -1.077893, y: 53.60004, z: 0}
 --- !u!1 &1637759438 stripped
@@ -2439,7 +2440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 0}
+  cameraController: {fileID: 1628719790}
   countryID: 35
   isSelected: 0
 --- !u!1 &1788676708 stripped

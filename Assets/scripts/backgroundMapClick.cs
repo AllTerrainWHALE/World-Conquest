@@ -14,19 +14,23 @@ public class backgroundMapClick : MonoBehaviour
     {
        
     }
+    // Update is called once per frame
      private float lastClickTime = 0f;
     private const float clickDelay = 0.5f;
     private int clickCount = 0;
 
     void Update()
     {
+        //Handle the click event on the regions
         if (Input.GetMouseButtonDown(0))
         {
+            //When the region is clicked, move the camera to the region
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
+            //Check if the region is clicked
             if (Physics.Raycast(ray, out hit) && hit.transform == transform)
             {
+                //Check if the click is a triple click
                 if (Time.time - lastClickTime < clickDelay)
                 {
                     clickCount++;
@@ -37,23 +41,17 @@ public class backgroundMapClick : MonoBehaviour
                 }
 
                 lastClickTime = Time.time;
-
+                //If the click is a triple click, move the camera to the region
                 if (clickCount == 3)
                 {
                     cameraController.targetPosition = transform.position;
                     cameraController.selectedCountry = -1;
-                    StartCoroutine(DebugAfterSecond());
                     clickCount = 0;
                 }
             }
         }
     }
 
-    IEnumerator DebugAfterSecond()
-    {
-        yield return new WaitForSeconds(1f);
-        Debug.Log("Triple mouse click detected");
-    }
 
    
     
