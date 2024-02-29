@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 0}
   countryID: 0
 --- !u!64 &21432811
 MeshCollider:
@@ -417,7 +417,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 26
   isSelected: 0
 --- !u!1 &75024522 stripped
@@ -437,7 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 0}
   countryID: 0
 --- !u!1 &76587784
 GameObject:
@@ -584,7 +585,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 15
   isSelected: 0
 --- !u!1 &139935017
@@ -997,7 +999,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 32
   isSelected: 0
 --- !u!1 &372964601
@@ -1047,7 +1050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 0}
   countryID: 0
 --- !u!64 &372964604
 MeshCollider:
@@ -1168,7 +1171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 0}
   countryID: 0
 --- !u!64 &394220052
 MeshCollider:
@@ -1259,7 +1262,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 18
   isSelected: 0
 --- !u!64 &394632527
@@ -1323,7 +1327,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 13
   isSelected: 0
 --- !u!1 &457671826 stripped
@@ -1365,7 +1370,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 23
   isSelected: 0
 --- !u!1 &465349043
@@ -1445,7 +1451,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 8
   isSelected: 0
 --- !u!1 &541078624
@@ -1563,7 +1570,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 9
   isSelected: 0
 --- !u!1 &583063902
@@ -1681,7 +1689,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 31
   isSelected: 0
 --- !u!1 &746130385
@@ -1851,7 +1860,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 10
   isSelected: 0
 --- !u!64 &842391943
@@ -2057,7 +2067,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 0}
   countryID: 0
 --- !u!64 &902055374
 MeshCollider:
@@ -2351,7 +2361,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 21
   isSelected: 0
 --- !u!1 &1080797878 stripped
@@ -2393,7 +2404,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 0}
+  cam: {fileID: 0}
   countryID: 34
   isSelected: 0
 --- !u!1 &1101108116
@@ -2654,7 +2666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 0}
   countryID: 0
 --- !u!64 &1125416532
 MeshCollider:
@@ -2775,7 +2787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 0}
   countryID: 0
 --- !u!64 &1127408065
 MeshCollider:
@@ -2971,7 +2983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 0}
   countryID: 0
 --- !u!64 &1144138046
 MeshCollider:
@@ -3348,7 +3360,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 5
   isSelected: 0
 --- !u!1 &1358882307
@@ -3427,7 +3440,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 20
   isSelected: 0
 --- !u!1 &1395724030 stripped
@@ -3469,7 +3483,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 39
   isSelected: 0
 --- !u!1 &1398025099 stripped
@@ -3511,7 +3526,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 0}
+  cam: {fileID: 0}
   countryID: 37
   isSelected: 0
 --- !u!1 &1401694484
@@ -3705,7 +3721,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 17
   isSelected: 0
 --- !u!1 &1480079723 stripped
@@ -3747,7 +3764,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 40
   isSelected: 0
 --- !u!1 &1553296612 stripped
@@ -3789,7 +3807,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 4
   isSelected: 0
 --- !u!1 &1560824956 stripped
@@ -3831,7 +3850,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 6
   isSelected: 0
 --- !u!1 &1580295170 stripped
@@ -3873,7 +3893,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 27
   isSelected: 0
 --- !u!1 &1589809121 stripped
@@ -3915,7 +3936,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 29
   isSelected: 0
 --- !u!1 &1599082907 stripped
@@ -3957,7 +3979,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 14
   isSelected: 0
 --- !u!1 &1615739933 stripped
@@ -3999,7 +4022,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 2
   isSelected: 0
 --- !u!1 &1618596376 stripped
@@ -4041,35 +4065,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 3
   isSelected: 0
---- !u!1 &1628719785 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6235395760684093637, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+--- !u!114 &1628719791 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6040993083453203460, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
   m_PrefabInstance: {fileID: 2015216487}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1628719790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1628719785}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: acf25285ed165514a875fde9a26acf88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {x: 0, y: 0, z: 0}
-  distance: 140
-  distanceMax: 220
-  distanceMin: 40
-  zoomSpeed: 2
-  mouseSpeed: 3
-  orbitDamping: 10
-  selectedCountry: -99
-  localRotation: {x: -1.077893, y: 53.60004, z: 0}
+--- !u!20 &1628719794 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1570669772524770002, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+  m_PrefabInstance: {fileID: 2015216487}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1630078269
 GameObject:
   m_ObjectHideFlags: 0
@@ -4146,7 +4161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 25
   isSelected: 0
 --- !u!1 &1657735900 stripped
@@ -4188,7 +4204,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 33
   isSelected: 0
 --- !u!1 &1689751728
@@ -4245,7 +4262,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 28
   isSelected: 0
 --- !u!64 &1691424410
@@ -4384,7 +4402,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 38
   isSelected: 0
 --- !u!1 &1766125235 stripped
@@ -4574,7 +4593,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 11
   isSelected: 0
 --- !u!1 &1787897553 stripped
@@ -4616,7 +4636,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 0}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 35
   isSelected: 0
 --- !u!1 &1788676708 stripped
@@ -4658,7 +4679,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 16
   isSelected: 0
 --- !u!1 &1789568418 stripped
@@ -4700,7 +4722,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 41
   isSelected: 0
 --- !u!1 &1807992162 stripped
@@ -4742,7 +4765,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 36
   isSelected: 0
 --- !u!1 &1816472587
@@ -4792,7 +4816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 0}
   countryID: 0
 --- !u!64 &1816472590
 MeshCollider:
@@ -5055,7 +5079,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 19
   isSelected: 0
 --- !u!1 &1921926694 stripped
@@ -5097,7 +5122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 30
   isSelected: 0
 --- !u!1 &1941176666
@@ -5311,7 +5337,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 7
   isSelected: 0
 --- !u!1 &1991382078 stripped
@@ -5331,7 +5358,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 0}
+  cam: {fileID: 0}
   countryID: 0
   isSelected: 0
 --- !u!64 &1991382083
@@ -5380,6 +5408,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: scene_Parent
       objectReference: {fileID: 0}
+    - target: {fileID: 2665409035543255661, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1628719794}
     - target: {fileID: 3150255127208988232, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
@@ -5508,9 +5540,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1409738076761175298, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1766125237}
-    - targetCorrespondingSourceObject: {fileID: 6235395760684093637, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1628719790}
     - targetCorrespondingSourceObject: {fileID: 3501193071541001281, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 75024527}
@@ -5806,7 +5835,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 22
   isSelected: 0
 --- !u!1 &2094818136 stripped
@@ -5848,7 +5878,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 1
   isSelected: 0
 --- !u!1 &2110076786 stripped
@@ -5890,7 +5921,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 24
   isSelected: 0
 --- !u!1 &2142999876 stripped
@@ -5932,7 +5964,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 1628719790}
+  cameraController: {fileID: 1628719791}
+  cam: {fileID: 1628719794}
   countryID: 12
   isSelected: 0
 --- !u!1660057539 &9223372036854775807

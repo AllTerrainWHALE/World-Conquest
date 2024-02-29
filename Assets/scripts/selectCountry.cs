@@ -9,6 +9,8 @@ public class selectCountry : MonoBehaviour
 {
     // Start is called before the first frame update
     public OrbitalCamera cameraController;
+
+    public Camera cam;
     public int countryID;
     public bool isSelected = false;
     private float yRaise = 1.0f;
@@ -20,10 +22,12 @@ public class selectCountry : MonoBehaviour
 
     private void OnMouseUp(){
         RaycastHit hit;
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Debug.Log("Mouse Clicked");
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         //Check if the region is clicked
         if (Physics.Raycast(ray, out hit) && hit.transform == transform)
         {
+             Debug.Log("Hit");
             if (cameraController != null){
                 cameraController.targetPosition = transform.position;
                 //Set the selected country
