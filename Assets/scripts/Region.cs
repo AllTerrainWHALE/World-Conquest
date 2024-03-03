@@ -8,13 +8,6 @@ public class Region : MonoBehaviour
 {
 
     // Created by: Eoin Howard Scully
-<<<<<<< Updated upstream
-    // This Object represents one region on the game board, it handles the following:
-    //   - Selecting a region
-    //   - Adding a troop to the region
-    //   - Removing a troop from the region  
-    //   - Adjacency
-=======
     //
     // This Object represents one region on the game board, it handles the following:
     //   - Handling a region selection
@@ -22,83 +15,32 @@ public class Region : MonoBehaviour
     //   - Removing a troop from the region
     //   - Adjacency
     //
->>>>>>> Stashed changes
     public int numberOfTroops = 0;
     public List<string> adjacentRegions;
     public string continentID;
     public Boolean selected = false;
-<<<<<<< Updated upstream
-    public GameObject placeHolderCube;
-    private List<GameObject> infantryList;
-    private List<GameObject> calvaryList;
-    private List<GameObject> artilleryList;
-=======
     public GameObject infantryModel;
     public GameObject calvaryModel;
     public GameObject artilleryModel;
     public List<GameObject> infantryList = new List<GameObject>();
     public List<GameObject> calvaryList = new List<GameObject>();
     public List<GameObject> artilleryList = new List<GameObject>();
->>>>>>> Stashed changes
 
     // Start is called before the first frame update
     void Start()
     {
-<<<<<<< Updated upstream
-        Debug.Log("Started!");
-=======
 
->>>>>>> Stashed changes
     }
 
     // Update is called once per frame
     void Update()
     {   
-<<<<<<< Updated upstream
-        //Detects if the region is selected, the 'P' key is selected and then adds a troop
-        if(Input.GetKeyDown(KeyCode.P) & selected)
-        {
-            addTroop();
-        }
-        //Detects if the region is selected, the 'Q' key is pressed and then removes a troop
-        if(Input.GetKeyDown(KeyCode.Q) & selected)
-        {
-            removeTroop();
-        }
-=======
 
->>>>>>> Stashed changes
     }
 
     //called on mouse click
     void OnMouseDown()
     {
-<<<<<<< Updated upstream
-        Debug.Log("Click detected!");
-        selectRegion();
-    }
-
-    //Author: Eoin Howard Scully
-    //
-    //Method that flips the 'selected' attribute
-    //
-    //In future prototypes this will also interact 
-    //with the 'meta' object to keep a record of selected objects
-    void selectRegion() 
-    {
-        //flips selected
-        Debug.Log("Selecting region!");
-        selected = !selected;
-    }
-
-    //Author: Eoin Howard Scully
-    //
-    //Method that adds a 'troop' on top of an object
-    //
-    void addTroop(int troopNum)
-    {
-        
-=======
         selectRegion();
     }
 
@@ -123,7 +65,6 @@ public class Region : MonoBehaviour
 
         // Calculates the ideal number of each token that should be on the board
 
->>>>>>> Stashed changes
         int infantryVal = (int)TroopTypes.Infantry;
         int calvaryVal = (int)TroopTypes.Cavalry;
         int artilleryVal = (int)TroopTypes.Artillery;
@@ -132,24 +73,6 @@ public class Region : MonoBehaviour
 
         int artilleryCount = totalTroops / artilleryVal;
         int calvaryCount = (totalTroops % artilleryVal) / calvaryVal;
-<<<<<<< Updated upstream
-        int infantryCount = (totalTroops % artilleryVal) % calvaryVal;
-
-        while(artilleryList.Count != artilleryCount)
-        {
-            //Defines a circle and picks a random point inside it to place the troop
-            float radius = 2.0f;
-
-            float theta = UnityEngine.Random.Range(0, 360) * Mathf.Deg2Rad; //Random Degree in Radians
-
-            float randX = UnityEngine.Random.Range(0, (radius * Mathf.Cos(theta)) * transform.localScale.x);
-            float randZ = UnityEngine.Random.Range(0, (radius * Mathf.Sin(theta)) * transform.localScale.z);
-            float newY = 0.2f;
-
-            var dist = new Vector3(randX, newY, randZ);
-
-            artilleryList.Add(Instantiate(placeHolderCube, transform.position += dist, transform.rotation, transform));
-=======
         int infantryCount = ((totalTroops % artilleryVal) % calvaryVal) / infantryVal;
 
         while(artilleryList.Count != artilleryCount)
@@ -157,32 +80,11 @@ public class Region : MonoBehaviour
             // Defines a circle and picks a random point inside it to place the troop
             artilleryList.Add(placeInCircle(artilleryModel));
 
->>>>>>> Stashed changes
         }
 
         while(calvaryList.Count != calvaryCount)
         {
             if(calvaryList.Count < calvaryCount) {
-<<<<<<< Updated upstream
-                //Adds one calvary until the amount of the board matches the calculated amount
-
-                //Defines a circle and picks a random point inside it to place the troop
-                float radius = 2.0f;
-
-                float theta = UnityEngine.Random.Range(0, 360) * Mathf.Deg2Rad; //Random Degree in Radians
-
-                float randX = UnityEngine.Random.Range(0, (radius * Mathf.Cos(theta)) * transform.localScale.x);
-                float randZ = UnityEngine.Random.Range(0, (radius * Mathf.Sin(theta)) * transform.localScale.z);
-                float newY = 0.2f;
-
-                var dist = new Vector3(randX, newY, randZ);
-
-                calvaryList.Add(Instantiate(placeHolderCube, transform.position += dist, transform.rotation, transform));
-            } else {
-                //Removes one calvary until the amount on the board matches the calculated amount
-
-                Destroy(calvaryList[0]);
-=======
                 // Adds one calvary until the amount of the board matches the calculated amount
                 calvaryList.Add(placeInCircle(calvaryModel));
 
@@ -191,60 +93,12 @@ public class Region : MonoBehaviour
                 Destroy(calvaryList[0]);
                 calvaryList.Remove(calvaryList[0]);
 
->>>>>>> Stashed changes
             }
         }
 
         while(infantryList.Count != infantryCount)
         {
             if(infantryList.Count < infantryCount) {
-<<<<<<< Updated upstream
-                //Adds one calvary until the amount of the board matches the calculated amount
-
-                //Defines a circle and picks a random point inside it to place the troop
-                float radius = 2.0f;
-
-                float theta = UnityEngine.Random.Range(0, 360) * Mathf.Deg2Rad; //Random Degree in Radians
-
-                float randX = UnityEngine.Random.Range(0, (radius * Mathf.Cos(theta)) * transform.localScale.x);
-                float randZ = UnityEngine.Random.Range(0, (radius * Mathf.Sin(theta)) * transform.localScale.z);
-                float newY = 0.2f;
-
-                var dist = new Vector3(randX, newY, randZ);
-
-                infantryList.Add(Instantiate(placeHolderCube, transform.position += dist, transform.rotation, transform));
-            } else {
-                //Removes one calvary until the amount on the board matches the calculated amount
-
-                Destroy(infantryList[0]);
-            }
-        }
-    }
-
-    //Author: Eoin Howard Scully
-    //
-    // This method removes a troop from the board
-    // (Mid-rewrite)
-    void removeTroop()
-    {
-        //Decrements troop counter  
-        numberOfToops -= 1;
-        //Detects if there are any 'little' troops that can be removed
-        //if not, one 'big' troop will be removed and 9 little troops added
-        if (littleTroop.Count > 0) {
-            Destroy(littleTroop[0]);
-        } else if (bigTroop.Count > 0) {
-            Destroy(bigTroop[0]);
-            for(int i = 0; i < 10; i++);
-            littleTroop.Add(Instantiate(placeHolderCube, transform.position += new Vector3(0, 2, 0), transform.rotation, transform));
-        } 
-    }
-}
-
-// using Troop;
-// Troop = new Troop();
-// int infantryValue = (int)Troop.TroopTypes.infantry
-=======
                 // Adds one infantry until the amount of the board matches the calculated amount
                 infantryList.Add(placeInCircle(infantryModel));
 
@@ -297,9 +151,11 @@ public class Region : MonoBehaviour
         {
             if(calvaryList.Count < calvaryCount) {
                 // Adds one calvary until the amount of the board matches the calculated amount
+                
                 calvaryList.Add(placeInCircle(calvaryModel));
             } else {
                 // Removes one calvary until the amount on the board matches the calculated amount
+
                 Destroy(calvaryList[0]);
                 calvaryList.Remove(calvaryList[0]);
             }
@@ -366,5 +222,3 @@ public class Region : MonoBehaviour
             targetRegion.addTroop(numOfTroops);
         }
     }
-}
->>>>>>> Stashed changes
