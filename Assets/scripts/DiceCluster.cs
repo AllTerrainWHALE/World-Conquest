@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class DiceCluster : MonoBehaviour
@@ -19,17 +20,17 @@ public class DiceCluster : MonoBehaviour
         
     }
 
-    public void SpawnDice()
+    public void SpawnDice(int diceCount)
     {
-        foreach (GameObject die in dice) Destroy(die);
+        DestroyDice();
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < diceCount; i++)
         {
             GameObject die = Instantiate(diePrefab,
                 new Vector3(
-                    transform.position.x,// + Random.Range(-50, 50),
+                    transform.position.x,
                     transform.position.y,
-                    transform.position.z// + Random.Range(-50, 50)
+                    transform.position.z
                 ),
                 Quaternion.Euler(
                     Random.Range(0, 360),
@@ -40,5 +41,21 @@ public class DiceCluster : MonoBehaviour
 
             dice.Add(die);
         }
+    }
+
+    public void DestroyDice()
+    {
+        dice.ForEach(d => Destroy(d));
+        dice.Clear();
+    }
+
+    public int GetRollTotal() => dice.Sum(d => d.GetComponent<DieBehaviour>().GetRoll());
+
+    public bool AllDiceSettled() => dice.Count(d => !d.GetComponent<DieBehaviour>().IsSettled()) == 0;
+
+    public void TestingDiceyThings()
+    {
+        if (AllDiceSettled()) Debug.Log("Total Rolled: " + GetRollTotal());
+        else Debug.Log("Dice not settled");
     }
 }

@@ -1,9 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class DieBehaviour : MonoBehaviour
 {
+    public Rigidbody rb;
+    public int rollVal;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,20 +22,22 @@ public class DieBehaviour : MonoBehaviour
         
     }
 
-    public void SpawnDie()
+    public int GetRoll()
     {
-        Instantiate(this,
-            new Vector3(
-                transform.position.x + Random.Range(-20, 20),
-                transform.position.y,
-                transform.position.z + Random.Range(-20, 20)
-            ),
-            Quaternion.Euler(
-                Random.Range(0, 360),
-                Random.Range(0, 360),
-                Random.Range(0, 360)
-                )
-        );
+        List<float> orientations = new()
+        {
+            Vector3.Dot(-transform.right, Vector3.up),      // 1
+            Vector3.Dot(-transform.up, Vector3.up),         // 2
+            Vector3.Dot(transform.right, Vector3.up),       // 3
+            Vector3.Dot(transform.up, Vector3.up),          // 4
+            Vector3.Dot(-transform.forward, Vector3.up),    // 5
+            Vector3.Dot(transform.forward, Vector3.up),     // 6
+        };
+
+        rollVal = orientations.IndexOf(orientations.OrderBy(item => Math.Abs(1.0 - item)).First()) + 1;
+        return rollVal;
     }
+
+    public bool IsSettled() => rb.velocity.magnitude <= 0.01f;
 
 }
