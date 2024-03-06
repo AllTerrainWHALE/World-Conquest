@@ -168,6 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 19
   isSelected: 0
 --- !u!64 &7079115323668370662
@@ -290,6 +291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 20
   isSelected: 0
 --- !u!64 &8061989217304455492
@@ -412,6 +414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 24
   isSelected: 0
 --- !u!64 &8641527501144772271
@@ -534,6 +537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 41
   isSelected: 0
 --- !u!64 &6675982207260670869
@@ -801,6 +805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 25
   isSelected: 0
 --- !u!64 &1561185364061139069
@@ -923,6 +928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 23
   isSelected: 0
 --- !u!64 &759878238065506946
@@ -1269,6 +1275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 2
   isSelected: 0
 --- !u!64 &7727184607934458101
@@ -1630,6 +1637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 18
   isSelected: 0
 --- !u!1 &702370148797718549
@@ -1730,6 +1738,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 26
   isSelected: 0
 --- !u!64 &962898322067872738
@@ -2677,6 +2686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 32
   isSelected: 0
 --- !u!64 &3178646520218145229
@@ -2799,6 +2809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 15
   isSelected: 0
 --- !u!64 &6663073945783844674
@@ -3471,6 +3482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 3
   isSelected: 0
 --- !u!64 &6458550475794608561
@@ -3593,6 +3605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 22
   isSelected: 0
 --- !u!64 &1469775831403499222
@@ -3864,6 +3877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 16
   isSelected: 0
 --- !u!64 &3078363149263618499
@@ -4133,6 +4147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 30
   isSelected: 0
 --- !u!64 &5970518807077023321
@@ -4433,6 +4448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 13
   isSelected: 0
 --- !u!64 &5154413252666160166
@@ -4587,6 +4603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 35
   isSelected: 0
 --- !u!64 &860537507084900755
@@ -4849,6 +4866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 12
   isSelected: 0
 --- !u!64 &6240212519693046181
@@ -6014,6 +6032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 11
   isSelected: 0
 --- !u!64 &8668511317120433323
@@ -6283,6 +6302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 39
   isSelected: 0
 --- !u!64 &1404485768114983175
@@ -6766,6 +6786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 29
   isSelected: 0
 --- !u!64 &8872942490792251293
@@ -7266,7 +7287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 0}
+  cameraController: {fileID: 6040993083453203460}
   countryID: 0
 --- !u!114 &4047824852424156305
 MonoBehaviour:
@@ -7429,7 +7450,6 @@ GameObject:
   - component: {fileID: 7468127660995269916}
   - component: {fileID: 2665409035543255661}
   - component: {fileID: 870127509661792069}
-  - component: {fileID: 5022133948269652125}
   m_Layer: 0
   m_Name: Cylinder_62
   m_TagString: Untagged
@@ -7515,6 +7535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 0
   isSelected: 0
 --- !u!64 &870127509661792069
@@ -7539,21 +7560,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5355142369774609171, guid: 0faeb0a740efc9c4b9843b6cba6055f0, type: 3}
---- !u!114 &5022133948269652125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3636540353868725403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraController: {fileID: 0}
-  countryID: 0
-  isSelected: 0
 --- !u!1 &3642758519938574222
 GameObject:
   m_ObjectHideFlags: 0
@@ -8354,6 +8360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 1
   isSelected: 0
 --- !u!64 &3206776069389064917
@@ -8661,6 +8668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 10
   isSelected: 0
 --- !u!64 &387473447556920467
@@ -9211,6 +9219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 36
   isSelected: 0
 --- !u!64 &4981220677335330406
@@ -9365,6 +9374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 0}
+  cam: {fileID: 1570669772524770002}
   countryID: 37
   isSelected: 0
 --- !u!64 &392443336996366324
@@ -9583,6 +9593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 7
   isSelected: 0
 --- !u!64 &1172248889104730416
@@ -10304,6 +10315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 0}
+  cam: {fileID: 1570669772524770002}
   countryID: 34
   isSelected: 0
 --- !u!64 &2335783736615825399
@@ -11288,6 +11300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 28
   isSelected: 0
 --- !u!64 &6440030877357610560
@@ -11895,6 +11908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 40
   isSelected: 0
 --- !u!64 &8773258337662215215
@@ -12525,6 +12539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 17
   isSelected: 0
 --- !u!64 &2034572224040998453
@@ -12762,6 +12777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 27
   isSelected: 0
 --- !u!64 &59135109036420898
@@ -12884,6 +12900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 21
   isSelected: 0
 --- !u!64 &4602158733375247434
@@ -13006,6 +13023,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 31
   isSelected: 0
 --- !u!64 &5871304068960570401
@@ -13160,6 +13178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 38
   isSelected: 0
 --- !u!64 &4654552906318334037
@@ -13940,6 +13959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 14
   isSelected: 0
 --- !u!64 &5023631876752982087
@@ -14062,6 +14082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 33
   isSelected: 0
 --- !u!64 &493902407020061872
@@ -14184,6 +14205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 6
   isSelected: 0
 --- !u!64 &7856998543730021850
@@ -14859,6 +14881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 9
   isSelected: 0
 --- !u!64 &729748024826065856
@@ -15383,6 +15406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 5
   isSelected: 0
 --- !u!64 &7712832922132853604
@@ -15732,6 +15756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 8
   isSelected: 0
 --- !u!64 &8980725891761980080
@@ -15886,6 +15911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
   countryID: 4
   isSelected: 0
 --- !u!64 &6803461913150985621
