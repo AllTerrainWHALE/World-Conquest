@@ -210,6 +210,7 @@ GameObject:
   - component: {fileID: 8394804647611483205}
   - component: {fileID: 72088881419661109}
   - component: {fileID: 6846200250337553683}
+  - component: {fileID: 5850110212278504448}
   m_Layer: 0
   m_Name: Cylinder_412
   m_TagString: Untagged
@@ -282,6 +283,31 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5850110212278504448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112161516442561836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcf3e2e37220b0540a659247f4ab66b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 1570669772524770002}
+  countryID: 0
+  isSelected: 0
+  numberOfTroops: 0
+  adjacentRegions: []
+  continentID: 
+  infantryModel: {fileID: 5391590636441125119, guid: 075e98587e426ea48bd92dfeb1180f16, type: 3}
+  calvaryModel: {fileID: 2608380975036736486, guid: 3151a55087912994a9f0f857ea6535f6, type: 3}
+  artilleryModel: {fileID: 1286818447314781574, guid: adfac04162181ca49bb4fc0ccc61a0cb, type: 3}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
 --- !u!1 &158755454056871954
 GameObject:
   m_ObjectHideFlags: 0
@@ -4723,8 +4749,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 6040993083453203460}
+  cam: {fileID: 0}
   countryID: 0
   isSelected: 0
+  numberOfTroops: 0
+  adjacentRegions: []
+  continentID: 
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
 --- !u!1 &3642758519938574222
 GameObject:
   m_ObjectHideFlags: 0
@@ -5099,7 +5135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 857478718539782290}
   m_Layer: 0
-  m_Name: Madagasca
+  m_Name: Madagascar
   m_TagString: Madagascar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

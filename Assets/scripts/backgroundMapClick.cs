@@ -37,7 +37,9 @@ public class backgroundMapClick : MonoBehaviour
                 }
 
                 lastClickTime = Time.time;
-
+                //If the click is a triple click, move the camera to the region
+                
+                /*
                 if (clickCount == 3)
                 {
                     cameraController.targetPosition = transform.position;
@@ -45,6 +47,7 @@ public class backgroundMapClick : MonoBehaviour
                     StartCoroutine(DebugAfterSecond());
                     clickCount = 0;
                 }
+                */
             }
         }
     }

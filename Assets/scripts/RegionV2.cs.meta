@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: dcf3e2e37220b0540a659247f4ab66b6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - cameraController: {instanceID: 0}
+  - cam: {instanceID: 0}
+  - infantryModel: {fileID: 5391590636441125119, guid: 075e98587e426ea48bd92dfeb1180f16, type: 3}
+  - calvaryModel: {fileID: 2608380975036736486, guid: 3151a55087912994a9f0f857ea6535f6, type: 3}
+  - artilleryModel: {fileID: 1286818447314781574, guid: adfac04162181ca49bb4fc0ccc61a0cb, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

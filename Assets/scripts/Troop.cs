@@ -1,19 +1,20 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 // Author: Bradley Hopper
 //
-// Enum file to store the values for artillery, cavalry and infantry pieces
-//
-class Troop {
+// Enum to hold values for infantry, cavalry, artillery tokens
 
+class Troop : MonoBehaviour
+{
+    //dummy class
 }
 
-enum TroopTypes {
-    Artillery = 10,
+enum TroopTypes
+{
+    Infantry = 1,
     Cavalry = 5,
-    Infantry = 1
+    Artillery = 10
 }
