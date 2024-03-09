@@ -149,12 +149,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4092460}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005338508, y: -0.7071067, z: -0.7071068, w: -0.000000053385076}
-  m_LocalPosition: {x: -2.6383688, y: 0.045563273, z: -1.8028222}
-  m_LocalScale: {x: 1.3137085, y: 2.336965, z: 2.336965}
+  m_LocalRotation: {x: 0.00017264487, y: 2.6034288e-11, z: 0.00000015099582, w: -1}
+  m_LocalPosition: {x: 0.08163342, y: 0.48980454, z: -0.0001621108}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1348250891}
+  m_Father: {fileID: 1805847580}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &4092462
 MeshRenderer:
@@ -464,15 +464,18 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 40
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Indonesia
+  - WesternAustralia
+  - EasternAustralia
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -603,15 +606,18 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 12
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - CentralAmerica
+  - Peru
+  - Brazil
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -775,15 +781,19 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 36
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Ukraine
+  - Afganistan
+  - China
+  - Siberia
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -914,15 +924,18 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 39
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Siam
+  - NewGuinea
+  - WesternAustralia
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -1125,15 +1138,18 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 37
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Siberia
+  - Irkutsk
+  - Kamchatka
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -1351,12 +1367,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131688197}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005338508, y: -0.7071067, z: -0.7071068, w: -0.000000053385076}
-  m_LocalPosition: {x: -3.2281976, y: 0.04556394, z: -2.0889816}
-  m_LocalScale: {x: 1.3137085, y: 2.336965, z: 2.336965}
+  m_LocalRotation: {x: 0.00017264487, y: 2.6034288e-11, z: 0.00000015099582, w: -1}
+  m_LocalPosition: {x: 0.5306128, y: 0.081641145, z: -0.000020946112}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 332774042}
+  m_Father: {fileID: 357876293}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &131688199
 MeshRenderer:
@@ -1480,15 +1496,17 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 23
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - SouthAfrica
+  - EastAfrica
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -1654,15 +1672,19 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 16
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Iceland
+  - GreatBritain
+  - NorthernEurope
+  - Ukraine
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -2069,12 +2091,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 224865354}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005338508, y: -0.7071067, z: -0.7071068, w: -0.000000053385076}
-  m_LocalPosition: {x: -2.2094026, y: 0.045531157, z: -1.1351182}
-  m_LocalScale: {x: 1.3137085, y: 2.336965, z: 2.336965}
+  m_LocalRotation: {x: 0.00017252564, y: 2.6034286e-11, z: 0.0000001509958, w: -1}
+  m_LocalPosition: {x: -0.43999997, y: -0.11999646, z: -0.0019119463}
+  m_LocalScale: {x: 0.48999986, y: 0.49000004, z: 0.49000004}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 581168689}
+  m_Father: {fileID: 1648309931}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &224865356
 MeshRenderer:
@@ -2152,12 +2174,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255532532}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005338508, y: -0.7071067, z: -0.7071068, w: -0.000000053385076}
-  m_LocalPosition: {x: -3.2281976, y: 0.054864123, z: -2.1843677}
-  m_LocalScale: {x: 2.6810384, y: 4.769316, z: 4.769316}
+  m_LocalRotation: {x: 0.00017264487, y: 2.6034288e-11, z: 0.00000015099582, w: -1}
+  m_LocalPosition: {x: 0.5306128, y: 0.040826313, z: 0.003972744}
+  m_LocalScale: {x: 2.0408168, y: 2.0408168, z: 2.0408168}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 332774042}
+  m_Father: {fileID: 357876293}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &255532534
 MeshRenderer:
@@ -2484,15 +2506,18 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 41
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - EasternAustralia
+  - NewGuinea
+  - Indonesia
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -2685,14 +2710,6 @@ Transform:
   m_LocalScale: {x: 18.64949, y: 10.483683, z: 10.483683}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 131688198}
-  - {fileID: 1486585020}
-  - {fileID: 1125563357}
-  - {fileID: 255532533}
-  - {fileID: 1576551058}
-  - {fileID: 734452394}
-  - {fileID: 1175026091}
-  - {fileID: 1501185841}
   - {fileID: 357876293}
   m_Father: {fileID: 1925153800}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2874,7 +2891,15 @@ Transform:
   m_LocalPosition: {x: -2.531127, y: 0.04554704, z: -2.2797742}
   m_LocalScale: {x: 1.3137085, y: 2.3369644, z: 2.3369644}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 131688198}
+  - {fileID: 1486585020}
+  - {fileID: 1125563357}
+  - {fileID: 255532533}
+  - {fileID: 1576551058}
+  - {fileID: 734452394}
+  - {fileID: 1175026091}
+  - {fileID: 1501185841}
   m_Father: {fileID: 332774042}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &357876294
@@ -2914,15 +2939,19 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 29
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Siberia
+  - Mongolia
+  - Kamchatka
+  - Yakutsk
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -3206,15 +3235,19 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 13
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Iceland
+  - Scandinavia
+  - NorthernEurope
+  - WesternEurope
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -3413,15 +3446,18 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 34
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - India
+  - China
+  - Indonesia
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -4599,8 +4635,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1648309931}
-  - {fileID: 707518037}
-  - {fileID: 224865355}
   m_Father: {fileID: 1925153800}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &581754814
@@ -4704,12 +4738,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610377662}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005338508, y: -0.7071067, z: -0.7071068, w: -0.000000053385076}
-  m_LocalPosition: {x: -2.638368, y: 0.054831088, z: -2.0889812}
-  m_LocalScale: {x: 2.6810384, y: 4.769316, z: 4.769316}
+  m_LocalRotation: {x: 0.00017264487, y: 2.6034288e-11, z: 0.00000015099582, w: -1}
+  m_LocalPosition: {x: 0.08163266, y: 0.36735693, z: 0.0038459229}
+  m_LocalScale: {x: 2.0408168, y: 2.0408168, z: 2.0408168}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1348250891}
+  m_Father: {fileID: 1805847580}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &610377664
 MeshRenderer:
@@ -4833,15 +4867,19 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 3
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - CentralAmerica
+  - WesternUSA
+  - Ontario
+  - Quebec
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -5041,15 +5079,21 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 24
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Brazil
+  - WesternEurope
+  - SouthernEurope
+  - Egypt
+  - EastAfrica
+  - Congo
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -5240,12 +5284,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647948314}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005338508, y: -0.7071067, z: -0.7071068, w: -0.000000053385076}
-  m_LocalPosition: {x: -2.5847473, y: 0.054831088, z: -2.0889812}
-  m_LocalScale: {x: 2.6810384, y: 4.769316, z: 4.769316}
+  m_LocalRotation: {x: 0.00017264487, y: 2.6034288e-11, z: 0.00000015099582, w: -1}
+  m_LocalPosition: {x: 0.04081647, y: 0.36735693, z: 0.0038459229}
+  m_LocalScale: {x: 2.0408168, y: 2.0408168, z: 2.0408168}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1348250891}
+  m_Father: {fileID: 1805847580}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &647948316
 MeshRenderer:
@@ -5369,15 +5413,19 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 10
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Venezuela
+  - Peru
+  - Argentina
+  - NorthAfrica
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -5508,15 +5556,17 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 30
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Kamchatka
+  - Mongolia
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -5633,12 +5683,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 676672627}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005338508, y: -0.7071067, z: -0.7071068, w: -0.000000053385076}
-  m_LocalPosition: {x: -2.5847473, y: 0.045530908, z: -2.0889812}
-  m_LocalScale: {x: 1.3137085, y: 2.336965, z: 2.336965}
+  m_LocalRotation: {x: 0.00017264487, y: 2.6034288e-11, z: 0.00000015099582, w: -1}
+  m_LocalPosition: {x: 0.04081647, y: 0.36735556, z: -0.00013367254}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1348250891}
+  m_Father: {fileID: 1805847580}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &676672629
 MeshRenderer:
@@ -5762,15 +5812,18 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 25
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Congo
+  - EastAfrica
+  - Madagascar
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -5922,12 +5975,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 707518036}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005338508, y: -0.7071067, z: -0.7071068, w: -0.000000053385076}
-  m_LocalPosition: {x: -2.2094026, y: 0.05483133, z: -1.1351182}
-  m_LocalScale: {x: 2.6810384, y: 4.769316, z: 4.769316}
+  m_LocalRotation: {x: 0.00017252564, y: 2.6034286e-11, z: 0.0000001509958, w: -1}
+  m_LocalPosition: {x: -0.43999997, y: -0.11999579, z: 0.000038054965}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 581168689}
+  m_Father: {fileID: 1648309931}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &707518038
 MeshRenderer:
@@ -6051,15 +6104,17 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 38
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - NewGuinea
+  - WesternAustralia
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -6190,15 +6245,18 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 14
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - GreenLand
+  - GreatBritain
+  - Scandinavia
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -6283,12 +6341,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734452393}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005338508, y: -0.7071067, z: -0.7071068, w: -0.000000053385076}
-  m_LocalPosition: {x: -3.2281976, y: 0.05486413, z: -2.2797542}
-  m_LocalScale: {x: 2.6810384, y: 4.769316, z: 4.769316}
+  m_LocalRotation: {x: 0.00017264487, y: 2.6034288e-11, z: 0.00000015099582, w: -1}
+  m_LocalPosition: {x: 0.5306128, y: 0, z: 0.0039868327}
+  m_LocalScale: {x: 2.0408168, y: 2.0408168, z: 2.0408168}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 332774042}
+  m_Father: {fileID: 357876293}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &734452395
 MeshRenderer:
@@ -6487,12 +6545,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 739089564}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005338508, y: -0.7071067, z: -0.7071068, w: -0.000000053385076}
-  m_LocalPosition: {x: -2.6383688, y: 0.05486345, z: -1.8028222}
-  m_LocalScale: {x: 2.6810384, y: 4.769316, z: 4.769316}
+  m_LocalRotation: {x: 0.00017264487, y: 2.6034288e-11, z: 0.00000015099582, w: -1}
+  m_LocalPosition: {x: 0.08163342, y: 0.4898059, z: 0.00381751}
+  m_LocalScale: {x: 2.0408168, y: 2.0408168, z: 2.0408168}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1348250891}
+  m_Father: {fileID: 1805847580}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &739089566
 MeshRenderer:
@@ -6863,15 +6921,21 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 32
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - SouthernEurope
+  - Egypt
+  - EastAfrica
+  - India
+  - Afganistan
+  - Ukraine
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -7039,15 +7103,19 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 22
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - SouthernEurope
+  - MiddleEast
+  - NorthAfrica
+  - EastAfrica
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -7178,15 +7246,21 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 21
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - MiddleEast
+  - Egypt
+  - NorthAfrica
+  - Congo
+  - SouthAfrica
+  - Madagascar
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -7445,15 +7519,19 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 8
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Alberta
+  - Ontario
+  - EasternUSA
+  - CentralAmerica
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -8383,15 +8461,19 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 5
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Alaska
+  - Alberta
+  - Ontario
+  - GreenLand
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -8642,12 +8724,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1030124655}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005338508, y: -0.7071067, z: -0.7071068, w: -0.000000053385076}
-  m_LocalPosition: {x: -2.638368, y: 0.045530908, z: -2.0889812}
-  m_LocalScale: {x: 1.3137085, y: 2.336965, z: 2.336965}
+  m_LocalRotation: {x: 0.00017264487, y: 2.6034288e-11, z: 0.00000015099582, w: -1}
+  m_LocalPosition: {x: 0.08163266, y: 0.36735556, z: -0.00013367254}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1348250891}
+  m_Father: {fileID: 1805847580}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1030124657
 MeshRenderer:
@@ -8757,12 +8839,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050033688}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005338508, y: -0.7071067, z: -0.7071068, w: -0.000000053385076}
-  m_LocalPosition: {x: -2.6383688, y: 0.054863475, z: -1.8982086}
-  m_LocalScale: {x: 2.6810384, y: 4.769316, z: 4.769316}
+  m_LocalRotation: {x: 0.00017264487, y: 2.6034288e-11, z: 0.00000015099582, w: -1}
+  m_LocalPosition: {x: 0.08163341, y: 0.44898954, z: 0.003831589}
+  m_LocalScale: {x: 2.0408168, y: 2.0408168, z: 2.0408168}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1348250891}
+  m_Father: {fileID: 1805847580}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1050033690
 MeshRenderer:
@@ -9044,15 +9126,20 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 15
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Scandinavia
+  - GreatBritain
+  - WesternEurope
+  - SouthernEurope
+  - Ukraine
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -9201,12 +9288,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125563356}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005338508, y: -0.7071067, z: -0.7071068, w: -0.000000053385076}
-  m_LocalPosition: {x: -3.2281976, y: 0.04556395, z: -2.1843677}
-  m_LocalScale: {x: 1.3137085, y: 2.336965, z: 2.336965}
+  m_LocalRotation: {x: 0.00017264487, y: 2.6034288e-11, z: 0.00000015099582, w: -1}
+  m_LocalPosition: {x: 0.5306128, y: 0.040824942, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 332774042}
+  m_Father: {fileID: 357876293}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1125563358
 MeshRenderer:
@@ -9330,15 +9417,20 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 33
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Siberia
+  - China
+  - Japan
+  - Kamchatka
+  - Irkutsk
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -9594,12 +9686,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1175026090}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005338508, y: -0.7071067, z: -0.7071068, w: -0.000000053385076}
-  m_LocalPosition: {x: -3.2281976, y: 0.04556399, z: -2.3751407}
-  m_LocalScale: {x: 1.3137085, y: 2.336965, z: 2.336965}
+  m_LocalRotation: {x: 0.00017264487, y: 2.6034288e-11, z: 0.00000015099582, w: -1}
+  m_LocalPosition: {x: 0.5306128, y: -0.040807884, z: 0.000021335065}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 332774042}
+  m_Father: {fileID: 357876293}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1175026092
 MeshRenderer:
@@ -9723,15 +9815,18 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 7
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Ontario
+  - EasternUSA
+  - GreenLand
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -9969,15 +10064,18 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 20
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - NorthAfrica
+  - EastAfrica
+  - SouthAfrica
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -10172,15 +10270,19 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 4
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - NorthWestTerritory
+  - Ontario
+  - Quebec
+  - Iceland
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -10482,15 +10584,19 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 1
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Alaska
+  - NorthWestTerritory
+  - Ontario
+  - WesternUSA
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -10599,15 +10705,21 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 18
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Scandinavia
+  - NorthernEurope
+  - SouthernEurope
+  - MiddleEast
+  - Afganistan
+  - Ural
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -10714,12 +10826,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296730767}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005338508, y: -0.7071067, z: -0.7071068, w: -0.000000053385076}
-  m_LocalPosition: {x: -2.6383688, y: 0.045563303, z: -1.8982086}
-  m_LocalScale: {x: 1.3137085, y: 2.336965, z: 2.336965}
+  m_LocalRotation: {x: 0.00017264487, y: 2.6034288e-11, z: 0.00000015099582, w: -1}
+  m_LocalPosition: {x: 0.08163341, y: 0.44898817, z: -0.00014803195}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1348250891}
+  m_Father: {fileID: 1805847580}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1296730769
 MeshRenderer:
@@ -10953,16 +11065,6 @@ Transform:
   m_LocalScale: {x: 18.64949, y: 10.483683, z: 10.483683}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4092461}
-  - {fileID: 739089565}
-  - {fileID: 1296730768}
-  - {fileID: 1050033689}
-  - {fileID: 1030124656}
-  - {fileID: 610377663}
-  - {fileID: 676672628}
-  - {fileID: 647948315}
-  - {fileID: 1700211627}
-  - {fileID: 1688239584}
   - {fileID: 1805847580}
   m_Father: {fileID: 1925153800}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11182,15 +11284,18 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 2
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - WesternUSA
+  - EasternUSA
+  - Venezuela
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -11321,15 +11426,18 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 11
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Venezuela
+  - Brazil
+  - Argentina
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -11803,15 +11911,20 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 31
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Yakutsk
+  - Irkutsk
+  - Mongolia
+  - Alaska
+  - Japan
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -11896,12 +12009,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1486585019}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005338508, y: -0.7071067, z: -0.7071068, w: -0.000000053385076}
-  m_LocalPosition: {x: -3.2281976, y: 0.054864097, z: -2.0889816}
-  m_LocalScale: {x: 2.6810384, y: 4.769316, z: 4.769316}
+  m_LocalRotation: {x: 0.00017264487, y: 2.6034288e-11, z: 0.00000015099582, w: -1}
+  m_LocalPosition: {x: 0.5306128, y: 0.08164252, z: 0.003958643}
+  m_LocalScale: {x: 2.0408168, y: 2.0408168, z: 2.0408168}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 332774042}
+  m_Father: {fileID: 357876293}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1486585021
 MeshRenderer:
@@ -11979,12 +12092,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1501185840}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005338508, y: -0.7071067, z: -0.7071068, w: -0.000000053385076}
-  m_LocalPosition: {x: -3.2281976, y: 0.054864142, z: -2.3751407}
-  m_LocalScale: {x: 2.6810384, y: 4.769316, z: 4.769316}
+  m_LocalRotation: {x: 0.00017264487, y: 2.6034288e-11, z: 0.00000015099582, w: -1}
+  m_LocalPosition: {x: 0.5306128, y: -0.040806513, z: 0.004000921}
+  m_LocalScale: {x: 2.0408168, y: 2.0408168, z: 2.0408168}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 332774042}
+  m_Father: {fileID: 357876293}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1501185842
 MeshRenderer:
@@ -12108,15 +12221,17 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 9
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Peru
+  - Brazil
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -12847,12 +12962,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576551057}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005338508, y: -0.7071067, z: -0.7071068, w: -0.000000053385076}
-  m_LocalPosition: {x: -3.2281976, y: 0.04556398, z: -2.2797542}
-  m_LocalScale: {x: 1.3137085, y: 2.336965, z: 2.336965}
+  m_LocalRotation: {x: 0.00017264487, y: 2.6034288e-11, z: 0.00000015099582, w: -1}
+  m_LocalPosition: {x: 0.5306128, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 332774042}
+  m_Father: {fileID: 357876293}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1576551059
 MeshRenderer:
@@ -13183,7 +13298,9 @@ Transform:
   m_LocalPosition: {x: -3.3890593, y: 0.054847203, z: -0.5628202}
   m_LocalScale: {x: 2.6810384, y: 4.7693157, z: 4.7693157}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 707518037}
+  - {fileID: 224865355}
   m_Father: {fileID: 581168689}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1648309932
@@ -13223,15 +13340,21 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 27
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Afganistan
+  - India
+  - Siam
+  - Mongolia
+  - Siberia
+  - Ural
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -13765,12 +13888,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1688239583}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005338508, y: -0.7071067, z: -0.7071068, w: -0.000000053385076}
-  m_LocalPosition: {x: -2.5311265, y: 0.054831088, z: -2.0889812}
-  m_LocalScale: {x: 2.6810384, y: 4.769316, z: 4.769316}
+  m_LocalRotation: {x: 0.00017264487, y: 2.6034288e-11, z: 0.00000015099582, w: -1}
+  m_LocalPosition: {x: 0, y: 0.36735696, z: 0.0038459229}
+  m_LocalScale: {x: 2.0408168, y: 2.0408168, z: 2.0408168}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1348250891}
+  m_Father: {fileID: 1805847580}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1688239585
 MeshRenderer:
@@ -13886,12 +14009,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700211626}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005338508, y: -0.7071067, z: -0.7071068, w: -0.000000053385076}
-  m_LocalPosition: {x: -2.5311265, y: 0.045530908, z: -2.0889812}
-  m_LocalScale: {x: 1.3137085, y: 2.336965, z: 2.336965}
+  m_LocalRotation: {x: 0.00017264487, y: 2.6034288e-11, z: 0.00000015099582, w: -1}
+  m_LocalPosition: {x: 0, y: 0.36735556, z: -0.00013367254}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1348250891}
+  m_Father: {fileID: 1805847580}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1700211628
 MeshRenderer:
@@ -14257,7 +14380,17 @@ Transform:
   m_LocalPosition: {x: -2.5311265, y: 0.04554703, z: -2.947478}
   m_LocalScale: {x: 1.3137085, y: 2.3369644, z: 2.3369644}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4092461}
+  - {fileID: 739089565}
+  - {fileID: 1296730768}
+  - {fileID: 1050033689}
+  - {fileID: 1030124656}
+  - {fileID: 610377663}
+  - {fileID: 676672628}
+  - {fileID: 647948315}
+  - {fileID: 1700211627}
+  - {fileID: 1688239584}
   m_Father: {fileID: 1348250891}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1805847581
@@ -14297,15 +14430,20 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 35
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Ural
+  - China
+  - Mongolia
+  - Irkutsk
+  - Yakutsk
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -14436,15 +14574,21 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 17
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - WesternEurope
+  - NorthernEurope
+  - Ukraine
+  - MiddleEast
+  - NorthAfrica
+  - Egypt
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -14860,15 +15004,18 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 0
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - NorthWestTerritory
+  - Alberta
+  - Kamchatka
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -15210,15 +15357,20 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 26
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - Ukraine
+  - MiddleEast
+  - India
+  - China
+  - Ural
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -15349,15 +15501,19 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 28
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - MiddleEast
+  - Afganistan
+  - China
+  - Siam
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -15531,15 +15687,19 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 19
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - GreatBritain
+  - NorthernEurope
+  - SouthernEurope
+  - NorthAfrica
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
@@ -15702,15 +15862,21 @@ MonoBehaviour:
   cameraController: {fileID: 1006289347}
   cam: {fileID: 1006289343}
   countryID: 6
+  continentID: 
   countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions:
+  - GreenLand
+  - Quebec
+  - WesternUSA
+  - EasternUSA
+  - NorthWestTerritory
+  - Alberta
   numberOfTroops: 0
-  adjacentRegions: []
-  continentID: 
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
   artilleryModel: {fileID: 0}
