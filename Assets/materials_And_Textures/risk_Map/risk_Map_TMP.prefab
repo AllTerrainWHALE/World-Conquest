@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6829415574484541146}
   - component: {fileID: 4310099523909069145}
   m_Layer: 0
-  m_Name: riskMapTemp
+  m_Name: risk_Map_TMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
