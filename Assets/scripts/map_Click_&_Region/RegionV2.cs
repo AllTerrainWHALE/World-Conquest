@@ -67,7 +67,7 @@ public class RegionV2 : MonoBehaviour
         //Check if the region is clicked
         if (Physics.Raycast(ray, out hit) && hit.transform == transform)
         {
-             Debug.Log("Hit");
+             Debug.Log(transform.tag);
             if (cameraController != null){
                 cameraController.targetPosition = transform.position;
                 //Set the selected country
