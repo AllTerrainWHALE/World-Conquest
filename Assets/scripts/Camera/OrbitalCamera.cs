@@ -56,7 +56,7 @@ public class OrbitalCamera : MonoBehaviour
             localRotation.x += ((Input.GetAxis("Mouse X") * mouseSpeed));
             localRotation.y -= ((Input.GetAxis("Mouse Y") * mouseSpeed));
             //Clamp the y rotation
-            localRotation.y = Mathf.Clamp(localRotation.y, 0f, 80f);
+            localRotation.y = Mathf.Clamp(localRotation.y, 15f, 80f);
             
             //Set the camera position
         }
