@@ -24,37 +24,39 @@ using UnityEngine.UIElements;
 public class RegionV2 : MonoBehaviour
 {
 
+    [Header("Camera")]
     [SerializeField] OrbitalCamera cameraController;
     [SerializeField] Camera cam;
+
+    [Header("Region Selection")]
     [SerializeField] int countryID; //obsoleted by countryTag
+    // id of the continent this region belongs to
+    [SerializeField] string continentID;
     [SerializeField] String countryTag; //tag of region
     [SerializeField] bool isSelected = false;
     [SerializeField] float yRaise = 1.0f;
-
     [SerializeField] Vector3 objectOriginalY = new Vector3(0,0,0);
     [SerializeField] Vector3 objectRaisedY= new Vector3(0,0,0);
     //objectTargetY is used to lerp the object to the target position
     [SerializeField] Vector3 objectTargetY= new Vector3(0,0,0);
 
-    // the number of troops inside the region
-    [SerializeField] int numberOfTroops = 0;
-
+    [Header("Adjacent Region(s) To Selected Regions")]
     // tags of all regions this region is adjacent to
     [SerializeField] List<string> adjacentRegions;
 
-    // id of the continent this region belongs to
-    [SerializeField] string continentID;
-
+    [Header("Troops")]
+    // the number of troops inside the region
+    [SerializeField] int numberOfTroops = 0;
     // prefabs of board tokens
     [SerializeField] GameObject infantryModel;
     [SerializeField] GameObject calvaryModel;
     [SerializeField] GameObject artilleryModel;
-
     // lists containing game objects to represent board tokens
     [SerializeField] List<GameObject> infantryList = new List<GameObject>();
     [SerializeField] List<GameObject> calvaryList = new List<GameObject>();
     [SerializeField] List<GameObject> artilleryList = new List<GameObject>();
 
+    [Header("WIP")]
     //center and radius of largest circle within the region (WIP)
     [SerializeField] float radius;
     [SerializeField] Vector3 center;

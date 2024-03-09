@@ -4,12 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Sector1
-  - Sector2
-  - Sector3
-  - Sector4
-  - Sector5
-  - Sector6
   - Alaska
   - Alberta
   - CentralAmerica
@@ -52,6 +46,12 @@ TagManager:
   - Indonesia
   - NewGuinea
   - WesternAustralia
+  - NorthAmerica
+  - SouthAmerica
+  - Europe
+  - Africa
+  - Asia
+  - Australia
   layers:
   - Default
   - TransparentFX
