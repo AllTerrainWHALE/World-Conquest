@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 8294641349718227228}
-  m_IndirectSpecularColor: {r: 0.4510556, g: 0.5008847, b: 0.5741736, a: 1}
+  m_IndirectSpecularColor: {r: 0.45105517, g: 0.50088423, b: 0.5741727, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -131,14 +131,506 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 36707369477864218, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: WesternEurope
+      objectReference: {fileID: 0}
+    - target: {fileID: 89429627663345417, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Congo
+      objectReference: {fileID: 0}
+    - target: {fileID: 112161516442561836, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: NorthAfrica
+      objectReference: {fileID: 0}
+    - target: {fileID: 158755454056871954, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: WesternAustralia
+      objectReference: {fileID: 0}
+    - target: {fileID: 255909580956694716, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: SouthAfrica
+      objectReference: {fileID: 0}
+    - target: {fileID: 258459583798378127, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: CentralAmerica
+      objectReference: {fileID: 0}
+    - target: {fileID: 258459583798378127, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 258459583798378127, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 258459583798378127, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 293760621871605812, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Madagascar
+      objectReference: {fileID: 0}
+    - target: {fileID: 483649284514586057, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: CentralAmerica
+      objectReference: {fileID: 0}
+    - target: {fileID: 515320637806309847, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Scandinavia
+      objectReference: {fileID: 0}
+    - target: {fileID: 515320637806309847, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 515320637806309847, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 515320637806309847, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
     - target: {fileID: 527730003367718872, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
       propertyPath: m_Name
       value: Dice1
+      objectReference: {fileID: 0}
+    - target: {fileID: 657198864014376390, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Ukraine
+      objectReference: {fileID: 0}
+    - target: {fileID: 702370148797718549, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Afganistan
+      objectReference: {fileID: 0}
+    - target: {fileID: 978546733373952624, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Yakutsk
+      objectReference: {fileID: 0}
+    - target: {fileID: 978546733373952624, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 978546733373952624, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 978546733373952624, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 1207661311099217425, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: MiddleEast
+      objectReference: {fileID: 0}
+    - target: {fileID: 1392303643467488437, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: NorthernEurope
       objectReference: {fileID: 0}
     - target: {fileID: 1409738076761175298, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
       propertyPath: m_Name
       value: scene_Parent
       objectReference: {fileID: 0}
+    - target: {fileID: 1523006236613364811, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: GreatBritain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523006236613364811, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 1523006236613364811, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 1523006236613364811, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 1682016796753784222, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: EasternUSA
+      objectReference: {fileID: 0}
+    - target: {fileID: 1707542817725867642, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Egypt
+      objectReference: {fileID: 0}
+    - target: {fileID: 1810011232508905071, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Scandinavia
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936745953757182325, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Japan
+      objectReference: {fileID: 0}
+    - target: {fileID: 2143368318264176736, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: GreatBritain
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201872362022914069, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Venezuela
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201872362022914069, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 2201872362022914069, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 2201872362022914069, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 2237895759140459105, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Siam
+      objectReference: {fileID: 0}
+    - target: {fileID: 2370250561141665290, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Venezuela
+      objectReference: {fileID: 0}
+    - target: {fileID: 2665409035543255661, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Alaska
+      objectReference: {fileID: 0}
+    - target: {fileID: 2665409035543255661, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 2665409035543255661, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 2665409035543255661, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 2713055840593517504, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: WesternEurope
+      objectReference: {fileID: 0}
+    - target: {fileID: 2713055840593517504, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 2713055840593517504, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 2713055840593517504, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 2814150878884745579, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Alberta
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862313074589851505, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Peru
+      objectReference: {fileID: 0}
+    - target: {fileID: 3046006129189023069, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Indonesia
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124768535586841997, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Ukraine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124768535586841997, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 3124768535586841997, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 3124768535586841997, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 3187619948331414179, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Afganistan
+      objectReference: {fileID: 0}
+    - target: {fileID: 3187619948331414179, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 3187619948331414179, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 3187619948331414179, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 3200870544549738208, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: WesternAustrlia
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200870544549738208, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: isSelected
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200870544549738208, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 3200870544549738208, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 3200870544549738208, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 3348347430570666487, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Irkutsk
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422906319547570819, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: GreenLand
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422906319547570819, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 3422906319547570819, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 3422906319547570819, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 3466087221692558360, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: WesternUSA
+      objectReference: {fileID: 0}
+    - target: {fileID: 3466087221692558360, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 3466087221692558360, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 3466087221692558360, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 3515083053625802573, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: EastAfrica
+      objectReference: {fileID: 0}
+    - target: {fileID: 3515083053625802573, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 3515083053625802573, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 3515083053625802573, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 3636540353868725403, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Alaska
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121331928370339993, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Alberta
+      objectReference: {fileID: 0}
+    - target: {fileID: 4157222160214510972, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Kamchatka
+      objectReference: {fileID: 0}
+    - target: {fileID: 4157222160214510972, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 4157222160214510972, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 4157222160214510972, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 4307111958024729933, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Argentina
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307111958024729933, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 4307111958024729933, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 4307111958024729933, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 4327938382243031994, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Brazil
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358140736746997794, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Irkutsk
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358140736746997794, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 4358140736746997794, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 4358140736746997794, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 4375928208154257740, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: India
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375928208154257740, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 4375928208154257740, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 4375928208154257740, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 4638271393312404308, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: SouthernEurope
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638271393312404308, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 4638271393312404308, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 4638271393312404308, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 4877772743568753027, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Ural
+      objectReference: {fileID: 0}
+    - target: {fileID: 4963786921699259923, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Yakutsk
+      objectReference: {fileID: 0}
+    - target: {fileID: 4966621716967151087, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: MiddleEast
+      objectReference: {fileID: 0}
+    - target: {fileID: 4966621716967151087, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 4966621716967151087, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 4966621716967151087, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 5037892963125249303, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Iceland
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037892963125249303, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: continentID
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037892963125249303, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 5037892963125249303, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 5037892963125249303, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 5143576759272287923, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Brazil
+      objectReference: {fileID: 0}
+    - target: {fileID: 5143576759272287923, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 5143576759272287923, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 5143576759272287923, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 5320069283629016721, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Quebec
+      objectReference: {fileID: 0}
+    - target: {fileID: 5343350152514077743, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Ural
+      objectReference: {fileID: 0}
+    - target: {fileID: 5343350152514077743, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 5343350152514077743, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 5343350152514077743, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 5496993179511908175, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: NorthernEurope
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496993179511908175, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: continentID
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496993179511908175, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 5496993179511908175, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 5496993179511908175, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
     - target: {fileID: 5607905392509025891, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.943
@@ -179,6 +671,294 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5783304378598549297, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: China
+      objectReference: {fileID: 0}
+    - target: {fileID: 5783304378598549297, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 5783304378598549297, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 5783304378598549297, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 6107884791213153181, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Ontario
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107884791213153181, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 6107884791213153181, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 6107884791213153181, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 6283714522530078207, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: EasternUSA
+      objectReference: {fileID: 0}
+    - target: {fileID: 6283714522530078207, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 6283714522530078207, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 6283714522530078207, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 6289025850339306358, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Quebec
+      objectReference: {fileID: 0}
+    - target: {fileID: 6289025850339306358, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 6289025850339306358, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 6289025850339306358, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 6414634583283047992, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: India
+      objectReference: {fileID: 0}
+    - target: {fileID: 6482234058656637260, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Japan
+      objectReference: {fileID: 0}
+    - target: {fileID: 6482234058656637260, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 6482234058656637260, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 6482234058656637260, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 6825486759084658617, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: NewGuinea
+      objectReference: {fileID: 0}
+    - target: {fileID: 6872186383541356330, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Congo
+      objectReference: {fileID: 0}
+    - target: {fileID: 6872186383541356330, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 6872186383541356330, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 6872186383541356330, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 7106591800208462868, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: NewGuinea
+      objectReference: {fileID: 0}
+    - target: {fileID: 7106591800208462868, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 7106591800208462868, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 7106591800208462868, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 7138729895746043795, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: SouthernEurope
+      objectReference: {fileID: 0}
+    - target: {fileID: 7173301881947406269, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Mongolia
+      objectReference: {fileID: 0}
+    - target: {fileID: 7173301881947406269, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 7173301881947406269, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 7173301881947406269, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 7345063672761039113, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: China
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410717886077113638, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Egypt
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410717886077113638, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 7410717886077113638, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 7410717886077113638, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 7412329791659876641, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: EastAfrica
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459553702177913226, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Kamchatka
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607472034510048614, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: EasternAustralia
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889625921608251681, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 7889625921608251681, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 7889625921608251681, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 7953818834867578808, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: EasternAustralia
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953818834867578808, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 7953818834867578808, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 7953818834867578808, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 8033013993882509511, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Iceland
+      objectReference: {fileID: 0}
+    - target: {fileID: 8046702959363219218, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Mongolia
+      objectReference: {fileID: 0}
+    - target: {fileID: 8050430602802409340, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: Ontario
+      objectReference: {fileID: 0}
+    - target: {fileID: 8071152692721779390, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Siam
+      objectReference: {fileID: 0}
+    - target: {fileID: 8752002009482731567, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: NorthAfrica
+      objectReference: {fileID: 0}
+    - target: {fileID: 8752002009482731567, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 8752002009482731567, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 8752002009482731567, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 8752294913525646415, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: WesternUSA
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789722712218623103, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: m_TagString
+      value: GreenLand
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862976849546742972, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Indonesia
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862976849546742972, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 8862976849546742972, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 8862976849546742972, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 8868487837641969620, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Peru
+      objectReference: {fileID: 0}
+    - target: {fileID: 8868487837641969620, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 8868487837641969620, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 8868487837641969620, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+    - target: {fileID: 9041002817189140741, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: countryTag
+      value: Madagascar
+      objectReference: {fileID: 0}
+    - target: {fileID: 9041002817189140741, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: calvaryModel
+      value: 
+      objectReference: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+    - target: {fileID: 9041002817189140741, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: infantryModel
+      value: 
+      objectReference: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+    - target: {fileID: 9041002817189140741, guid: 67e11151ae7250447bb336346ab1116e, type: 3}
+      propertyPath: artilleryModel
+      value: 
+      objectReference: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
