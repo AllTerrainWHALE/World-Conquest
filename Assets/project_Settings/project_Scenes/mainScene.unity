@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1665904204}
-  m_IndirectSpecularColor: {r: 0.4510556, g: 0.5008847, b: 0.5741736, a: 1}
+  m_IndirectSpecularColor: {r: 0.45105517, g: 0.50088423, b: 0.5741727, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -465,7 +465,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 40
   continentID: 
-  countryTag: 
+  countryTag: NewGuinea
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -476,9 +476,9 @@ MonoBehaviour:
   - WesternAustralia
   - EasternAustralia
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -607,7 +607,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 12
   continentID: 
-  countryTag: 
+  countryTag: Venezuela
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -618,9 +618,9 @@ MonoBehaviour:
   - Peru
   - Brazil
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -782,7 +782,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 36
   continentID: 
-  countryTag: 
+  countryTag: Ural
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -794,9 +794,9 @@ MonoBehaviour:
   - China
   - Siberia
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -925,7 +925,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 39
   continentID: 
-  countryTag: 
+  countryTag: Indonesia
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -936,9 +936,9 @@ MonoBehaviour:
   - NewGuinea
   - WesternAustralia
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -1139,7 +1139,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 37
   continentID: 
-  countryTag: 
+  countryTag: Yakutsk
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -1150,9 +1150,9 @@ MonoBehaviour:
   - Irkutsk
   - Kamchatka
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -1497,7 +1497,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 23
   continentID: 
-  countryTag: 
+  countryTag: Madagascar
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -1507,9 +1507,9 @@ MonoBehaviour:
   - SouthAfrica
   - EastAfrica
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -1673,7 +1673,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 16
   continentID: 
-  countryTag: 
+  countryTag: Scandinavia
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -1685,9 +1685,9 @@ MonoBehaviour:
   - NorthernEurope
   - Ukraine
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -2507,7 +2507,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 41
   continentID: 
-  countryTag: 
+  countryTag: WesternAustralia
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -2518,9 +2518,9 @@ MonoBehaviour:
   - NewGuinea
   - Indonesia
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -2940,7 +2940,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 29
   continentID: 
-  countryTag: 
+  countryTag: Irkutsk
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -2952,9 +2952,9 @@ MonoBehaviour:
   - Kamchatka
   - Yakutsk
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -3236,7 +3236,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 13
   continentID: 
-  countryTag: 
+  countryTag: GreatBritain
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -3248,9 +3248,9 @@ MonoBehaviour:
   - NorthernEurope
   - WesternEurope
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -3447,7 +3447,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 34
   continentID: 
-  countryTag: 
+  countryTag: Siam
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -3458,9 +3458,9 @@ MonoBehaviour:
   - China
   - Indonesia
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -4868,7 +4868,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 3
   continentID: 
-  countryTag: 
+  countryTag: EasternUSA
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -4880,9 +4880,9 @@ MonoBehaviour:
   - Ontario
   - Quebec
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -5080,7 +5080,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 24
   continentID: 
-  countryTag: 
+  countryTag: NorthAfrica
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -5094,9 +5094,9 @@ MonoBehaviour:
   - EastAfrica
   - Congo
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -5414,7 +5414,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 10
   continentID: 
-  countryTag: 
+  countryTag: Brazil
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -5426,9 +5426,9 @@ MonoBehaviour:
   - Argentina
   - NorthAfrica
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -5557,7 +5557,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 30
   continentID: 
-  countryTag: 
+  countryTag: Japan
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -5567,9 +5567,9 @@ MonoBehaviour:
   - Kamchatka
   - Mongolia
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -5813,7 +5813,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 25
   continentID: 
-  countryTag: 
+  countryTag: SouthAfrica
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -5824,9 +5824,9 @@ MonoBehaviour:
   - EastAfrica
   - Madagascar
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -6105,7 +6105,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 38
   continentID: 
-  countryTag: 
+  countryTag: EasternAustralia
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -6115,9 +6115,9 @@ MonoBehaviour:
   - NewGuinea
   - WesternAustralia
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -6246,7 +6246,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 14
   continentID: 
-  countryTag: 
+  countryTag: Iceland
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -6257,9 +6257,9 @@ MonoBehaviour:
   - GreatBritain
   - Scandinavia
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -6922,7 +6922,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 32
   continentID: 
-  countryTag: 
+  countryTag: MiddleEast
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -6936,9 +6936,9 @@ MonoBehaviour:
   - Afganistan
   - Ukraine
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -7104,7 +7104,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 22
   continentID: 
-  countryTag: 
+  countryTag: Egypt
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -7116,9 +7116,9 @@ MonoBehaviour:
   - NorthAfrica
   - EastAfrica
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -7247,7 +7247,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 21
   continentID: 
-  countryTag: 
+  countryTag: EastAfrica
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -7261,9 +7261,9 @@ MonoBehaviour:
   - SouthAfrica
   - Madagascar
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -7520,7 +7520,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 8
   continentID: 
-  countryTag: 
+  countryTag: WesternUSA
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -7532,9 +7532,9 @@ MonoBehaviour:
   - EasternUSA
   - CentralAmerica
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -8462,7 +8462,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 5
   continentID: 
-  countryTag: 
+  countryTag: NorthWestTerritory
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -8474,9 +8474,9 @@ MonoBehaviour:
   - Ontario
   - GreenLand
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -9127,7 +9127,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 15
   continentID: 
-  countryTag: 
+  countryTag: NorthernEurope
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -9140,9 +9140,9 @@ MonoBehaviour:
   - SouthernEurope
   - Ukraine
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -9418,7 +9418,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 33
   continentID: 
-  countryTag: 
+  countryTag: Mongolia
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -9431,9 +9431,9 @@ MonoBehaviour:
   - Kamchatka
   - Irkutsk
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -9816,7 +9816,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 7
   continentID: 
-  countryTag: 
+  countryTag: Quebec
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -9827,9 +9827,9 @@ MonoBehaviour:
   - EasternUSA
   - GreenLand
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -10065,7 +10065,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 20
   continentID: 
-  countryTag: 
+  countryTag: Congo
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -10076,9 +10076,9 @@ MonoBehaviour:
   - EastAfrica
   - SouthAfrica
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -10271,7 +10271,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 4
   continentID: 
-  countryTag: 
+  countryTag: GreenLand
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -10283,9 +10283,9 @@ MonoBehaviour:
   - Quebec
   - Iceland
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -10585,7 +10585,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 1
   continentID: 
-  countryTag: 
+  countryTag: Alberta
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -10597,9 +10597,9 @@ MonoBehaviour:
   - Ontario
   - WesternUSA
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -10706,7 +10706,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 18
   continentID: 
-  countryTag: 
+  countryTag: Ukraine
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -10720,9 +10720,9 @@ MonoBehaviour:
   - Afganistan
   - Ural
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -11285,7 +11285,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 2
   continentID: 
-  countryTag: 
+  countryTag: CentralAmerica
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -11296,9 +11296,9 @@ MonoBehaviour:
   - EasternUSA
   - Venezuela
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -11427,7 +11427,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 11
   continentID: 
-  countryTag: 
+  countryTag: Peru
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -11438,9 +11438,9 @@ MonoBehaviour:
   - Brazil
   - Argentina
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -11912,7 +11912,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 31
   continentID: 
-  countryTag: 
+  countryTag: Kamchatka
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -11925,9 +11925,9 @@ MonoBehaviour:
   - Alaska
   - Japan
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -12222,7 +12222,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 9
   continentID: 
-  countryTag: 
+  countryTag: Argentina
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -12232,9 +12232,9 @@ MonoBehaviour:
   - Peru
   - Brazil
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -13341,7 +13341,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 27
   continentID: 
-  countryTag: 
+  countryTag: China
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -13355,9 +13355,9 @@ MonoBehaviour:
   - Siberia
   - Ural
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -14431,7 +14431,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 35
   continentID: 
-  countryTag: 
+  countryTag: Siberia
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -14444,9 +14444,9 @@ MonoBehaviour:
   - Irkutsk
   - Yakutsk
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -14575,7 +14575,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 17
   continentID: 
-  countryTag: 
+  countryTag: SouthernEurope
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -14589,9 +14589,9 @@ MonoBehaviour:
   - NorthAfrica
   - Egypt
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -15005,7 +15005,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 0
   continentID: 
-  countryTag: 
+  countryTag: Alaska
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -15016,9 +15016,9 @@ MonoBehaviour:
   - Alberta
   - Kamchatka
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -15358,7 +15358,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 26
   continentID: 
-  countryTag: 
+  countryTag: Afganistan
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -15371,9 +15371,9 @@ MonoBehaviour:
   - China
   - Ural
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -15502,7 +15502,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 28
   continentID: 
-  countryTag: 
+  countryTag: India
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -15514,9 +15514,9 @@ MonoBehaviour:
   - China
   - Siam
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -15688,7 +15688,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 19
   continentID: 
-  countryTag: 
+  countryTag: WesternEurope
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -15700,9 +15700,9 @@ MonoBehaviour:
   - SouthernEurope
   - NorthAfrica
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
@@ -15863,7 +15863,7 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 6
   continentID: 
-  countryTag: 
+  countryTag: Ontario
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -15877,9 +15877,9 @@ MonoBehaviour:
   - NorthWestTerritory
   - Alberta
   numberOfTroops: 0
-  infantryModel: {fileID: 0}
-  calvaryModel: {fileID: 0}
-  artilleryModel: {fileID: 0}
+  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
+  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
+  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
   infantryList: []
   calvaryList: []
   artilleryList: []
