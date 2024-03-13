@@ -8,13 +8,22 @@ public class DeckScript : MonoBehaviour
     [SerializeField] List<GameObject> cards = new List<GameObject>(); //list containing all of the possible cards set in unity inspector
     [SerializeField] Transform cardSpawnPoint; //point where cards appears. set through inspector
 
-    // will get random card from the list
+    // will get random card from the list and remove it
     GameObject GetRandomCard()
     {
-        return cards[Random.Range(0,cards.Count)];
+        if(cards.Count == 0)
+        {
+            return null;
+        }else{
+            int randomCard = Random.Range(0,cards.Count-1);
+            RemoveCard(randomCard);
+            return cards[randomCard];
+        }
     }
 
-    // removes card from the list
+
+
+   // removes card from the list
     void RemoveCard(int cardIndex)
     {
         cards.RemoveAt(cardIndex);

@@ -5,10 +5,25 @@ using UnityEngine;
 
 public class CardScript : MonoBehaviour
 {
-    [SerializeField] string region; // region name
-    [SerializeField] string troopsType; // what type of troops are on the card
+    [SerializeField] public string region; // region name
 
-    //as i understand there are two type of cards wild and territory
-    [SerializeField] string cardType;
+    [SerializeField] public TypeOfTroops typeOfTroops;
+    [SerializeField] public CardType cardType;
+    public enum TypeOfTroops // enum for type of troops
+    {
+        Infatry,
+        Artillery,
+        cavalry,
+        WildCard
+
+    };
+
+    //enum for type of card
+    public enum CardType
+    {
+        Territory,
+        WildCard
+
+    };
 
 }
