@@ -12,20 +12,30 @@ public class OrbitalCamera : MonoBehaviour
     //It is used to move the camera to the region that is clicked
     //It is attached to the camera game object
     //Used to handle camera orbiting and zooming
-    public Vector3 targetPosition = Vector3.zero;
+
+    [Header("Camera Controller Settings")]
     [SerializeField]  float distance = 100.0f;
     [SerializeField]  float distanceMax = 150.0f;
     [SerializeField]  float distanceMin = 40.0f;
     [SerializeField] float zoomSpeed = 2f;
     [SerializeField] float mouseSpeed = 3;
     [SerializeField] float orbitDamping = 7;
+
+    [Header("Camera Position And Rotation")]
+    public Vector3 targetPosition = Vector3.zero;
     public Vector3 actualPosition = Vector3.zero;
-    public int selectedCountry = -99;
     public Vector3 localRotation;
-    private Vector3 lastMousePosition;
     
+    private Vector3 lastMousePosition;
+
+    [Header("Current Selected Region")]
+    public int selectedCountry = -99;
+    
+
+
     void Start()
-    { 
+    {
+
         //Initialise the camera position
         Quaternion QT = Quaternion.Euler(transform.rotation.y, transform.rotation.x, 0f);
         localRotation.x = Input.GetAxis("Mouse X") + transform.rotation.x;
