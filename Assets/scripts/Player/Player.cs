@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     // List of tags of all currently owned regions
     [SerializeField] List<string> OwnedRegions;
     // The deck that the player keeps their cards in
-    [SerializeField] Deck playerDeck = new Deck();
+    [SerializeField] List<CardScript> cardsOwnedByPlayer;
     // The bonus to be used in the setup/deployment phases
     [SerializeField] int Bonus;
 
@@ -25,4 +25,8 @@ public class Player : MonoBehaviour
     {
         
     }
+
+    public List<string> GetOwnedRegions() { return OwnedRegions; }
+    public int GetBonus() { return Bonus; }
+    public List<CardScript> GetPlayerDeck() { return cardsOwnedByPlayer; }
 }
