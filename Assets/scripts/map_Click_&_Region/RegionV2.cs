@@ -74,6 +74,7 @@ public class RegionV2 : MonoBehaviour
                 cameraController.targetPosition = transform.position;
                 //Set the selected country
                 cameraController.selectedCountry = countryID;
+                cameraController.selectedCountryTag = countryTag;
             }
         }
     }
@@ -163,7 +164,7 @@ public class RegionV2 : MonoBehaviour
     //
     // Method that adds a number of troops on top of an object
     //
-    void addTroop(int troopNum = 1)
+    public void addTroop(int troopNum = 1)
     {
 
         // Calculates the ideal number of each token that should be on the board
