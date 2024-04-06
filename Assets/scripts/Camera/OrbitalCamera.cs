@@ -30,6 +30,7 @@ public class OrbitalCamera : MonoBehaviour
 
     [Header("Current Selected Region")]
     public int selectedCountry = -99;
+    public string selectedCountryTag;
     
 
 

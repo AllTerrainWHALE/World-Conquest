@@ -31,4 +31,14 @@ public class GameLoop : MonoBehaviour
 
     }
 
+    public void SetPlayerList(List<Player> newPlayers)
+    {
+        playerList = newPlayers;
+    }
+
+    public List<Player> GetPlayerList()
+    {
+        return playerList;
+    }
+
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,5 +25,15 @@ public class Player : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public List<String> getOwnedRegions()
+    {
+        return OwnedRegions;
+    }
+
+    public void addRegion(string newRegionTag)
+    {
+        OwnedRegions.Add(newRegionTag);
     }
 }
