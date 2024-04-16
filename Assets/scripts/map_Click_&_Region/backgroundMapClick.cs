@@ -15,7 +15,7 @@ public class backgroundMapClick : MonoBehaviour
        
     }
     // Update is called once per frame
-     private float lastClickTime = 0f;
+    private float lastClickTime = 0f;
     private const float clickDelay = 0.5f;
     private int clickCount = 0;
 
