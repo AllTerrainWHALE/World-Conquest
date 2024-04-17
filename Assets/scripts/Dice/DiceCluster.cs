@@ -32,12 +32,12 @@ public class DiceCluster : MonoBehaviour
         
     }
 
-    /* Testing purposes only*/
+    /* Testing purposes only
     public void SpawnDice()
     {
         SpawnDice(5, 2);
     }
-    
+    */
 
     /// <summary>
     /// Spawns a collection of dice for the attacker and defender, using the passed in values.
@@ -152,7 +152,7 @@ public class DiceCluster : MonoBehaviour
     /// </returns>
     public bool AllDiceSettled() => attackerDice.Concat(defenderDice).Count(d => !d.GetComponent<DieBehaviour>().IsSettled()) == 0;
 
-    /* Testing purposes only*/
+    /* Testing purposes only
     public void TestingDiceyThings()
     {
         if (AllDiceSettled())
@@ -166,5 +166,5 @@ public class DiceCluster : MonoBehaviour
 
         else Debug.Log("Dice not settled");
     }
-    
+    */
 }
