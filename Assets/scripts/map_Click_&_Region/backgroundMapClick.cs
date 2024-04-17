@@ -45,7 +45,7 @@ public class backgroundMapClick : MonoBehaviour
                 if (clickCount == 3)
                 {
                     cameraController.targetPosition = transform.position;
-                    cameraController.selectedCountry = -1;
+                    cameraController.selectedCountry = -99;
                     clickCount = 0;
                 }
             }

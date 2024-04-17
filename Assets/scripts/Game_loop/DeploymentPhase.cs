@@ -13,6 +13,12 @@ public class DeploymentPhase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+
+    // Author: 
+    public void PhaseLoop()
+    {
+
     }
 }

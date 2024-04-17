@@ -32,8 +32,9 @@ public class RegionV2 : MonoBehaviour
     [SerializeField] int countryID; //obsoleted by countryTag
     // id of the continent this region belongs to
     [SerializeField] string continentID;
-    [SerializeField] String countryTag; //tag of region
+    [SerializeField] public String countryTag => this.tag; //tag of region
     [SerializeField] bool isSelected = false;
+    [SerializeField] public bool isHighlighted { get; set; } = false;
     [SerializeField] float yRaise = 1.0f;
     [SerializeField] Vector3 objectOriginalY = new Vector3(0,0,0);
     [SerializeField] Vector3 objectRaisedY= new Vector3(0,0,0);
@@ -47,6 +48,7 @@ public class RegionV2 : MonoBehaviour
     [Header("Troops")]
     // the number of troops inside the region
     [SerializeField] int numberOfTroops = 0;
+
     // prefabs of board tokens
     [SerializeField] GameObject infantryModel;
     [SerializeField] GameObject calvaryModel;
@@ -146,6 +148,26 @@ public class RegionV2 : MonoBehaviour
                 //adds 5 troops
             }
         }
+
+        // Authors: Harvey & Bradley
+        // Makes the country flash brighter and darker if "isHighlighted" is set to TRUE
+        Material uniqueMaterial = GetComponent<Renderer>().material;
+        if (isHighlighted) {
+            float timeModifier = 2.5f;
+            float highlightBrightness = 0.02f;
+            // If the object you want is the one this script is attached to:
+            float metalicValue = uniqueMaterial.GetFloat("_Metallic");
+
+            metalicValue += Mathf.Sin(Time.time * timeModifier) * highlightBrightness;
+            uniqueMaterial.SetFloat("_Metallic", metalicValue);
+        }
+        else {
+            if (uniqueMaterial.GetFloat("_Metallic") != 0.4f)
+            {
+                uniqueMaterial.SetFloat("_Metallic", 0.4f);
+            }
+        }
+        isHighlighted = false;
     }
 
     // Author: Eoin Howard Scully

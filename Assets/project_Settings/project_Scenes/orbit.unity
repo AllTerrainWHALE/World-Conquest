@@ -123,6 +123,43 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &246911174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 246911175}
+  m_Layer: 0
+  m_Name: players
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &246911175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246911174}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1723738799}
+  - {fileID: 1964172917}
+  - {fileID: 733362175}
+  - {fileID: 1020958569}
+  - {fileID: 689394950}
+  - {fileID: 990691027}
+  m_Father: {fileID: 5607905393983536388}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &293509189
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,16 +198,400 @@ Transform:
   - {fileID: 3083332797939769604}
   - {fileID: 831649301096423565}
   - {fileID: 4312120952360137008}
-  - {fileID: 1385960849848375107}
-  - {fileID: 9110626980886271275}
-  - {fileID: 2842574946503366626}
-  - {fileID: 6579738630029525562}
-  - {fileID: 4686936742957056389}
-  - {fileID: 2466520372903247076}
-  - {fileID: 8689856696968948491}
   - {fileID: 6551852903826408764}
   m_Father: {fileID: 651635477951556363}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &433010394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 433010395}
+  - component: {fileID: 433010396}
+  m_Layer: 0
+  m_Name: game_loop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &433010395
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433010394}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1390421601915760159}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &433010396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433010394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af957a71f5171d54db067dceb2577702, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  phaseNumber: 2
+  turnNumber: 0
+  playerList:
+  - {fileID: 1723738800}
+  - {fileID: 1964172918}
+  - {fileID: 733362176}
+  - {fileID: 1020958570}
+  - {fileID: 689394951}
+  - {fileID: 990691028}
+  Setup: {fileID: 0}
+  Deployment: {fileID: 0}
+  Attack: {fileID: 987078795}
+  Fortify: {fileID: 0}
+--- !u!1 &689394949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 689394950}
+  - component: {fileID: 689394951}
+  m_Layer: 0
+  m_Name: player_5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &689394950
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689394949}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 246911175}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &689394951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689394949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81c72fe5d2fbe9845be45d58ed07374c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerID: 5
+  OwnedRegions: []
+  playerDeck: {fileID: 0}
+  Bonus: 0
+--- !u!1 &733362174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 733362175}
+  - component: {fileID: 733362176}
+  m_Layer: 0
+  m_Name: player_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &733362175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733362174}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 246911175}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &733362176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733362174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81c72fe5d2fbe9845be45d58ed07374c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerID: 3
+  OwnedRegions: []
+  playerDeck: {fileID: 0}
+  Bonus: 0
+--- !u!1 &987078793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 987078794}
+  - component: {fileID: 987078795}
+  m_Layer: 0
+  m_Name: attack_phase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &987078794
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987078793}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1390421601915760159}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &987078795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987078793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8f73ba89a399c49a2982e86674b832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraScript: {fileID: 6040993081976432483}
+--- !u!1 &990691026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 990691027}
+  - component: {fileID: 990691028}
+  m_Layer: 0
+  m_Name: player_6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &990691027
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990691026}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 246911175}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &990691028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990691026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81c72fe5d2fbe9845be45d58ed07374c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerID: 6
+  OwnedRegions: []
+  playerDeck: {fileID: 0}
+  Bonus: 0
+--- !u!1 &1020958568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1020958569}
+  - component: {fileID: 1020958570}
+  m_Layer: 0
+  m_Name: player_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1020958569
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020958568}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 246911175}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1020958570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020958568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81c72fe5d2fbe9845be45d58ed07374c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerID: 4
+  OwnedRegions: []
+  playerDeck: {fileID: 0}
+  Bonus: 0
+--- !u!1 &1723738798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1723738799}
+  - component: {fileID: 1723738800}
+  m_Layer: 0
+  m_Name: player_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1723738799
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723738798}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 246911175}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1723738800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723738798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81c72fe5d2fbe9845be45d58ed07374c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerID: 1
+  OwnedRegions:
+  - Brazil
+  playerDeck: {fileID: 0}
+  Bonus: 0
+--- !u!1 &1964172916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1964172917}
+  - component: {fileID: 1964172918}
+  m_Layer: 0
+  m_Name: player_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1964172917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964172916}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 246911175}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1964172918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964172916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81c72fe5d2fbe9845be45d58ed07374c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerID: 2
+  OwnedRegions: []
+  playerDeck: {fileID: 0}
+  Bonus: 0
 --- !u!1 &4956063879276559
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,7 +782,7 @@ GameObject:
   - component: {fileID: 8641527501280841160}
   m_Layer: 0
   m_Name: Cylinder_412
-  m_TagString: Untagged
+  m_TagString: NorthAfrica
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -563,13 +984,15 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 2
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Western_US
+  - Eastern_US
+  - Venezuela
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -873,26 +1296,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &449548078821572057
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4686936742957056389}
-  - component: {fileID: 3930610796170160375}
-  - component: {fileID: 4847547722942566215}
-  - component: {fileID: 6185395537885829854}
-  - component: {fileID: 4781622889786751407}
-  m_Layer: 0
-  m_Name: obj_Ocean (6)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &456512824371524724
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,48 +1385,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4544917394039198567, guid: 94a28ccf63e2a7342863188146e0caef, type: 3}
---- !u!23 &501320383571970299
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6839144777767715232}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 5a8110006a7524b409009fab165b1a20, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &508530540492046585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1036,7 +1397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 0}
+  cameraController: {fileID: 6040993081976432483}
   countryID: 0
 --- !u!114 &515320637401772720
 MonoBehaviour:
@@ -1054,13 +1415,16 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 16
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Iceland
+  - Great_Britain
+  - Northern_Europe
+  - Ukraine
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -1086,14 +1450,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8113562835380463199}
   m_CullTransparentMesh: 1
---- !u!33 &543552142984439648
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6839144777767715232}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!64 &551497655036465032
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1393,26 +1749,6 @@ Transform:
   - {fileID: 8427114750158322302}
   m_Father: {fileID: 1438267059932953371}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &752382679671649499
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6579738630029525562}
-  - component: {fileID: 4016523207583400104}
-  - component: {fileID: 8071137378210283773}
-  - component: {fileID: 7680055940025312110}
-  - component: {fileID: 5417604602812330021}
-  m_Layer: 0
-  m_Name: obj_Ocean (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!64 &759878237930944997
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1718,20 +2054,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &957196289117761043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5647375445743607487}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraController: {fileID: 0}
-  countryID: 0
 --- !u!64 &962898323276109957
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1788,13 +2110,15 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 37
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Siberia
+  - Irkutsk
+  - Kamchatka
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -2249,21 +2573,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!4 &1385960849848375107
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3959545643159896497}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -272.1, y: -0.8, z: -40.72905}
-  m_LocalScale: {x: 32.612663, y: 1.0257385, z: 20.57578}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 293509190}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1388491744918744570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2312,6 +2621,8 @@ Transform:
   - {fileID: 5392723866106196959}
   - {fileID: 6355559965193133290}
   - {fileID: 8193840898164364927}
+  - {fileID: 433010395}
+  - {fileID: 987078794}
   m_Father: {fileID: 5607905393983536388}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1392303641452437458
@@ -2566,13 +2877,16 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 13
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Iceland
+  - Scandinavia
+  - Northern_Europe
+  - Western_Europe
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -3115,7 +3429,7 @@ GameObject:
   - component: {fileID: 6837301546667735139}
   m_Layer: 0
   m_Name: Brazil
-  m_TagString: Brazil
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3170,14 +3484,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!33 &1929749761334576389
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4038283967439478013}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1936745955768597010
 GameObject:
   m_ObjectHideFlags: 0
@@ -3260,7 +3566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 0}
+  cameraController: {fileID: 6040993081976432483}
   countryID: 0
 --- !u!33 &1996656143209652098
 MeshFilter:
@@ -3516,13 +3822,15 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 12
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Central_America
+  - Peru
+  - Brazil
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -3828,7 +4136,7 @@ GameObject:
   - component: {fileID: 6240212517677830850}
   m_Layer: 0
   m_Name: Cylinder_88
-  m_TagString: Untagged
+  m_TagString: Venezuela
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3951,21 +4259,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936745955768597010}
   m_Mesh: {fileID: 9219940321761278449, guid: 3939794a3a6be91449b35a4380b06c50, type: 3}
---- !u!4 &2466520372903247076
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4122787008211220889}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 379.3, y: -0.8, z: 164.9}
-  m_LocalScale: {x: 32.612663, y: 1.0257385, z: 20.57578}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 293509190}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2476906467154425725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4397,13 +4690,15 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 0
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - NW_Territory
+  - Alberta
+  - Kamchatka
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -4460,13 +4755,16 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 19
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Great_Britain
+  - Northern_Europe
+  - Southern_Europe
+  - North_Africa
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -4761,13 +5059,16 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 1
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Alaska
+  - NW_Territory
+  - Ontario
+  - Western_US
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -4807,21 +5108,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7874254301894419400}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &2842574946503366626
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6839144777767715232}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 53.7, y: -0.8, z: 164.9}
-  m_LocalScale: {x: 32.612663, y: 1.0257385, z: 20.57578}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 293509190}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2843415221379990486
 Transform:
@@ -4904,7 +5190,7 @@ GameObject:
   - component: {fileID: 8668511315108003788}
   m_Layer: 0
   m_Name: Cylinder_118
-  m_TagString: Untagged
+  m_TagString: Peru
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5212,13 +5498,18 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 18
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Scandinavia
+  - Northern_Europe
+  - Southern_Europe
+  - Middle_east
+  - Afghanistan
+  - Ural
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -5346,13 +5637,17 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 26
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Ukraine
+  - Middle_East
+  - India
+  - China
+  - Ural
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -5397,13 +5692,15 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 41
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Eastern_Australia
+  - New_Guinea
+  - Indonesia
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -5474,20 +5771,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6570105756914923258}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3258971754105119401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4122787008211220889}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraController: {fileID: 0}
-  countryID: 0
 --- !u!1 &3275976193840850496
 GameObject:
   m_ObjectHideFlags: 0
@@ -5719,20 +6002,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &3375276998584885446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6839144777767715232}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraController: {fileID: 0}
-  countryID: 0
 --- !u!224 &3394867503671315432
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5791,20 +6060,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8338733121712422319}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3398754893055354579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4038283967439478013}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraController: {fileID: 0}
-  countryID: 0
 --- !u!224 &3404830778855781171
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5882,13 +6137,16 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 4
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - NW_Territory
+  - Ontario
+  - Quebec
+  - Iceland
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -5910,7 +6168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 0}
+  cameraController: {fileID: 6040993081976432483}
   countryID: 0
 --- !u!23 &3452884291174178938
 MeshRenderer:
@@ -5986,13 +6244,16 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 8
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Alberta
+  - Ontario
+  - Eastern_US
+  - Central_America
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -6013,7 +6274,7 @@ GameObject:
   - component: {fileID: 5008058742420138854}
   m_Layer: 0
   m_Name: Peru
-  m_TagString: Peru
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6063,7 +6324,6 @@ GameObject:
   - component: {fileID: 7189088235450086667}
   - component: {fileID: 6618829466007772828}
   - component: {fileID: 3124821111508698287}
-  - component: {fileID: 4047824852019619830}
   m_Layer: 0
   m_Name: obj_Ocean
   m_TagString: Untagged
@@ -6087,13 +6347,18 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 21
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Middle_East
+  - Egypt
+  - North_Africa
+  - Congo
+  - South_Africa
+  - Madagascar
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -6215,7 +6480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 0}
+  cameraController: {fileID: 6040993081976432483}
   countryID: 0
 --- !u!4 &3625225966831075049
 Transform:
@@ -6345,28 +6610,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &3647914282859947801
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6839144777767715232}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &3686598022326889999
 GameObject:
   m_ObjectHideFlags: 0
@@ -6810,14 +7053,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 293509190}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &3930610796170160375
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 449548078821572057}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &3942510115926929751
 Transform:
   m_ObjectHideFlags: 0
@@ -6834,26 +7069,6 @@ Transform:
   - {fileID: 5189666533810059090}
   m_Father: {fileID: 2843415221379990486}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3959545643159896497
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1385960849848375107}
-  - component: {fileID: 7494218990617610868}
-  - component: {fileID: 8085607333810275126}
-  - component: {fileID: 5439855683285913190}
-  - component: {fileID: 4114985009883693133}
-  m_Layer: 0
-  m_Name: obj_Ocean (7)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &3985808956833490571
 GameObject:
   m_ObjectHideFlags: 0
@@ -6932,14 +7147,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!33 &4016523207583400104
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 752382679671649499}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &4020914780189666639
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6990,26 +7197,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3395706016938041015}
   m_CullTransparentMesh: 1
---- !u!1 &4038283967439478013
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9110626980886271275}
-  - component: {fileID: 1929749761334576389}
-  - component: {fileID: 8709543438047008474}
-  - component: {fileID: 4618202430251314037}
-  - component: {fileID: 3398754893055354579}
-  m_Layer: 0
-  m_Name: obj_Ocean (8)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &4040111178661369325
 GameObject:
   m_ObjectHideFlags: 0
@@ -7026,20 +7213,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &4047824852019619830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3501193070334926630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraController: {fileID: 0}
-  countryID: 0
 --- !u!23 &4051558976820982294
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7148,20 +7321,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6272610435667966827}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &4114985009883693133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3959545643159896497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraController: {fileID: 0}
-  countryID: 0
 --- !u!1 &4121331929844851710
 GameObject:
   m_ObjectHideFlags: 0
@@ -7177,26 +7336,6 @@ GameObject:
   - component: {fileID: 3206776068987247026}
   m_Layer: 0
   m_Name: Cylinder_35
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &4122787008211220889
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2466520372903247076}
-  - component: {fileID: 8909726043067448838}
-  - component: {fileID: 8034098827918339069}
-  - component: {fileID: 7367627900600846974}
-  - component: {fileID: 3258971754105119401}
-  m_Layer: 0
-  m_Name: obj_Ocean (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7282,13 +7421,17 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 31
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Yakutsk
+  - Irkutsk
+  - Mongolia
+  - Alaska
+  - Japan
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -7476,13 +7619,14 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 9
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Peru
+  - Brazil
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -7522,7 +7666,7 @@ GameObject:
   - component: {fileID: 387473447960934388}
   m_Layer: 0
   m_Name: Cylinder_291
-  m_TagString: Untagged
+  m_TagString: Brazil
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7559,13 +7703,16 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 29
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Siberia
+  - Mongolia
+  - Kamchatka
+  - Yakutsk
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -7680,13 +7827,16 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 28
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Middle_East
+  - Afghanistan
+  - China
+  - Siam
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -7746,28 +7896,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6535250492011133880}
   m_CullTransparentMesh: 1
---- !u!64 &4426788515398207404
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5647375445743607487}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &4445216070546403422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7869,7 +7997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 0}
+  cameraController: {fileID: 6040993081976432483}
   countryID: 0
 --- !u!1 &4478616569559898576
 GameObject:
@@ -8117,28 +8245,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!64 &4618202430251314037
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4038283967439478013}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &4638271391565623347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8155,13 +8261,18 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 17
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Western_Europe
+  - Northern_Europe
+  - Ukraine
+  - Middle_East
+  - North_Africa
+  - Egypt
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -8306,21 +8417,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4686936742957056389
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 449548078821572057}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -271.5, y: -0.8, z: -246.5}
-  m_LocalScale: {x: 32.612663, y: 1.0257385, z: 20.57578}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 293509190}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4705732154056853783
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8472,20 +8568,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4781622889786751407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 449548078821572057}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraController: {fileID: 0}
-  countryID: 0
 --- !u!224 &4800694774274733218
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8535,48 +8617,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!23 &4847547722942566215
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 449548078821572057}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 5a8110006a7524b409009fab165b1a20, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!4 &4852108203173998269
 Transform:
   m_ObjectHideFlags: 0
@@ -8798,13 +8838,18 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 32
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Southern_Europe
+  - Egypt
+  - East_Africa
+  - India
+  - Afghanistan
+  - Ukraine
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -9001,13 +9046,15 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 14
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Greenland
+  - Great_Britain
+  - Scandinavia
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -9071,7 +9118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 0}
+  cameraController: {fileID: 6040993081976432483}
   countryID: 0
 --- !u!114 &5074266670413548590
 MonoBehaviour:
@@ -9169,13 +9216,16 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 10
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Venezuela
+  - Peru
+  - Argentina
+  - NorthAfrica
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -9408,14 +9458,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &5296922289956526544
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5647375445743607487}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &5320069285105722870
 GameObject:
   m_ObjectHideFlags: 0
@@ -9452,13 +9494,16 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 36
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Ukraine
+  - Afghanistan
+  - China
+  - Siberia
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -9592,20 +9637,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5658747988914906872}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5417604602812330021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 752382679671649499}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraController: {fileID: 0}
-  countryID: 0
 --- !u!114 &5433902998737029415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9636,28 +9667,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!64 &5439855683285913190
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3959545643159896497}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &5440323019864836838
 GameObject:
   m_ObjectHideFlags: 0
@@ -9752,13 +9761,17 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 15
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - 13
+  - 16
+  - 18
+  - 17
+  - 19
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -9906,6 +9919,7 @@ Transform:
   - {fileID: 1390421601915760159}
   - {fileID: 8320188734534154917}
   - {fileID: 651635477951556363}
+  - {fileID: 246911175}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &5623116797472702452
@@ -9972,26 +9986,6 @@ Transform:
   - {fileID: 4138546122942792206}
   m_Father: {fileID: 651635477951556363}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5647375445743607487
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8689856696968948491}
-  - component: {fileID: 5296922289956526544}
-  - component: {fileID: 7140824927640003984}
-  - component: {fileID: 4426788515398207404}
-  - component: {fileID: 957196289117761043}
-  m_Layer: 0
-  m_Name: obj_Ocean (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!23 &5647706269565029822
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10256,13 +10250,18 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 27
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Afghanistan
+  - India
+  - Siam
+  - Mongolia
+  - Siberia
+  - Ural
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -10650,13 +10649,15 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 34
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - India
+  - China
+  - Indonesia
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -10767,7 +10768,7 @@ GameObject:
   - component: {fileID: 332554904550744395}
   m_Layer: 0
   m_Name: Argentina
-  m_TagString: Argentina
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10842,13 +10843,18 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 6
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Greenland
+  - Quebec
+  - Western_US
+  - Eastern_US
+  - NW_Territory
+  - Alberta
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -10931,28 +10937,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6185395537885829854
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 449548078821572057}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &6212003929172826201
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11153,13 +11137,16 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 3
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Central_America
+  - Western_US
+  - Ontario
+  - Quebec
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -11185,13 +11172,15 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 7
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Ontario
+  - Eastern_US
+  - Greenland
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -11555,13 +11544,14 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 30
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Kamchatka
+  - Mongolia
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -11664,21 +11654,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &6579738630029525562
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 752382679671649499}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -271.50003, y: -0.8, z: 164.9}
-  m_LocalScale: {x: 32.612663, y: 1.0257385, z: 20.57578}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 293509190}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6588573323330123114
 GameObject:
   m_ObjectHideFlags: 0
@@ -11783,7 +11758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 0}
+  cameraController: {fileID: 6040993081976432483}
   countryID: 0
 --- !u!1 &6652583615050160547
 GameObject:
@@ -12113,26 +12088,6 @@ Transform:
   - {fileID: 5658747988914906872}
   m_Father: {fileID: 5018591185436461130}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6839144777767715232
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2842574946503366626}
-  - component: {fileID: 543552142984439648}
-  - component: {fileID: 501320383571970299}
-  - component: {fileID: 3647914282859947801}
-  - component: {fileID: 3375276998584885446}
-  m_Layer: 0
-  m_Name: obj_Ocean (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!23 &6846200249398242932
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12233,13 +12188,15 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 20
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - North_Africa
+  - East_Africa
+  - South_Africa
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -12558,13 +12515,15 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 40
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Indonesia
+  - Western_Australia
+  - Eastern_Australia
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -12585,7 +12544,7 @@ GameObject:
   - component: {fileID: 2478533241358132112}
   m_Layer: 0
   m_Name: Venezuela
-  m_TagString: Venezuela
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12652,48 +12611,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!23 &7140824927640003984
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5647375445743607487}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 5a8110006a7524b409009fab165b1a20, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!4 &7151156841308757760
 Transform:
   m_ObjectHideFlags: 0
@@ -12848,13 +12765,17 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 33
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Siberia
+  - China
+  - Japan
+  - Kamchatka
+  - Irkutsk
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -13006,7 +12927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 0}
+  cameraController: {fileID: 6040993081976432483}
   countryID: 0
 --- !u!4 &7302790989650926043
 Transform:
@@ -13165,28 +13086,6 @@ Transform:
   - {fileID: 4273771928880991236}
   m_Father: {fileID: 4765958848385536291}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &7367627900600846974
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4122787008211220889}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &7402332198740520196
 Transform:
   m_ObjectHideFlags: 0
@@ -13218,13 +13117,16 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 22
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Southern_Europe
+  - Middle_East
+  - North_Africa
+  - East_Africa
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -13390,14 +13292,6 @@ Skybox:
   m_GameObject: {fileID: 1409738076358243941}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
---- !u!33 &7494218990617610868
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3959545643159896497}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &7499809006774592006
 Transform:
   m_ObjectHideFlags: 0
@@ -13530,28 +13424,6 @@ Transform:
   - {fileID: 2045031763687752434}
   m_Father: {fileID: 2069629971015691281}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &7680055940025312110
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 752382679671649499}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!64 &7712832923073212419
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13649,7 +13521,7 @@ GameObject:
   - component: {fileID: 3498584968955756443}
   m_Layer: 0
   m_Name: NorthAfrica
-  m_TagString: NorthAfrica
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14022,13 +13894,15 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 25
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Congo
+  - East_Africa
+  - Madagascar
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -14121,13 +13995,14 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 38
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - New_Guinea
+  - Western_Australia
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -14233,48 +14108,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!23 &8034098827918339069
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4122787008211220889}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 5a8110006a7524b409009fab165b1a20, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!4 &8042056348214890928
 Transform:
   m_ObjectHideFlags: 0
@@ -14460,48 +14293,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7907151720325096874}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &8071137378210283773
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 752382679671649499}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 5a8110006a7524b409009fab165b1a20, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &8071152690706727385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14518,13 +14309,17 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 35
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Ural
+  - China
+  - Mongolia
+  - Irkutsk
+  - Yakutsk
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -14534,48 +14329,6 @@ MonoBehaviour:
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
---- !u!23 &8085607333810275126
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3959545643159896497}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 5a8110006a7524b409009fab165b1a20, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8113562835380463199
 GameObject:
   m_ObjectHideFlags: 0
@@ -15349,21 +15102,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8689856696968948491
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5647375445743607487}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 379.29996, y: -0.8, z: -246.5}
-  m_LocalScale: {x: 32.612663, y: 1.0257385, z: 20.57578}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 293509190}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8693506480618876148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15471,48 +15209,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!23 &8709543438047008474
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4038283967439478013}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 5a8110006a7524b409009fab165b1a20, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8711928673755769207
 GameObject:
   m_ObjectHideFlags: 0
@@ -15629,13 +15325,18 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 24
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Brazil
+  - Western_Europe
+  - Southern_Europe
+  - Egypt
+  - East_Africa
+  - Congo
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -15660,7 +15361,7 @@ GameObject:
   - component: {fileID: 8980725890824372695}
   m_Layer: 0
   m_Name: Cube_77
-  m_TagString: Untagged
+  m_TagString: WesternUSA
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15894,13 +15595,15 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 39
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Siam
+  - New_Guinea
+  - Western_Australia
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -15942,13 +15645,15 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 11
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Venezuela
+  - Brazil
+  - Argentina
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -16022,14 +15727,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!33 &8909726043067448838
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4122787008211220889}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &8912928672276712823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16046,13 +15743,16 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 5
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - Alaska
+  - Alberta
+  - Ontario
+  - GreenLand
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -16297,13 +15997,14 @@ MonoBehaviour:
   cam: {fileID: 1570669773733597621}
   countryID: 23
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
   objectRaisedY: {x: 0, y: 0, z: 0}
   objectTargetY: {x: 0, y: 0, z: 0}
-  adjacentRegions: []
+  adjacentRegions:
+  - South_Africa
+  - East_Africa
   numberOfTroops: 0
   infantryModel: {fileID: 0}
   calvaryModel: {fileID: 0}
@@ -16367,21 +16068,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1810011232107021576}
   m_Mesh: {fileID: 945755437766832360, guid: f36267551b5588c408fea6871ea0924b, type: 3}
---- !u!4 &9110626980886271275
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4038283967439478013}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 379.8, y: -0.8, z: -40.72905}
-  m_LocalScale: {x: 32.612663, y: 1.0257385, z: 20.57578}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 293509190}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9138002345990616955
 GameObject:
   m_ObjectHideFlags: 0
@@ -16426,7 +16112,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 34.9}
+  m_AnchoredPosition: {x: 0, y: 34.899902}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &9183222476859519923

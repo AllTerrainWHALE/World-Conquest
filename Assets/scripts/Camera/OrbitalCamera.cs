@@ -14,9 +14,9 @@ public class OrbitalCamera : MonoBehaviour
     //Used to handle camera orbiting and zooming
 
     [Header("Camera Controller Settings")]
-    [SerializeField]  float distance = 100.0f;
-    [SerializeField]  float distanceMax = 150.0f;
-    [SerializeField]  float distanceMin = 40.0f;
+    [SerializeField] float distance = 100.0f;
+    [SerializeField] float distanceMax = 150.0f;
+    [SerializeField] float distanceMin = 40.0f;
     [SerializeField] float zoomSpeed = 2f;
     [SerializeField] float mouseSpeed = 3;
     [SerializeField] float orbitDamping = 7;

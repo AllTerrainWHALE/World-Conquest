@@ -20,7 +20,7 @@ public class SetupPhase : MonoBehaviour
         
     }
 
-    void initalise_phase()
+    public void PhaseLoop()
     {
         GameObject Gameloop = GameObject.FindGameObjectWithTag("Gameloop");
         GameLoop gameLoopScript = Gameloop.GetComponent<GameLoop>();
