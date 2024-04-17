@@ -123,22 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &235540364 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-  m_PrefabInstance: {fileID: 1612443991}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &235540365 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: -9072691422524963614, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-  m_PrefabInstance: {fileID: 1612443991}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 097eaa281e3be9445b8d55ab2e525f58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &293509189
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,63 +171,6 @@ Transform:
   - {fileID: 6551852903826408764}
   m_Father: {fileID: 651635477951556363}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1612443991
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1390421601915760159}
-    m_Modifications:
-    - target: {fileID: 3443918187715971237, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-      propertyPath: m_Name
-      value: dice_Cluster
-      objectReference: {fileID: 0}
-    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -8.349409
-      objectReference: {fileID: 0}
-    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 66.49659
-      objectReference: {fileID: 0}
-    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -8.504993
-      objectReference: {fileID: 0}
-    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
 --- !u!1 &4956063879276559
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,6 +361,23 @@ GameObject:
   - component: {fileID: 8641527501280841160}
   m_Layer: 0
   m_Name: Cylinder_412
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &142166954856005361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8193840898164364927}
+  - component: {fileID: 5083831758124465349}
+  m_Layer: 0
+  m_Name: dice_Cluster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1805,7 +1749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 6040993081976432483}
+  cameraController: {fileID: 0}
   countryID: 0
 --- !u!64 &962898323276109957
 MeshCollider:
@@ -2386,7 +2330,7 @@ Transform:
   - {fileID: 5212497031310882596}
   - {fileID: 5392723866106196959}
   - {fileID: 6355559965193133290}
-  - {fileID: 235540364}
+  - {fileID: 8193840898164364927}
   m_Father: {fileID: 5607905393983536388}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1392303641452437458
@@ -3343,7 +3287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 6040993081976432483}
+  cameraController: {fileID: 0}
   countryID: 0
 --- !u!33 &1996656143209652098
 MeshFilter:
@@ -5329,6 +5273,20 @@ MonoBehaviour:
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
+--- !u!114 &3124821111508698287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3501193070334926630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraController: {fileID: 6040993081976432483}
+  countryID: 0
 --- !u!4 &3154614681789058075
 Transform:
   m_ObjectHideFlags: 0
@@ -5573,7 +5531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 6040993081976432483}
+  cameraController: {fileID: 0}
   countryID: 0
 --- !u!1 &3275976193840850496
 GameObject:
@@ -5909,7 +5867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 6040993081976432483}
+  cameraController: {fileID: 0}
   countryID: 0
 --- !u!224 &3404830778855781171
 RectTransform:
@@ -6187,6 +6145,7 @@ GameObject:
   - component: {fileID: 2802429357823019465}
   - component: {fileID: 7189088235450086667}
   - component: {fileID: 6618829466007772828}
+  - component: {fileID: 3124821111508698287}
   - component: {fileID: 4047824852019619830}
   m_Layer: 0
   m_Name: obj_Ocean
@@ -7182,7 +7141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 6040993081976432483}
+  cameraController: {fileID: 0}
   countryID: 0
 --- !u!23 &4051558976820982294
 MeshRenderer:
@@ -7304,7 +7263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 6040993081976432483}
+  cameraController: {fileID: 0}
   countryID: 0
 --- !u!1 &4121331929844851710
 GameObject:
@@ -8021,7 +7980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 6040993081976432483}
+  cameraController: {fileID: 0}
   countryID: 0
 --- !u!1 &4478616569559898576
 GameObject:
@@ -9275,6 +9234,20 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
+--- !u!114 &5083831758124465349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142166954856005361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 097eaa281e3be9445b8d55ab2e525f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackerDie: {fileID: 5484968637221750851, guid: 606a513ebcb0fb54b9f1dffb7708af40, type: 3}
+  defenderDie: {fileID: 8210363159237233491, guid: 919bdc991a172f84288070d4fa4f3fa8, type: 3}
 --- !u!4 &5090532584194790301
 Transform:
   m_ObjectHideFlags: 0
@@ -9772,7 +9745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 6040993081976432483}
+  cameraController: {fileID: 0}
   countryID: 0
 --- !u!114 &5433902998737029415
 MonoBehaviour:
@@ -10960,8 +10933,9 @@ MonoBehaviour:
   orbitDamping: 10
   targetPosition: {x: 0, y: 0, z: 0}
   actualPosition: {x: 0, y: 0, z: 0}
-  localRotation: {x: 0, y: 69.795, z: 0}
+  localRotation: {x: 0, y: 80, z: 0}
   selectedCountry: -99
+  selectedCountryTag: 
 --- !u!1 &6049196364836572090
 GameObject:
   m_ObjectHideFlags: 0
@@ -11069,7 +11043,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 235540365}
+      - m_Target: {fileID: 5083831758124465349}
         m_TargetAssemblyTypeName: DiceCluster, Assembly-CSharp
         m_MethodName: SpawnDice
         m_Mode: 1
@@ -11770,7 +11744,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 235540365}
+      - m_Target: {fileID: 5083831758124465349}
         m_TargetAssemblyTypeName: DiceCluster, Assembly-CSharp
         m_MethodName: TestingDiceyThings
         m_Mode: 1
@@ -13342,7 +13316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f3264056d3a24d948f52ba8e61150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraController: {fileID: 6040993081976432483}
+  cameraController: {fileID: 0}
   countryID: 0
 --- !u!4 &7302790989650926043
 Transform:
@@ -15103,6 +15077,21 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7302790989650926043}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &8193840898164364927
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142166954856005361}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.349409, y: 66.49659, z: -8.504993}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1390421601915760159}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8203552273913969263
 GameObject:

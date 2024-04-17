@@ -32,12 +32,12 @@ public class DiceCluster : MonoBehaviour
         
     }
 
-    /* Testing purposes only
+    /* Testing purposes only*/
     public void SpawnDice()
     {
         SpawnDice(5, 2);
     }
-    */
+    
 
     /// <summary>
     /// Spawns a collection of dice for the attacker and defender, using the passed in values.
@@ -59,9 +59,9 @@ public class DiceCluster : MonoBehaviour
         defenderDiceCount = Mathf.Max(1, Mathf.Min(defenderDiceCount, 2));
 
         // Remove all current dice on the board
-        /* Testing purposes only
+        /* Testing purposes only*/
         DestroyDice();
-        */
+        
 
         // Spawn the attackers dice (red) in a random orientation
         // and add them to the list of attackers dice
@@ -152,7 +152,7 @@ public class DiceCluster : MonoBehaviour
     /// </returns>
     public bool AllDiceSettled() => attackerDice.Concat(defenderDice).Count(d => !d.GetComponent<DieBehaviour>().IsSettled()) == 0;
 
-    /* Testing purposes only
+    /* Testing purposes only*/
     public void TestingDiceyThings()
     {
         if (AllDiceSettled())
@@ -166,5 +166,5 @@ public class DiceCluster : MonoBehaviour
 
         else Debug.Log("Dice not settled");
     }
-    */
+    
 }
