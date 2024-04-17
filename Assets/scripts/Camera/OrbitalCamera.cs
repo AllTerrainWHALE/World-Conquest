@@ -36,12 +36,20 @@ public class OrbitalCamera : MonoBehaviour
 
     void Start()
     {
+        /*
+         * Below code commented out by Bradley Hopper.
+         * This code block was causing issues with the camera starting in
+         *  a position that was flat with the boards surface. For unknown
+         *  reasons, the bug has been fixed without the use of this code
+         */
 
         //Initialise the camera position
-        Quaternion QT = Quaternion.Euler(transform.rotation.y, transform.rotation.x, 0f);
-        localRotation.x = Input.GetAxis("Mouse X") + transform.rotation.x;
-        localRotation.y = Input.GetAxis("Mouse Y") + transform.rotation.y;
+        //Quaternion QT = Quaternion.Euler(transform.rotation.y, transform.rotation.x, 0f);
+        //Debug.Log(transform.rotation);
+        //localRotation.x = transform.rotation.y;
+        //localRotation.y = transform.rotation.x;
     }
+
     // Update is called once per frame
     void Update()
     {

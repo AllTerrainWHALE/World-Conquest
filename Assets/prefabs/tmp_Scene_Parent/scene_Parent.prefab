@@ -170,7 +170,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 19
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &7079115323668370662
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -293,7 +309,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 20
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &8061989217304455492
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -416,7 +448,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 24
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &8641527501144772271
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -539,7 +587,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 41
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &6675982207260670869
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -807,7 +871,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 25
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &1561185364061139069
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -930,7 +1010,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 23
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &759878238065506946
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1278,7 +1374,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 2
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &7727184607934458101
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1640,7 +1752,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 18
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!1 &702370148797718549
 GameObject:
   m_ObjectHideFlags: 0
@@ -1741,7 +1869,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 26
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &962898322067872738
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2689,7 +2833,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 32
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &3178646520218145229
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2812,7 +2972,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 15
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &6663073945783844674
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2868,7 +3044,6 @@ Transform:
   - {fileID: 1390421603928124792}
   - {fileID: 8320188733324310978}
   - {fileID: 651635477816141932}
-  - {fileID: 8193840897494504728}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!45 &7470423767603259967
@@ -3484,7 +3659,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 3
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &6458550475794608561
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3607,7 +3798,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 22
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &1469775831403499222
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3879,7 +4086,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 16
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &3078363149263618499
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4149,7 +4372,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 30
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &5970518807077023321
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4450,7 +4689,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 13
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &5154413252666160166
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4605,7 +4860,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 35
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &860537507084900755
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4868,7 +5139,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 12
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &6240212519693046181
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6034,7 +6321,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 11
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &8668511317120433323
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6304,7 +6607,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 39
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &1404485768114983175
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6676,7 +6995,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5083831756109807522}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DiceCluster, Assembly-CSharp
         m_MethodName: SpawnDice
         m_Mode: 3
@@ -6788,7 +7107,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 29
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &8872942490792251293
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6903,7 +7238,6 @@ RectTransform:
   - {fileID: 6438667801002239919}
   - {fileID: 3394867501656787087}
   - {fileID: 3767908943374753665}
-  - {fileID: 4809705236031037363}
   m_Father: {fileID: 8320188733324310978}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7538,7 +7872,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 0
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &870127509661792069
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8363,7 +8713,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 1
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &3206776069389064917
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8671,7 +9037,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 10
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &387473447556920467
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9222,7 +9604,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 36
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &4981220677335330406
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9377,7 +9775,23 @@ MonoBehaviour:
   cameraController: {fileID: 0}
   cam: {fileID: 1570669772524770002}
   countryID: 37
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &392443336996366324
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9596,7 +10010,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 7
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &1172248889104730416
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10318,7 +10748,23 @@ MonoBehaviour:
   cameraController: {fileID: 0}
   cam: {fileID: 1570669772524770002}
   countryID: 34
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &2335783736615825399
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11072,16 +11518,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acf25285ed165514a875fde9a26acf88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {x: 0, y: 0, z: 0}
   distance: 100
   distanceMax: 150
   distanceMin: 40
   zoomSpeed: 2
   mouseSpeed: 3
   orbitDamping: 10
+  targetPosition: {x: 0, y: 0, z: 0}
   actualPosition: {x: 0, y: 0, z: 0}
-  selectedCountry: -99
   localRotation: {x: 0, y: 0, z: 0}
+  selectedCountry: -99
 --- !u!1 &6272610436608718860
 GameObject:
   m_ObjectHideFlags: 0
@@ -11303,7 +11749,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 28
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &6440030877357610560
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11911,7 +12373,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 40
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &8773258337662215215
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12430,7 +12908,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5083831756109807522}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DiceCluster, Assembly-CSharp
         m_MethodName: TestingDiceyThings
         m_Mode: 1
@@ -12542,7 +13020,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 17
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &2034572224040998453
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12780,7 +13274,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 27
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &59135109036420898
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12903,7 +13413,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 21
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &4602158733375247434
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13026,7 +13552,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 31
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &5871304068960570401
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13181,7 +13723,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 38
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &4654552906318334037
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13962,7 +14520,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 14
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &5023631876752982087
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14085,7 +14659,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 33
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &493902407020061872
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14208,7 +14798,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 6
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &7856998543730021850
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14884,7 +15490,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 9
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &729748024826065856
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15409,7 +16031,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 5
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &7712832922132853604
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15759,7 +16397,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 8
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &8980725891761980080
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15914,7 +16568,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 4
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &6803461913150985621
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16283,139 +16953,3 @@ Transform:
   - {fileID: 2804558778830710854}
   m_Father: {fileID: 2859543525883622887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &3328816875402507571
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 5607905392509025891}
-    m_Modifications:
-    - target: {fileID: 3443918187715971237, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-      propertyPath: m_Name
-      value: Dice Cluster
-      objectReference: {fileID: 0}
-    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
---- !u!114 &5083831756109807522 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7547807866379782801, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-  m_PrefabInstance: {fileID: 3328816875402507571}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 097eaa281e3be9445b8d55ab2e525f58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &8193840897494504728 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
-  m_PrefabInstance: {fileID: 3328816875402507571}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &3951133236218799533
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 6459481239982560169}
-    m_Modifications:
-    - target: {fileID: 4436812567170109329, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
-      propertyPath: m_Name
-      value: Dice
-      objectReference: {fileID: 0}
-    - target: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -168.93204
-      objectReference: {fileID: 0}
-    - target: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.66
-      objectReference: {fileID: 0}
-    - target: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5.5663033
-      objectReference: {fileID: 0}
-    - target: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
---- !u!4 &4809705236031037363 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
-  m_PrefabInstance: {fileID: 3951133236218799533}
-  m_PrefabAsset: {fileID: 0}
-

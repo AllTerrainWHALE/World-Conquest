@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AttackPhase : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +15,23 @@ public class AttackPhase : MonoBehaviour
     void Update()
     {
         
+    }
+
+    // Author: 
+    public void PhaseLoop()
+    {
+
+    }
+
+    // Author: 
+    private void SelectCountries()
+    {
+
+    }
+
+    // Author: 
+    private void RollingDice()
+    {
+
     }
 }
