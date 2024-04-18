@@ -32,6 +32,9 @@ public class Player : MonoBehaviour
         return OwnedRegions;
     }
 
+    // Author: Bradley & Harvey
+    public bool isOwnedRegion(string regionTag) => OwnedRegions.Contains(regionTag);
+
     public void addRegion(string newRegionTag)
     {
         OwnedRegions.Add(newRegionTag);

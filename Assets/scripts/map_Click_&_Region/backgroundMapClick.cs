@@ -21,6 +21,8 @@ public class backgroundMapClick : MonoBehaviour
 
     void Update()
     {
+        if (cameraController == null || cameraController.isClickLocked) return;
+
         //Handle the click event on the regions
         if (Input.GetMouseButtonDown(0))
         {

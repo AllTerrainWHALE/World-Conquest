@@ -30,7 +30,6 @@ TagManager:
   - Madagascar
   - NorthAfrica
   - SouthAfrica
-  - Afganistan
   - China
   - India
   - Irkutsk
@@ -52,6 +51,14 @@ TagManager:
   - Africa
   - Asia
   - Australia
+  - Sector4
+  - Sector2
+  - Sector6
+  - Sector3
+  - Sector5
+  - Sector1
+  - Undefined
+  - Afghanistan
   layers:
   - Default
   - TransparentFX
