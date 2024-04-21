@@ -117,35 +117,6 @@ public class RegionV2 : MonoBehaviour
             if (countryID >= 0)
                 transform.position = Vector3.Lerp(transform.position, objectTargetY, Time.deltaTime * 5);
         }
-
-        if(isSelected)
-        {
-            if(Input.GetKeyDown(KeyCode.P))
-            {
-                Debug.Log("P detected");
-                Debug.Log("TEST: " + gameObject.GetComponent<MeshRenderer>().bounds);
-                addTroop();
-                //add one troop
-            }
-            else if(Input.GetKeyDown(KeyCode.Q))
-            {
-                Debug.Log("Q detected");
-                removeTroop();
-                //remove one troop
-            }
-            else if(Input.GetKeyDown(KeyCode.O))
-            {
-                Debug.Log("O detected");
-                removeTroop(5);
-                //removes 5 troops
-            }
-            else if(Input.GetKeyDown(KeyCode.B))
-            {
-                Debug.Log("B detected");
-                addTroop(5);
-                //adds 5 troops
-            }
-        }
     }
 
     // Author: Eoin Howard Scully

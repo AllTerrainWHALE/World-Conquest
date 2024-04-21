@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameLoop : MonoBehaviour
@@ -23,13 +24,29 @@ public class GameLoop : MonoBehaviour
 
     void Start()
     {
-
+        for (int index = 1; index <= 4; index++)
+        {
+            Player newPlayer = new Player();
+            newPlayer.Init(index);
+            playerList.Add(newPlayer);
+        }
+        
+        phaseNumber = 0;
+        Setup.Init(playerList);
     }
 
     void Update()
     {
-
+        switch (phaseNumber)
+        {
+            case 0:
+                Debug.Log(Setup);
+                Setup.PhaseLoop();
+                break;
+        }
     }
+
+    public void incrementPhase() { phaseNumber += 1; }
 
     public void SetPlayerList(List<Player> newPlayers)
     {

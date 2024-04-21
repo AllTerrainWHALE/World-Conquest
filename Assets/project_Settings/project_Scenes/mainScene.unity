@@ -5740,6 +5740,56 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 739089564}
   m_Mesh: {fileID: -5495902117074765545, guid: 627fd13d5a434054199a20cbffe155ff, type: 3}
+--- !u!1 &754688698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 754688699}
+  - component: {fileID: 754688700}
+  m_Layer: 0
+  m_Name: Game_Loop
+  m_TagString: Game_Loop
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &754688699
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754688698}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1778308655}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &754688700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754688698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af957a71f5171d54db067dceb2577702, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  phaseNumber: 0
+  turnNumber: 0
+  playerList: []
+  Deployment: {fileID: 0}
+  Attack: {fileID: 0}
+  Fortify: {fileID: 0}
 --- !u!1 &767044266
 GameObject:
   m_ObjectHideFlags: 0
@@ -7406,6 +7456,7 @@ MonoBehaviour:
   actualPosition: {x: 0, y: 0, z: 0}
   localRotation: {x: 0, y: 0, z: 0}
   selectedCountry: -99
+  selectedCountryTag: 
 --- !u!1 &1012814753
 GameObject:
   m_ObjectHideFlags: 0
@@ -12921,6 +12972,7 @@ Transform:
   - {fileID: 182784875}
   - {fileID: 574521725}
   - {fileID: 1554957028}
+  - {fileID: 754688699}
   m_Father: {fileID: 783878625}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1792516854
