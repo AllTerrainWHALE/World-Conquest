@@ -2,35 +2,124 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.ShortcutManagement;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DeploymentPhase : MonoBehaviour
 {
-    int troopsToDeploy; // how many troops player will need to deploy
-    Player player; //player whos turn now
+    [SerializeField] public int troopsToDeploy; // how many troops player will need to deploy
+    [SerializeField] Player player; //player whos turn now
+    [SerializeField] bool isItDeployment = false;
+    [SerializeField] OrbitalCamera camera;
+    [SerializeField] Slider armiesSlider;
 
     CardCombinationChecker CardChecker = new CardCombinationChecker();
+
+    void Awake()
+    {
+        camera = GetComponent<Camera>().GetComponent<OrbitalCamera>();
+    }
+
+    void Update()
+    {
+        if(camera.selectedCountryTag != null)
+        {
+            armiesSlider.enabled = true;
+        }else{
+            armiesSlider.enabled = false;
+        }
+    }
+
+    public void PhaseLoop()
+    {
+        if (player != null){
+            GetNewArmies();
+            CheckCards();
+            armiesSlider.maxValue = troopsToDeploy;
+        }
+    }
+
+    public void Deploy()
+    {
+        Debug.Log(camera.selectedCountryTag);
+        GameObject country = GameObject.FindGameObjectWithTag(camera.selectedCountryTag);
+        country.GetComponent<RegionV2>().addTroop((int) armiesSlider.value);
+        troopsToDeploy -= (int) armiesSlider.value;
+        armiesSlider.maxValue = troopsToDeploy;
+        Debug.Log(armiesSlider.value + " armies deployed");
+    }
 
     public void GetNewArmies()
     {
         troopsToDeploy += player.GetOwnedRegions().Count / 3; // troops for owning regions
         troopsToDeploy += player.GetBonus(); // bonus troops for owning continent
-        CheckCards();
     }
 
     // check if there are combinations and if player have 5 or more cards
-    void CheckCards()
+    public void CheckCards()
     {
-        if(CardChecker.CheckForValidCombination(player.GetPlayerDeck(), 
+        if(CardChecker.CheckForValidCombination(player.cardsOwnedByPlayer, 
         out CardCombinationChecker.CardCombination combination) 
-        || player.GetPlayerDeck().Count >= 5)
+        || player.cardsOwnedByPlayer.Count >= 5)
         {
-            UseCards(combination);
+            Debug.Log(combination);
+            troopsToDeploy += UseCards(combination);
         }
     }
 
-    // method to give troops for having certain combination
-    void UseCards(CardCombinationChecker.CardCombination combination)
+    // method to give troops for having certain combination and remove cards from player
+    int UseCards(CardCombinationChecker.CardCombination combination)
     {
-                  
+        Debug.Log(player.cardsOwnedByPlayer);
+        if (combination == CardCombinationChecker.CardCombination.ThreeDifferentTypes || combination == CardCombinationChecker.CardCombination.WildCardCombination)
+        {
+            List<CardScript.TypeOfTroops> types = new List<CardScript.TypeOfTroops>();
+            int counter = 1;
+            for (int i = player.cardsOwnedByPlayer.Count - 1; i >= 0; i--)
+            {
+                Debug.Log(player.cardsOwnedByPlayer[i].typeOfTroops);
+                if (!types.Contains(player.cardsOwnedByPlayer[i].typeOfTroops) && counter < 4)
+                {
+                    types.Add(player.cardsOwnedByPlayer[i].typeOfTroops);
+                    player.cardsOwnedByPlayer.RemoveAt(i);
+                    counter++;
+                }
+                Debug.Log("i: " + i);
+                Debug.Log("Counter: " + counter);
+            }
+        }else if(combination == CardCombinationChecker.CardCombination.ThreeSameTypes)
+        {
+            var typeCounts = new Dictionary<CardScript.TypeOfTroops, int>();
+            foreach (var card in player.cardsOwnedByPlayer)
+            {
+                if (typeCounts.ContainsKey(card.typeOfTroops))
+                {
+                    typeCounts[card.typeOfTroops]++;
+                }
+                else
+                {
+                    typeCounts[card.typeOfTroops] = 1;
+                }
+            }
+            foreach (var type in typeCounts.Keys)
+            {
+                for (int i = player.cardsOwnedByPlayer.Count - 1; i >= 0 && typeCounts[type] > 0; i--)
+                {
+                    if (player.cardsOwnedByPlayer[i].typeOfTroops == type)
+                    {
+                        player.cardsOwnedByPlayer.RemoveAt(i);
+                        typeCounts[type]--;
+                    }
+                }
+            }
+        }
+        player.UpdateCards(player.cardsOwnedByPlayer);
+        if (player.cardsSetsTradedIn == 5)
+        {
+            return 15;
+        }else if (player.cardsSetsTradedIn > 5)
+        {
+            return 15 + (player.cardsSetsTradedIn - 5) * 5;
+        }
+        return 4 + player.cardsSetsTradedIn * 2;
     }
 }

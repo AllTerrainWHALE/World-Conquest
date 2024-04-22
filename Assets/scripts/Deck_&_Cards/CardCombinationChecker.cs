@@ -32,7 +32,7 @@ public class CardCombinationChecker : MonoBehaviour
                 case CardScript.TypeOfTroops.Artillery:
                     artilleryCount++;
                     break;
-                case CardScript.TypeOfTroops.cavalry:
+                case CardScript.TypeOfTroops.Cavalry:
                     cavalryCount++;
                     break;
                 case CardScript.TypeOfTroops.WildCard:

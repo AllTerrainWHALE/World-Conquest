@@ -163,7 +163,7 @@ public class RegionV2 : MonoBehaviour
     //
     // Method that adds a number of troops on top of an object
     //
-    void addTroop(int troopNum = 1)
+    public void addTroop(int troopNum = 1)
     {
 
         // Calculates the ideal number of each token that should be on the board
@@ -221,7 +221,7 @@ public class RegionV2 : MonoBehaviour
     // This method removes a number of troops from the board
     // Returns false if the reduction results in negative troops
     // 
-    bool removeTroop(int troopNum = 1)
+    public bool removeTroop(int troopNum = 1)
     {
         // Logs an error if the user tries to remove too many troops
         if ((numberOfTroops - troopNum) < 0) {

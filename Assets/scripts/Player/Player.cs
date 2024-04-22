@@ -10,9 +10,10 @@ public class Player : MonoBehaviour
     // List of tags of all currently owned regions
     [SerializeField] List<string> OwnedRegions;
     // The deck that the player keeps their cards in
-    [SerializeField] List<CardScript> cardsOwnedByPlayer;
+    [SerializeField] public List<CardScript> cardsOwnedByPlayer;
     // The bonus to be used in the setup/deployment phases
-    [SerializeField] int Bonus;
+    [SerializeField] int bonus;
+    [SerializeField] public int cardsSetsTradedIn;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,6 @@ public class Player : MonoBehaviour
     }
 
     public List<string> GetOwnedRegions() { return OwnedRegions; }
-    public int GetBonus() { return Bonus; }
-    public List<CardScript> GetPlayerDeck() { return cardsOwnedByPlayer; }
+    public int GetBonus() { return bonus; }
+    public void UpdateCards(List<CardScript> cards) { cardsOwnedByPlayer = cards; }
 }

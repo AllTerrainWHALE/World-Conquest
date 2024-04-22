@@ -89,5 +89,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   region: Western Europe
-  typeOfTroops: 0
+  typeOfTroops: 1
   cardType: 0

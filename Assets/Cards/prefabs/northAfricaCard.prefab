@@ -89,5 +89,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   region: North Africa
-  typeOfTroops: 0
+  typeOfTroops: 2
   cardType: 0

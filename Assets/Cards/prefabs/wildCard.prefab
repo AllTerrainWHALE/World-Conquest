@@ -89,5 +89,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   region: Wild Card
-  typeOfTroops: 0
+  typeOfTroops: 3
   cardType: 1
