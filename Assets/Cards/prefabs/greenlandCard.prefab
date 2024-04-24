@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 289476033209493956}
   - component: {fileID: 4894811221074983945}
   - component: {fileID: 973180553473464371}
-  - component: {fileID: -8586176538921253222}
+  - component: {fileID: 8161268318222346806}
   m_Layer: 5
   m_Name: greenlandCard
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &-8586176538921253222
+--- !u!114 &8161268318222346806
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4977758624593848722}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2db3c3a797015a24d83c88dfabedf82a, type: 3}
+  m_Script: {fileID: 11500000, guid: b1825fcde7f1f0c458424edc2e774681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   region: Greenland

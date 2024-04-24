@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 47632248547829311}
   - component: {fileID: 1015530860908686942}
   - component: {fileID: 4018006664894570780}
-  - component: {fileID: -4543202408402734574}
+  - component: {fileID: 3436680654644830958}
   m_Layer: 5
   m_Name: scandinaviaCard
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &-4543202408402734574
+--- !u!114 &3436680654644830958
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6636216238661354288}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2db3c3a797015a24d83c88dfabedf82a, type: 3}
+  m_Script: {fileID: 11500000, guid: b1825fcde7f1f0c458424edc2e774681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   region: Scandinavia

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1669013543327688167}
   - component: {fileID: 6391762046360276880}
   - component: {fileID: 1001371298208557669}
-  - component: {fileID: -8125179491658343359}
+  - component: {fileID: 8864997429970125158}
   m_Layer: 5
   m_Name: congoCard
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &-8125179491658343359
+--- !u!114 &8864997429970125158
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3741535166219286390}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2db3c3a797015a24d83c88dfabedf82a, type: 3}
+  m_Script: {fileID: 11500000, guid: b1825fcde7f1f0c458424edc2e774681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   region: Congo

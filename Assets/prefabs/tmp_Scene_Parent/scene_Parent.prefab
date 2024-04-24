@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 7079115323668370662}
   m_Layer: 0
   m_Name: Cube_147
-  m_TagString: Untagged
+  m_TagString: WesternEurope
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 8061989217304455492}
   m_Layer: 0
   m_Name: Cylinder_40
-  m_TagString: Untagged
+  m_TagString: Congo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 8641527501144772271}
   m_Layer: 0
   m_Name: Cylinder_412
-  m_TagString: Untagged
+  m_TagString: NorthAfrica
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -454,7 +454,7 @@ GameObject:
   - component: {fileID: 6675982207260670869}
   m_Layer: 0
   m_Name: Cylinder_213
-  m_TagString: Untagged
+  m_TagString: WesternAustralia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -722,7 +722,7 @@ GameObject:
   - component: {fileID: 1561185364061139069}
   m_Layer: 0
   m_Name: Cylinder_189
-  m_TagString: Untagged
+  m_TagString: SouthAfrica
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -845,7 +845,7 @@ GameObject:
   - component: {fileID: 759878238065506946}
   m_Layer: 0
   m_Name: Cylinder_19
-  m_TagString: Untagged
+  m_TagString: Madagascar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1193,7 +1193,7 @@ GameObject:
   - component: {fileID: 7727184607934458101}
   m_Layer: 0
   m_Name: Cylinder_83
-  m_TagString: Untagged
+  m_TagString: CentralAmerica
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1533,7 +1533,7 @@ GameObject:
   - component: {fileID: 3124768535586841997}
   m_Layer: 0
   m_Name: Cylinder_142
-  m_TagString: Untagged
+  m_TagString: Ukraine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1656,7 +1656,7 @@ GameObject:
   - component: {fileID: 962898322067872738}
   m_Layer: 0
   m_Name: Cylinder_33
-  m_TagString: Untagged
+  m_TagString: Afganistan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2604,7 +2604,7 @@ GameObject:
   - component: {fileID: 3178646520218145229}
   m_Layer: 0
   m_Name: Cube_362
-  m_TagString: Untagged
+  m_TagString: MiddleEast
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2727,7 +2727,7 @@ GameObject:
   - component: {fileID: 6663073945783844674}
   m_Layer: 0
   m_Name: Cube_88
-  m_TagString: Untagged
+  m_TagString: NorthernEurope
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3399,7 +3399,7 @@ GameObject:
   - component: {fileID: 6458550475794608561}
   m_Layer: 0
   m_Name: Cylinder_62
-  m_TagString: Untagged
+  m_TagString: EasternUSA
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3522,7 +3522,7 @@ GameObject:
   - component: {fileID: 1469775831403499222}
   m_Layer: 0
   m_Name: Cube_100
-  m_TagString: Untagged
+  m_TagString: Egypt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3794,7 +3794,7 @@ GameObject:
   - component: {fileID: 3078363149263618499}
   m_Layer: 0
   m_Name: Cylinder_64
-  m_TagString: Untagged
+  m_TagString: Scandinavia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4064,7 +4064,7 @@ GameObject:
   - component: {fileID: 5970518807077023321}
   m_Layer: 0
   m_Name: Cylinder_70
-  m_TagString: Untagged
+  m_TagString: Japan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4365,7 +4365,7 @@ GameObject:
   - component: {fileID: 5154413252666160166}
   m_Layer: 0
   m_Name: Cylinder_86
-  m_TagString: Untagged
+  m_TagString: GreatBritain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4520,7 +4520,7 @@ GameObject:
   - component: {fileID: 860537507084900755}
   m_Layer: 0
   m_Name: Cylinder_122
-  m_TagString: Untagged
+  m_TagString: Siberia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4783,7 +4783,7 @@ GameObject:
   - component: {fileID: 6240212519693046181}
   m_Layer: 0
   m_Name: Cylinder_88
-  m_TagString: Untagged
+  m_TagString: Venezuela
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5949,7 +5949,7 @@ GameObject:
   - component: {fileID: 8668511317120433323}
   m_Layer: 0
   m_Name: Cylinder_118
-  m_TagString: Untagged
+  m_TagString: Peru
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6219,7 +6219,7 @@ GameObject:
   - component: {fileID: 1404485768114983175}
   m_Layer: 0
   m_Name: Cylinder_126
-  m_TagString: Untagged
+  m_TagString: Indonesia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6703,7 +6703,7 @@ GameObject:
   - component: {fileID: 8872942490792251293}
   m_Layer: 0
   m_Name: Cylinder_140
-  m_TagString: Untagged
+  m_TagString: Irkutsk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7453,7 +7453,7 @@ GameObject:
   - component: {fileID: 870127509661792069}
   m_Layer: 0
   m_Name: Cylinder_62
-  m_TagString: Untagged
+  m_TagString: Alaska
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8278,7 +8278,7 @@ GameObject:
   - component: {fileID: 3206776069389064917}
   m_Layer: 0
   m_Name: Cylinder_35
-  m_TagString: Untagged
+  m_TagString: Alberta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8586,7 +8586,7 @@ GameObject:
   - component: {fileID: 387473447556920467}
   m_Layer: 0
   m_Name: Cylinder_291
-  m_TagString: Untagged
+  m_TagString: Brazil
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9137,7 +9137,7 @@ GameObject:
   - component: {fileID: 4981220677335330406}
   m_Layer: 0
   m_Name: Cylinder_62
-  m_TagString: Untagged
+  m_TagString: Ural
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9292,7 +9292,7 @@ GameObject:
   - component: {fileID: 392443336996366324}
   m_Layer: 0
   m_Name: Cylinder_119
-  m_TagString: Untagged
+  m_TagString: Yakutsk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9511,7 +9511,7 @@ GameObject:
   - component: {fileID: 1172248889104730416}
   m_Layer: 0
   m_Name: Cylinder_57
-  m_TagString: Untagged
+  m_TagString: Quebec
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10233,7 +10233,7 @@ GameObject:
   - component: {fileID: 2335783736615825399}
   m_Layer: 0
   m_Name: Cylinder_62
-  m_TagString: Untagged
+  m_TagString: Siam
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11081,7 +11081,6 @@ MonoBehaviour:
   orbitDamping: 10
   actualPosition: {x: 0, y: 0, z: 0}
   selectedCountry: -99
-  localRotation: {x: 0, y: 0, z: 0}
 --- !u!1 &6272610436608718860
 GameObject:
   m_ObjectHideFlags: 0
@@ -11218,7 +11217,7 @@ GameObject:
   - component: {fileID: 6440030877357610560}
   m_Layer: 0
   m_Name: Cube_69
-  m_TagString: Untagged
+  m_TagString: India
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11826,7 +11825,7 @@ GameObject:
   - component: {fileID: 8773258337662215215}
   m_Layer: 0
   m_Name: Cylinder_99
-  m_TagString: Untagged
+  m_TagString: NewGuinea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12457,7 +12456,7 @@ GameObject:
   - component: {fileID: 2034572224040998453}
   m_Layer: 0
   m_Name: Cylinder_83
-  m_TagString: Untagged
+  m_TagString: SouthernEurope
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12695,7 +12694,7 @@ GameObject:
   - component: {fileID: 59135109036420898}
   m_Layer: 0
   m_Name: Cube_234
-  m_TagString: Untagged
+  m_TagString: China
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12818,7 +12817,7 @@ GameObject:
   - component: {fileID: 4602158733375247434}
   m_Layer: 0
   m_Name: Cylinder_72
-  m_TagString: Untagged
+  m_TagString: EastAfrica
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12941,7 +12940,7 @@ GameObject:
   - component: {fileID: 5871304068960570401}
   m_Layer: 0
   m_Name: Cylinder_303
-  m_TagString: Untagged
+  m_TagString: Kamchatka
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13096,7 +13095,7 @@ GameObject:
   - component: {fileID: 4654552906318334037}
   m_Layer: 0
   m_Name: Cylinder_244
-  m_TagString: Untagged
+  m_TagString: EasternAustralia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13877,7 +13876,7 @@ GameObject:
   - component: {fileID: 5023631876752982087}
   m_Layer: 0
   m_Name: Cube_42
-  m_TagString: Untagged
+  m_TagString: Iceland
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14000,7 +13999,7 @@ GameObject:
   - component: {fileID: 493902407020061872}
   m_Layer: 0
   m_Name: Cube_133
-  m_TagString: Untagged
+  m_TagString: Mongolia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14123,7 +14122,7 @@ GameObject:
   - component: {fileID: 7856998543730021850}
   m_Layer: 0
   m_Name: Cylinder_18
-  m_TagString: Untagged
+  m_TagString: Ontario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15324,7 +15323,7 @@ GameObject:
   - component: {fileID: 7712832922132853604}
   m_Layer: 0
   m_Name: Cylinder_78
-  m_TagString: Untagged
+  m_TagString: NorthWestTerritory
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15674,7 +15673,7 @@ GameObject:
   - component: {fileID: 8980725891761980080}
   m_Layer: 0
   m_Name: Cube_77
-  m_TagString: Untagged
+  m_TagString: WesternUSA
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15829,7 +15828,7 @@ GameObject:
   - component: {fileID: 6803461913150985621}
   m_Layer: 0
   m_Name: Cylinder_128
-  m_TagString: Untagged
+  m_TagString: GreenLand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

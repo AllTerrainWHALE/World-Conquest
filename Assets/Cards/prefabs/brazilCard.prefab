@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2921990777217279229}
   - component: {fileID: 4409546507253875068}
   - component: {fileID: 5644157706229850556}
-  - component: {fileID: 6694802678250877605}
+  - component: {fileID: 8818482757774890207}
   m_Layer: 5
   m_Name: brazilCard
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6694802678250877605
+--- !u!114 &8818482757774890207
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1700249206848087627}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2db3c3a797015a24d83c88dfabedf82a, type: 3}
+  m_Script: {fileID: 11500000, guid: b1825fcde7f1f0c458424edc2e774681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   region: Brazil

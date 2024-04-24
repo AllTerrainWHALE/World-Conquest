@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2057303963159364203}
   - component: {fileID: 1022259725255190432}
   - component: {fileID: 2623280564135104635}
-  - component: {fileID: 2248613470015648832}
+  - component: {fileID: 2592980578037287484}
   m_Layer: 5
   m_Name: middleEastCard
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2248613470015648832
+--- !u!114 &2592980578037287484
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6140249904312130082}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2db3c3a797015a24d83c88dfabedf82a, type: 3}
+  m_Script: {fileID: 11500000, guid: b1825fcde7f1f0c458424edc2e774681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   region: Middle East

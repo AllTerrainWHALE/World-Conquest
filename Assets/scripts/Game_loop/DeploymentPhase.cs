@@ -8,24 +8,20 @@ public class DeploymentPhase : MonoBehaviour
 {
     [SerializeField] public int troopsToDeploy; // how many troops player will need to deploy
     [SerializeField] Player player; //player whos turn now
-    [SerializeField] bool isItDeployment = false;
-    [SerializeField] OrbitalCamera camera;
-    [SerializeField] Slider armiesSlider;
+    [SerializeField] bool isItDeployment;
+    [SerializeField] OrbitalCamera cameraScript;
+    [SerializeField] GameObject armiesSlider;
 
     CardCombinationChecker CardChecker = new CardCombinationChecker();
 
-    void Awake()
-    {
-        camera = GetComponent<Camera>().GetComponent<OrbitalCamera>();
-    }
-
     void Update()
     {
-        if(camera.selectedCountryTag != null)
+
+        if(cameraScript.selectedCountry > -1 && isItDeployment && troopsToDeploy > 0)
         {
-            armiesSlider.enabled = true;
+            armiesSlider.SetActive(true);
         }else{
-            armiesSlider.enabled = false;
+            armiesSlider.SetActive(false);
         }
     }
 
@@ -34,18 +30,18 @@ public class DeploymentPhase : MonoBehaviour
         if (player != null){
             GetNewArmies();
             CheckCards();
-            armiesSlider.maxValue = troopsToDeploy;
+            armiesSlider.GetComponent<Slider>().maxValue = troopsToDeploy;
         }
     }
 
     public void Deploy()
     {
-        Debug.Log(camera.selectedCountryTag);
-        GameObject country = GameObject.FindGameObjectWithTag(camera.selectedCountryTag);
-        country.GetComponent<RegionV2>().addTroop((int) armiesSlider.value);
-        troopsToDeploy -= (int) armiesSlider.value;
-        armiesSlider.maxValue = troopsToDeploy;
-        Debug.Log(armiesSlider.value + " armies deployed");
+        Debug.Log(cameraScript.selectedCountryTag);
+        GameObject country = GameObject.FindGameObjectWithTag(cameraScript.selectedCountryTag);
+        country.GetComponent<RegionV2>().addTroop((int) armiesSlider.GetComponent<Slider>().value);
+        troopsToDeploy -= (int) armiesSlider.GetComponent<Slider>().value;
+        armiesSlider.GetComponent<Slider>().maxValue = troopsToDeploy;
+        Debug.Log(armiesSlider.GetComponent<Slider>().value + " armies deployed in " + country.tag);
     }
 
     public void GetNewArmies()

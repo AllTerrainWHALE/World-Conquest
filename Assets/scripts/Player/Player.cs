@@ -27,6 +27,11 @@ public class Player : MonoBehaviour
         
     }
 
+    public void addRegion(string newRegionTag)
+    {
+        OwnedRegions.Add(newRegionTag);
+    }
+
     public List<string> GetOwnedRegions() { return OwnedRegions; }
     public int GetBonus() { return bonus; }
     public void UpdateCards(List<CardScript> cards) { cardsOwnedByPlayer = cards; }

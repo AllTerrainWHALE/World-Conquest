@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 322426107736957507}
   - component: {fileID: 358655020780159026}
   - component: {fileID: 1860929994360921019}
-  - component: {fileID: -8732230806956385926}
+  - component: {fileID: 1168017914223096880}
   m_Layer: 5
   m_Name: kamchatkaCard
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &-8732230806956385926
+--- !u!114 &1168017914223096880
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 177601965518492147}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2db3c3a797015a24d83c88dfabedf82a, type: 3}
+  m_Script: {fileID: 11500000, guid: b1825fcde7f1f0c458424edc2e774681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   region: Kamchatka
