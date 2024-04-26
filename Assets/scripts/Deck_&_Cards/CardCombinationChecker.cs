@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CardCombinationChecker : MonoBehaviour
 {
-    // Enum to represent the combinations of cards
+    // combinations
     public enum CardCombination
     {
         ThreeDifferentTypes,
@@ -12,7 +12,7 @@ public class CardCombinationChecker : MonoBehaviour
         WildCardCombination
     }
 
-    // Method to check for valid card combinations
+    // method to check for valid card combinations
     public bool CheckForValidCombination(List<CardScript> playerCards, out CardCombination combination)
     {
 
@@ -21,7 +21,7 @@ public class CardCombinationChecker : MonoBehaviour
         int cavalryCount = 0;
         int wildCardCount = 0;
 
-        //checks through players cards and counts them
+        // checks through players cards and counts them
         foreach (CardScript card in playerCards)
         {
             switch (card.typeOfTroops)

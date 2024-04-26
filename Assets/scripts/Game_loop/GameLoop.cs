@@ -20,6 +20,7 @@ public class GameLoop : MonoBehaviour
     [SerializeField] DeploymentPhase Deployment = new DeploymentPhase(); 
     [SerializeField] AttackPhase Attack = new AttackPhase(); 
     [SerializeField] FortifyPhase Fortify = new FortifyPhase(); 
+    [SerializeField] public int cardsSetsTradedIn; // Ilja: It would be better to store it here
 
     void Start()
     {

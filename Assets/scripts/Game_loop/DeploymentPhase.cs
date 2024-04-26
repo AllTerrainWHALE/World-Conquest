@@ -8,15 +8,16 @@ public class DeploymentPhase : MonoBehaviour
 {
     [SerializeField] public int troopsToDeploy; // how many troops player will need to deploy
     [SerializeField] Player player; //player whos turn now
-    [SerializeField] bool isItDeployment;
-    [SerializeField] OrbitalCamera cameraScript;
-    [SerializeField] GameObject armiesSlider;
+    [SerializeField] bool isItDeployment; // used on update method
+    [SerializeField] OrbitalCamera cameraScript; // camera
+    [SerializeField] GameObject armiesSlider; // slider for troops armies deployment
 
     CardCombinationChecker CardChecker = new CardCombinationChecker();
+    GameLoop gameLoop = new GameLoop();
 
     void Update()
     {
-
+        // when country selected and player have troops slider appears
         if(cameraScript.selectedCountry > -1 && isItDeployment && troopsToDeploy > 0)
         {
             armiesSlider.SetActive(true);
@@ -25,39 +26,52 @@ public class DeploymentPhase : MonoBehaviour
         }
     }
 
+    // gives troops and sets max value for slider
+    // also uses cards if you 5 or more of them
     public void PhaseLoop()
     {
         if (player != null){
             GetNewArmies();
-            CheckCards();
+            CheckIf5Cards();
             armiesSlider.GetComponent<Slider>().maxValue = troopsToDeploy;
         }
     }
 
+    // method for deploy button
+    // gets a selected country, uses method to add troops in RegionV2 script
+    // and changes max value for slider
     public void Deploy()
     {
-        Debug.Log(cameraScript.selectedCountryTag);
         GameObject country = GameObject.FindGameObjectWithTag(cameraScript.selectedCountryTag);
         country.GetComponent<RegionV2>().addTroop((int) armiesSlider.GetComponent<Slider>().value);
         troopsToDeploy -= (int) armiesSlider.GetComponent<Slider>().value;
         armiesSlider.GetComponent<Slider>().maxValue = troopsToDeploy;
-        Debug.Log(armiesSlider.GetComponent<Slider>().value + " armies deployed in " + country.tag);
     }
 
+    // method that calculates how many troops you get
     public void GetNewArmies()
     {
         troopsToDeploy += player.GetOwnedRegions().Count / 3; // troops for owning regions
         troopsToDeploy += player.GetBonus(); // bonus troops for owning continent
     }
 
-    // check if there are combinations and if player have 5 or more cards
+    public void CheckIf5Cards()
+    {
+        if(player.cardsOwnedByPlayer.Count >= 5)
+        {
+            CardChecker.CheckForValidCombination(player.cardsOwnedByPlayer, out CardCombinationChecker.CardCombination combination);
+            troopsToDeploy += UseCards(combination);
+        }
+    }
+
+    // method for use cards button
+    // uses CardChecker script to find combination then
+    // gives it to UseCards method
     public void CheckCards()
     {
         if(CardChecker.CheckForValidCombination(player.cardsOwnedByPlayer, 
-        out CardCombinationChecker.CardCombination combination) 
-        || player.cardsOwnedByPlayer.Count >= 5)
+        out CardCombinationChecker.CardCombination combination))
         {
-            Debug.Log(combination);
             troopsToDeploy += UseCards(combination);
         }
     }
@@ -65,11 +79,12 @@ public class DeploymentPhase : MonoBehaviour
     // method to give troops for having certain combination and remove cards from player
     int UseCards(CardCombinationChecker.CardCombination combination)
     {
-        Debug.Log(player.cardsOwnedByPlayer);
+        // Three different types and wild card combination
         if (combination == CardCombinationChecker.CardCombination.ThreeDifferentTypes || combination == CardCombinationChecker.CardCombination.WildCardCombination)
         {
             List<CardScript.TypeOfTroops> types = new List<CardScript.TypeOfTroops>();
             int counter = 1;
+            // removes cards
             for (int i = player.cardsOwnedByPlayer.Count - 1; i >= 0; i--)
             {
                 Debug.Log(player.cardsOwnedByPlayer[i].typeOfTroops);
@@ -79,12 +94,11 @@ public class DeploymentPhase : MonoBehaviour
                     player.cardsOwnedByPlayer.RemoveAt(i);
                     counter++;
                 }
-                Debug.Log("i: " + i);
-                Debug.Log("Counter: " + counter);
             }
+        // three same types
         }else if(combination == CardCombinationChecker.CardCombination.ThreeSameTypes)
         {
-            var typeCounts = new Dictionary<CardScript.TypeOfTroops, int>();
+            var typeCounts = new Dictionary<CardScript.TypeOfTroops, int>(); // stores how many of each type player has
             foreach (var card in player.cardsOwnedByPlayer)
             {
                 if (typeCounts.ContainsKey(card.typeOfTroops))
@@ -96,6 +110,7 @@ public class DeploymentPhase : MonoBehaviour
                     typeCounts[card.typeOfTroops] = 1;
                 }
             }
+            // removes cards
             foreach (var type in typeCounts.Keys)
             {
                 for (int i = player.cardsOwnedByPlayer.Count - 1; i >= 0 && typeCounts[type] > 0; i--)
@@ -109,13 +124,15 @@ public class DeploymentPhase : MonoBehaviour
             }
         }
         player.UpdateCards(player.cardsOwnedByPlayer);
-        if (player.cardsSetsTradedIn == 5)
+        
+        // points formula
+        if (gameLoop.cardsSetsTradedIn == 5)
         {
             return 15;
-        }else if (player.cardsSetsTradedIn > 5)
+        }else if (gameLoop.cardsSetsTradedIn > 5)
         {
-            return 15 + (player.cardsSetsTradedIn - 5) * 5;
+            return 15 + (gameLoop.cardsSetsTradedIn - 5) * 5;
         }
-        return 4 + player.cardsSetsTradedIn * 2;
+        return 4 + gameLoop.cardsSetsTradedIn * 2;
     }
 }

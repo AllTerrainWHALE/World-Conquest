@@ -74,7 +74,7 @@ public class RegionV2 : MonoBehaviour
                 cameraController.targetPosition = transform.position;
                 //Set the selected country
                 cameraController.selectedCountry = countryID;
-                cameraController.selectedCountryTag = tag;
+                cameraController.selectedCountryTag = tag; // Ilja: Takes tag straight from game object
             }
         }
     }

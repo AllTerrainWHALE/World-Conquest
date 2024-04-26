@@ -10,10 +10,9 @@ public class Player : MonoBehaviour
     // List of tags of all currently owned regions
     [SerializeField] List<string> OwnedRegions;
     // The deck that the player keeps their cards in
-    [SerializeField] public List<CardScript> cardsOwnedByPlayer;
+    [SerializeField] public List<CardScript> cardsOwnedByPlayer; // Ilja: I think someone created temporary empty card scripts, but now we have finished ones
     // The bonus to be used in the setup/deployment phases
     [SerializeField] int bonus;
-    [SerializeField] public int cardsSetsTradedIn;
 
     // Start is called before the first frame update
     void Start()
