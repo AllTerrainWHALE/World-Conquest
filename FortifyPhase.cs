@@ -17,7 +17,7 @@ public class FortifyPhase : MonoBehaviour
     [SerializeField] GameObject confirmButton;
 
     [Header("Fortifying Troops")]
-    [SerializeField] int troopsToMove = 0; //amount of troops to forify
+    [SerializeField] int troopsToMove = 0;
 
     private bool isFortifying = false;
 
@@ -31,15 +31,15 @@ public class FortifyPhase : MonoBehaviour
         // Empty Update method
     }
 
-    public void PhaseLoop(Player currentPlayer) //gets the current player object
+    public void PhaseLoop(Player currentPlayer)
     {
         if (!isFortifying)
         {
-            SelectCountries(currentPlayer); //method to select countries
+            SelectCountries(currentPlayer);
         }
         else
         {
-            FortifyTroops(); //if done selecting countries fortify troops
+            FortifyTroops();
         }
     }
 
@@ -51,26 +51,33 @@ public class FortifyPhase : MonoBehaviour
 
         if (isOwned)
         {
-            fromCountry = GameObject.FindGameObjectWithTag(cameraScript.selectedCountryTag).GetComponent<RegionV2>();
-
-            if (fortifiedCountry != null && !fortifiedCountry.isAdjacentRegion(cameraScript.selectedCountryTag))
-                fortifiedCountry = null;
-
-            foreach (var countryTag in fromCountry.getAdjacentRegions())
+            if (fromCountry == null)
             {
-                if (currentPlayer.isOwnedRegion(countryTag))
-                    GameObject.FindGameObjectWithTag(countryTag).GetComponent<RegionV2>().isHighlighted = true;
+                fromCountry = GameObject.FindGameObjectWithTag(cameraScript.selectedCountryTag).GetComponent<RegionV2>();
+
+                foreach (var countryTag in fromCountry.getAdjacentRegions())
+                {
+                    if (currentPlayer.isOwnedRegion(countryTag))
+                        GameObject.FindGameObjectWithTag(countryTag).GetComponent<RegionV2>().isHighlighted = true;
+                }
+            }
+            else if (fortifiedCountry == null)
+            {
+                fortifiedCountry = GameObject.FindGameObjectWithTag(cameraScript.selectedCountryTag).GetComponent<RegionV2>();
+
+                if (!fromCountry.isAdjacentRegion(cameraScript.selectedCountryTag))
+                {
+                    fortifiedCountry = null;
+                }
+                else if (fromCountry == fortifiedCountry)
+                {
+                    fromCountry = null;
+                    fortifiedCountry = null;
+                }
             }
         }
-        else
-        {
-            fortifiedCountry = GameObject.FindGameObjectWithTag(cameraScript.selectedCountryTag).GetComponent<RegionV2>();
 
-            if (fromCountry != null && !fromCountry.isAdjacentRegion(cameraScript.selectedCountryTag))
-                fromCountry = null;
-        }
-
-        if (fromCountry != null && fortifiedCountry != null && fromCountry != fortifiedCountry)
+        if (fromCountry != null && fortifiedCountry != null)
         {
             isFortifying = true;
             SetupFortifyUI();
@@ -105,7 +112,7 @@ public class FortifyPhase : MonoBehaviour
         }
     }
 
-    private void ResetFortifyPhase() //resets back to neutral
+    private void ResetFortifyPhase()
     {
         isFortifying = false;
         fromCountry = null;
