@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameLoop : MonoBehaviour
@@ -16,20 +17,29 @@ public class GameLoop : MonoBehaviour
     // The turn order is:
     //    Setup --> Deployment --> Attack --> Fortify
     //    (note that setup occurs once at the beginning of the game)
-    [SerializeField] SetupPhase Setup = new SetupPhase(); 
-    [SerializeField] DeploymentPhase Deployment = new DeploymentPhase(); 
-    [SerializeField] AttackPhase Attack = new AttackPhase(); 
-    [SerializeField] FortifyPhase Fortify = new FortifyPhase(); 
+    [SerializeField] SetupPhase Setup; 
+    [SerializeField] DeploymentPhase Deployment; 
+    [SerializeField] AttackPhase Attack; 
+    [SerializeField] FortifyPhase Fortify;
 
     void Start()
-    {
-
+    {   
+        phaseNumber = 0;
+        Setup.Init(playerList);
     }
 
     void Update()
     {
-
+        switch (phaseNumber)
+        {
+            case 0:
+                Debug.Log(Setup);
+                Setup.PhaseLoop();
+                break;
+        }
     }
+
+    public void incrementPhase() { phaseNumber += 1; }
 
     public void SetPlayerList(List<Player> newPlayers)
     {

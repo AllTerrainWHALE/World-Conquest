@@ -52,6 +52,7 @@ TagManager:
   - Africa
   - Asia
   - Australia
+  - Game_Loop
   layers:
   - Default
   - TransparentFX
