@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 7079115323668370662}
   m_Layer: 0
   m_Name: Cube_147
-  m_TagString: WesternEurope
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -170,7 +170,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 19
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &7079115323668370662
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -208,7 +224,7 @@ GameObject:
   - component: {fileID: 8061989217304455492}
   m_Layer: 0
   m_Name: Cylinder_40
-  m_TagString: Congo
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -293,7 +309,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 20
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &8061989217304455492
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -331,7 +363,7 @@ GameObject:
   - component: {fileID: 8641527501144772271}
   m_Layer: 0
   m_Name: Cylinder_412
-  m_TagString: NorthAfrica
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -416,7 +448,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 24
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &8641527501144772271
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -454,7 +502,7 @@ GameObject:
   - component: {fileID: 6675982207260670869}
   m_Layer: 0
   m_Name: Cylinder_213
-  m_TagString: WesternAustralia
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -539,7 +587,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 41
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &6675982207260670869
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -722,7 +786,7 @@ GameObject:
   - component: {fileID: 1561185364061139069}
   m_Layer: 0
   m_Name: Cylinder_189
-  m_TagString: SouthAfrica
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -807,7 +871,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 25
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &1561185364061139069
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -845,7 +925,7 @@ GameObject:
   - component: {fileID: 759878238065506946}
   m_Layer: 0
   m_Name: Cylinder_19
-  m_TagString: Madagascar
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -930,7 +1010,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 23
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &759878238065506946
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1193,7 +1289,7 @@ GameObject:
   - component: {fileID: 7727184607934458101}
   m_Layer: 0
   m_Name: Cylinder_83
-  m_TagString: CentralAmerica
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1278,7 +1374,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 2
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &7727184607934458101
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1533,7 +1645,7 @@ GameObject:
   - component: {fileID: 3124768535586841997}
   m_Layer: 0
   m_Name: Cylinder_142
-  m_TagString: Ukraine
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1640,7 +1752,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 18
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!1 &702370148797718549
 GameObject:
   m_ObjectHideFlags: 0
@@ -1656,7 +1784,7 @@ GameObject:
   - component: {fileID: 962898322067872738}
   m_Layer: 0
   m_Name: Cylinder_33
-  m_TagString: Afganistan
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1741,7 +1869,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 26
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &962898322067872738
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2604,7 +2748,7 @@ GameObject:
   - component: {fileID: 3178646520218145229}
   m_Layer: 0
   m_Name: Cube_362
-  m_TagString: MiddleEast
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2689,7 +2833,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 32
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &3178646520218145229
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2727,7 +2887,7 @@ GameObject:
   - component: {fileID: 6663073945783844674}
   m_Layer: 0
   m_Name: Cube_88
-  m_TagString: NorthernEurope
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2812,7 +2972,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 15
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &6663073945783844674
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3399,7 +3575,7 @@ GameObject:
   - component: {fileID: 6458550475794608561}
   m_Layer: 0
   m_Name: Cylinder_62
-  m_TagString: EasternUSA
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3484,7 +3660,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 3
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &6458550475794608561
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3522,7 +3714,7 @@ GameObject:
   - component: {fileID: 1469775831403499222}
   m_Layer: 0
   m_Name: Cube_100
-  m_TagString: Egypt
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3607,7 +3799,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 22
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &1469775831403499222
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3794,7 +4002,7 @@ GameObject:
   - component: {fileID: 3078363149263618499}
   m_Layer: 0
   m_Name: Cylinder_64
-  m_TagString: Scandinavia
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3879,7 +4087,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 16
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &3078363149263618499
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4064,7 +4288,7 @@ GameObject:
   - component: {fileID: 5970518807077023321}
   m_Layer: 0
   m_Name: Cylinder_70
-  m_TagString: Japan
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4149,7 +4373,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 30
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &5970518807077023321
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4365,7 +4605,7 @@ GameObject:
   - component: {fileID: 5154413252666160166}
   m_Layer: 0
   m_Name: Cylinder_86
-  m_TagString: GreatBritain
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4450,7 +4690,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 13
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &5154413252666160166
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4520,7 +4776,7 @@ GameObject:
   - component: {fileID: 860537507084900755}
   m_Layer: 0
   m_Name: Cylinder_122
-  m_TagString: Siberia
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4605,7 +4861,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 35
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &860537507084900755
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4783,7 +5055,7 @@ GameObject:
   - component: {fileID: 6240212519693046181}
   m_Layer: 0
   m_Name: Cylinder_88
-  m_TagString: Venezuela
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4868,7 +5140,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 12
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &6240212519693046181
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5949,7 +6237,7 @@ GameObject:
   - component: {fileID: 8668511317120433323}
   m_Layer: 0
   m_Name: Cylinder_118
-  m_TagString: Peru
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6034,7 +6322,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 11
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &8668511317120433323
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6219,7 +6523,7 @@ GameObject:
   - component: {fileID: 1404485768114983175}
   m_Layer: 0
   m_Name: Cylinder_126
-  m_TagString: Indonesia
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6304,7 +6608,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 39
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &1404485768114983175
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6703,7 +7023,7 @@ GameObject:
   - component: {fileID: 8872942490792251293}
   m_Layer: 0
   m_Name: Cylinder_140
-  m_TagString: Irkutsk
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6788,7 +7108,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 29
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &8872942490792251293
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7453,7 +7789,7 @@ GameObject:
   - component: {fileID: 870127509661792069}
   m_Layer: 0
   m_Name: Cylinder_62
-  m_TagString: Alaska
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7538,7 +7874,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 0
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &870127509661792069
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8278,7 +8630,7 @@ GameObject:
   - component: {fileID: 3206776069389064917}
   m_Layer: 0
   m_Name: Cylinder_35
-  m_TagString: Alberta
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8363,7 +8715,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 1
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &3206776069389064917
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8586,7 +8954,7 @@ GameObject:
   - component: {fileID: 387473447556920467}
   m_Layer: 0
   m_Name: Cylinder_291
-  m_TagString: Brazil
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8671,7 +9039,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 10
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &387473447556920467
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9137,7 +9521,7 @@ GameObject:
   - component: {fileID: 4981220677335330406}
   m_Layer: 0
   m_Name: Cylinder_62
-  m_TagString: Ural
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9222,7 +9606,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 36
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &4981220677335330406
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9292,7 +9692,7 @@ GameObject:
   - component: {fileID: 392443336996366324}
   m_Layer: 0
   m_Name: Cylinder_119
-  m_TagString: Yakutsk
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9377,7 +9777,23 @@ MonoBehaviour:
   cameraController: {fileID: 0}
   cam: {fileID: 1570669772524770002}
   countryID: 37
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &392443336996366324
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9511,7 +9927,7 @@ GameObject:
   - component: {fileID: 1172248889104730416}
   m_Layer: 0
   m_Name: Cylinder_57
-  m_TagString: Quebec
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9596,7 +10012,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 7
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &1172248889104730416
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10233,7 +10665,7 @@ GameObject:
   - component: {fileID: 2335783736615825399}
   m_Layer: 0
   m_Name: Cylinder_62
-  m_TagString: Siam
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10318,7 +10750,23 @@ MonoBehaviour:
   cameraController: {fileID: 0}
   cam: {fileID: 1570669772524770002}
   countryID: 34
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &2335783736615825399
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11072,15 +11520,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acf25285ed165514a875fde9a26acf88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {x: 0, y: 0, z: 0}
   distance: 100
   distanceMax: 150
   distanceMin: 40
   zoomSpeed: 2
   mouseSpeed: 3
   orbitDamping: 10
+  targetPosition: {x: 0, y: 0, z: 0}
   actualPosition: {x: 0, y: 0, z: 0}
+  localRotation: {x: 0, y: 0, z: 0}
   selectedCountry: -99
+  selectedCountryTag: 
 --- !u!1 &6272610436608718860
 GameObject:
   m_ObjectHideFlags: 0
@@ -11217,7 +11667,7 @@ GameObject:
   - component: {fileID: 6440030877357610560}
   m_Layer: 0
   m_Name: Cube_69
-  m_TagString: India
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11302,7 +11752,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 28
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &6440030877357610560
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11825,7 +12291,7 @@ GameObject:
   - component: {fileID: 8773258337662215215}
   m_Layer: 0
   m_Name: Cylinder_99
-  m_TagString: NewGuinea
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11910,7 +12376,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 40
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &8773258337662215215
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12456,7 +12938,7 @@ GameObject:
   - component: {fileID: 2034572224040998453}
   m_Layer: 0
   m_Name: Cylinder_83
-  m_TagString: SouthernEurope
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12541,7 +13023,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 17
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &2034572224040998453
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12694,7 +13192,7 @@ GameObject:
   - component: {fileID: 59135109036420898}
   m_Layer: 0
   m_Name: Cube_234
-  m_TagString: China
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12779,7 +13277,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 27
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &59135109036420898
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12817,7 +13331,7 @@ GameObject:
   - component: {fileID: 4602158733375247434}
   m_Layer: 0
   m_Name: Cylinder_72
-  m_TagString: EastAfrica
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12902,7 +13416,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 21
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &4602158733375247434
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12940,7 +13470,7 @@ GameObject:
   - component: {fileID: 5871304068960570401}
   m_Layer: 0
   m_Name: Cylinder_303
-  m_TagString: Kamchatka
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13025,7 +13555,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 31
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &5871304068960570401
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13095,7 +13641,7 @@ GameObject:
   - component: {fileID: 4654552906318334037}
   m_Layer: 0
   m_Name: Cylinder_244
-  m_TagString: EasternAustralia
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13180,7 +13726,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 38
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &4654552906318334037
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13876,7 +14438,7 @@ GameObject:
   - component: {fileID: 5023631876752982087}
   m_Layer: 0
   m_Name: Cube_42
-  m_TagString: Iceland
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13961,7 +14523,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 14
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &5023631876752982087
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13999,7 +14577,7 @@ GameObject:
   - component: {fileID: 493902407020061872}
   m_Layer: 0
   m_Name: Cube_133
-  m_TagString: Mongolia
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14084,7 +14662,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 33
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &493902407020061872
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14122,7 +14716,7 @@ GameObject:
   - component: {fileID: 7856998543730021850}
   m_Layer: 0
   m_Name: Cylinder_18
-  m_TagString: Ontario
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14207,7 +14801,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 6
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &7856998543730021850
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14798,7 +15408,7 @@ GameObject:
   - component: {fileID: 729748024826065856}
   m_Layer: 0
   m_Name: Cylinder_132
-  m_TagString: Argentina
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14883,7 +15493,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 9
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &729748024826065856
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15323,7 +15949,7 @@ GameObject:
   - component: {fileID: 7712832922132853604}
   m_Layer: 0
   m_Name: Cylinder_78
-  m_TagString: NorthWestTerritory
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15408,7 +16034,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 5
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &7712832922132853604
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15673,7 +16315,7 @@ GameObject:
   - component: {fileID: 8980725891761980080}
   m_Layer: 0
   m_Name: Cube_77
-  m_TagString: WesternUSA
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15758,7 +16400,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 8
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &8980725891761980080
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15828,7 +16486,7 @@ GameObject:
   - component: {fileID: 6803461913150985621}
   m_Layer: 0
   m_Name: Cylinder_128
-  m_TagString: GreenLand
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15913,7 +16571,23 @@ MonoBehaviour:
   cameraController: {fileID: 6040993083453203460}
   cam: {fileID: 1570669772524770002}
   countryID: 4
+  continentID: 
+  countryTag: 
   isSelected: 0
+  yRaise: 1
+  objectOriginalY: {x: 0, y: 0, z: 0}
+  objectRaisedY: {x: 0, y: 0, z: 0}
+  objectTargetY: {x: 0, y: 0, z: 0}
+  adjacentRegions: []
+  numberOfTroops: 0
+  infantryModel: {fileID: 0}
+  calvaryModel: {fileID: 0}
+  artilleryModel: {fileID: 0}
+  infantryList: []
+  calvaryList: []
+  artilleryList: []
+  radius: 0
+  center: {x: 0, y: 0, z: 0}
 --- !u!64 &6803461913150985621
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16417,4 +17091,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
   m_PrefabInstance: {fileID: 3951133236218799533}
   m_PrefabAsset: {fileID: 0}
-
