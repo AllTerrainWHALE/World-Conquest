@@ -30,6 +30,7 @@ TagManager:
   - Madagascar
   - NorthAfrica
   - SouthAfrica
+  - Afghanistan
   - China
   - India
   - Irkutsk
@@ -58,7 +59,7 @@ TagManager:
   - Sector5
   - Sector1
   - Undefined
-  - Afghanistan
+  - Game_Loop
   layers:
   - Default
   - TransparentFX
