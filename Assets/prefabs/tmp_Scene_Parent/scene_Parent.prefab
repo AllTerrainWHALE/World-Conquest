@@ -3044,7 +3044,6 @@ Transform:
   - {fileID: 1390421603928124792}
   - {fileID: 8320188733324310978}
   - {fileID: 651635477816141932}
-  - {fileID: 8193840897494504728}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!45 &7470423767603259967
@@ -6996,7 +6995,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5083831756109807522}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DiceCluster, Assembly-CSharp
         m_MethodName: SpawnDice
         m_Mode: 3
@@ -7239,7 +7238,6 @@ RectTransform:
   - {fileID: 6438667801002239919}
   - {fileID: 3394867501656787087}
   - {fileID: 3767908943374753665}
-  - {fileID: 4809705236031037363}
   m_Father: {fileID: 8320188733324310978}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -11527,6 +11525,7 @@ MonoBehaviour:
   mouseSpeed: 3
   orbitDamping: 10
   targetPosition: {x: 0, y: 0, z: 0}
+  targetPosition: {x: 0, y: 0, z: 0}
   actualPosition: {x: 0, y: 0, z: 0}
   localRotation: {x: 0, y: 0, z: 0}
   selectedCountry: -99
@@ -12911,7 +12910,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5083831756109807522}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DiceCluster, Assembly-CSharp
         m_MethodName: TestingDiceyThings
         m_Mode: 1

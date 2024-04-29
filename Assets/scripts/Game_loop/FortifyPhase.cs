@@ -13,6 +13,12 @@ public class FortifyPhase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+
+    // Author: 
+    public void PhaseLoop()
+    {
+
     }
 }

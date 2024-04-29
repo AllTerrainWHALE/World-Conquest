@@ -15,12 +15,14 @@ public class backgroundMapClick : MonoBehaviour
        
     }
     // Update is called once per frame
-     private float lastClickTime = 0f;
+    private float lastClickTime = 0f;
     private const float clickDelay = 0.5f;
     private int clickCount = 0;
 
     void Update()
     {
+        if (cameraController == null || cameraController.isClickLocked) return;
+
         //Handle the click event on the regions
         if (Input.GetMouseButtonDown(0))
         {
@@ -45,7 +47,7 @@ public class backgroundMapClick : MonoBehaviour
                 if (clickCount == 3)
                 {
                     cameraController.targetPosition = transform.position;
-                    cameraController.selectedCountry = -1;
+                    cameraController.selectedCountry = -99;
                     clickCount = 0;
                 }
             }
