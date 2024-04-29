@@ -171,7 +171,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 19
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -310,7 +309,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 20
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -449,7 +447,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 24
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -588,7 +585,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 41
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -872,7 +868,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 25
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -1011,7 +1006,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 23
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -1375,7 +1369,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 2
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -1753,7 +1746,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 18
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -1870,7 +1862,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 26
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -2616,6 +2607,37 @@ Transform:
   - {fileID: 577956377746513104}
   m_Father: {fileID: 5023949798904566000}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1091230428144167507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4436812567170109329, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
+  m_PrefabInstance: {fileID: 3951133236218799533}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4809705236031037363}
+  m_Layer: 0
+  m_Name: 'Dice (Missing Prefab with guid: d55f2bd098adebe4aab2ee6f9ed42f38)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4809705236031037363
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
+  m_PrefabInstance: {fileID: 3951133236218799533}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091230428144167507}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -168.93204, y: 4.66, z: 5.5663033}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6459481239982560169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1124096887987635146
 GameObject:
   m_ObjectHideFlags: 0
@@ -2834,7 +2856,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 32
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -2973,7 +2994,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 15
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -3044,6 +3064,7 @@ Transform:
   - {fileID: 1390421603928124792}
   - {fileID: 8320188733324310978}
   - {fileID: 651635477816141932}
+  - {fileID: 8193840897494504728}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!45 &7470423767603259967
@@ -3660,7 +3681,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 3
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -3799,7 +3819,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 22
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -4087,7 +4106,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 16
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -4373,7 +4391,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 30
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -4690,7 +4707,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 13
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -4861,7 +4877,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 35
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -5140,7 +5155,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 12
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -6322,7 +6336,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 11
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -6608,7 +6621,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 39
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -7108,7 +7120,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 29
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -7238,6 +7249,7 @@ RectTransform:
   - {fileID: 6438667801002239919}
   - {fileID: 3394867501656787087}
   - {fileID: 3767908943374753665}
+  - {fileID: 4809705236031037363}
   m_Father: {fileID: 8320188733324310978}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7873,7 +7885,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 0
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -8714,7 +8725,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 1
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -9038,7 +9048,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 10
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -9605,7 +9614,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 36
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -9776,7 +9784,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 37
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -10011,7 +10018,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 7
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -10749,7 +10755,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 34
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -11525,9 +11530,11 @@ MonoBehaviour:
   mouseSpeed: 3
   orbitDamping: 10
   targetPosition: {x: 0, y: 0, z: 0}
+  targetPosition: {x: 0, y: 0, z: 0}
   actualPosition: {x: 0, y: 0, z: 0}
   localRotation: {x: 0, y: 0, z: 0}
   selectedCountry: -99
+  selectedCountryTag: 
 --- !u!1 &6272610436608718860
 GameObject:
   m_ObjectHideFlags: 0
@@ -11750,7 +11757,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 28
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -12374,7 +12380,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 40
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -13021,7 +13026,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 17
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -13275,7 +13279,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 27
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -13414,7 +13417,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 21
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -13553,7 +13555,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 31
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -13724,7 +13725,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 38
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -14521,7 +14521,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 14
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -14660,7 +14659,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 33
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -14799,7 +14797,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 6
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -15405,7 +15402,7 @@ GameObject:
   - component: {fileID: 729748024826065856}
   m_Layer: 0
   m_Name: Cylinder_132
-  m_TagString: Argentina
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15491,7 +15488,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 9
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -16032,7 +16028,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 5
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -16398,7 +16393,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 8
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -16569,7 +16563,6 @@ MonoBehaviour:
   cam: {fileID: 1570669772524770002}
   countryID: 4
   continentID: 
-  countryTag: 
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -16953,3 +16946,127 @@ Transform:
   - {fileID: 2804558778830710854}
   m_Father: {fileID: 2859543525883622887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3328816875402507571
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5607905392509025891}
+    m_Modifications:
+    - target: {fileID: 3443918187715971237, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+      propertyPath: m_Name
+      value: Dice Cluster
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+--- !u!4 &8193840897494504728 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+  m_PrefabInstance: {fileID: 3328816875402507571}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3951133236218799533
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6459481239982560169}
+    m_Modifications:
+    - target: {fileID: 4436812567170109329, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
+      propertyPath: m_Name
+      value: Dice
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -168.93204
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.5663033
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
+--- !u!4 &4809705236031037363 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
+  m_PrefabInstance: {fileID: 3951133236218799533}
+  m_PrefabAsset: {fileID: 0}

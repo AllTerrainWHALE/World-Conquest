@@ -140,7 +140,7 @@ public class SetupPhase : MonoBehaviour
         //check if region unowned
 
         foreach(Player p in playerList) {
-            if(p.getOwnedRegions().Contains(regionTag)) {return false;}
+            if(p.GetOwnedRegions().Contains(regionTag)) {return false;}
         }
 
         return true;
@@ -155,7 +155,7 @@ public class SetupPhase : MonoBehaviour
         //check if region owned by the current player
 
         Player currentPlayer = playerList[currentPlayerIndex];
-        if( !(currentPlayer.getOwnedRegions().Contains(regionTag)) ) { return false; }
+        if( !(currentPlayer.GetOwnedRegions().Contains(regionTag)) ) { return false; }
 
         return true;
     }

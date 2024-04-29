@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7637666650575516363}
   - component: {fileID: 614714376130676191}
   - component: {fileID: 4753139665475176776}
-  - component: {fileID: -3654797000194342077}
+  - component: {fileID: 143297025413990446}
   m_Layer: 5
   m_Name: irkutskCard
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &-3654797000194342077
+--- !u!114 &143297025413990446
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,9 +85,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1381462419308730327}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2db3c3a797015a24d83c88dfabedf82a, type: 3}
+  m_Script: {fileID: 11500000, guid: b1825fcde7f1f0c458424edc2e774681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   region: Irkutsk
-  typeOfTroops: 0
+  typeOfTroops: 2
   cardType: 0
