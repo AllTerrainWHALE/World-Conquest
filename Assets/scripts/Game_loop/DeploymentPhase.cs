@@ -57,9 +57,9 @@ public class DeploymentPhase : MonoBehaviour
 
     public void CheckIf5Cards()
     {
-        if(player.cardsOwnedByPlayer.Count >= 5)
+        if(player.playerDeck.Count >= 5)
         {
-            CardChecker.CheckForValidCombination(player.cardsOwnedByPlayer, out CardCombinationChecker.CardCombination combination);
+            CardChecker.CheckForValidCombination(player.playerDeck, out CardCombinationChecker.CardCombination combination);
             troopsToDeploy += UseCards(combination);
         }
     }
@@ -69,7 +69,7 @@ public class DeploymentPhase : MonoBehaviour
     // gives it to UseCards method
     public void CheckCards()
     {
-        if(CardChecker.CheckForValidCombination(player.cardsOwnedByPlayer, 
+        if(CardChecker.CheckForValidCombination(player.playerDeck, 
         out CardCombinationChecker.CardCombination combination))
         {
             troopsToDeploy += UseCards(combination);
@@ -85,13 +85,13 @@ public class DeploymentPhase : MonoBehaviour
             List<CardScript.TypeOfTroops> types = new List<CardScript.TypeOfTroops>();
             int counter = 1;
             // removes cards
-            for (int i = player.cardsOwnedByPlayer.Count - 1; i >= 0; i--)
+            for (int i = player.playerDeck.Count - 1; i >= 0; i--)
             {
-                Debug.Log(player.cardsOwnedByPlayer[i].typeOfTroops);
-                if (!types.Contains(player.cardsOwnedByPlayer[i].typeOfTroops) && counter < 4)
+                Debug.Log(player.playerDeck[i].typeOfTroops);
+                if (!types.Contains(player.playerDeck[i].typeOfTroops) && counter < 4)
                 {
-                    types.Add(player.cardsOwnedByPlayer[i].typeOfTroops);
-                    player.cardsOwnedByPlayer.RemoveAt(i);
+                    types.Add(player.playerDeck[i].typeOfTroops);
+                    player.playerDeck.RemoveAt(i);
                     counter++;
                 }
             }
@@ -99,7 +99,7 @@ public class DeploymentPhase : MonoBehaviour
         }else if(combination == CardCombinationChecker.CardCombination.ThreeSameTypes)
         {
             var typeCounts = new Dictionary<CardScript.TypeOfTroops, int>(); // stores how many of each type player has
-            foreach (var card in player.cardsOwnedByPlayer)
+            foreach (var card in player.playerDeck)
             {
                 if (typeCounts.ContainsKey(card.typeOfTroops))
                 {
@@ -113,17 +113,17 @@ public class DeploymentPhase : MonoBehaviour
             // removes cards
             foreach (var type in typeCounts.Keys)
             {
-                for (int i = player.cardsOwnedByPlayer.Count - 1; i >= 0 && typeCounts[type] > 0; i--)
+                for (int i = player.playerDeck.Count - 1; i >= 0 && typeCounts[type] > 0; i--)
                 {
-                    if (player.cardsOwnedByPlayer[i].typeOfTroops == type)
+                    if (player.playerDeck[i].typeOfTroops == type)
                     {
-                        player.cardsOwnedByPlayer.RemoveAt(i);
+                        player.playerDeck.RemoveAt(i);
                         typeCounts[type]--;
                     }
                 }
             }
         }
-        player.UpdateCards(player.cardsOwnedByPlayer);
+        player.UpdateCards(player.playerDeck);
         
         // points formula
         if (gameLoop.cardsSetsTradedIn == 5)

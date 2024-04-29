@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6882638970829365291}
-  - component: {fileID: 7547807866379782801}
+  - component: {fileID: -9072691422524963614}
   m_Layer: 0
   m_Name: Dice Cluster
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7547807866379782801
+--- !u!114 &-9072691422524963614
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,4 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 097eaa281e3be9445b8d55ab2e525f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diePrefab: {fileID: 1399163942701870740, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
+  attackerDie: {fileID: 5484968637221750851, guid: 606a513ebcb0fb54b9f1dffb7708af40, type: 3}
+  defenderDie: {fileID: 8210363159237233491, guid: 919bdc991a172f84288070d4fa4f3fa8, type: 3}

@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro.Examples;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -8,9 +10,9 @@ public class Player : MonoBehaviour
     // Identifier for each player, can be replaced with a username
     [SerializeField] int PlayerID;
     // List of tags of all currently owned regions
-    [SerializeField] List<string> OwnedRegions;
+    [SerializeField] List<string> OwnedRegions = new List<string>();
     // The deck that the player keeps their cards in
-    [SerializeField] public List<CardScript> cardsOwnedByPlayer; // Ilja: I think someone created temporary empty card scripts, but now we have finished ones
+    [SerializeField] public List<CardScript> playerDeck; // Ilja: I think someone created temporary empty card scripts, but now we have finished ones
     // The bonus to be used in the setup/deployment phases
     [SerializeField] int bonus;
 
@@ -26,12 +28,26 @@ public class Player : MonoBehaviour
         
     }
 
+    public void Init(int _ID) 
+    {
+        PlayerID = _ID;
+        OwnedRegions = new List<string>();
+        playerDeck = new List<CardScript>();
+    }
+
+    public List<String> GetOwnedRegions()
+    {
+        return OwnedRegions;
+    }
+
+    // Author: Bradley & Harvey
+    public bool isOwnedRegion(string regionTag) => OwnedRegions.Contains(regionTag);
+
     public void addRegion(string newRegionTag)
     {
         OwnedRegions.Add(newRegionTag);
     }
-
-    public List<string> GetOwnedRegions() { return OwnedRegions; }
+    
     public int GetBonus() { return bonus; }
-    public void UpdateCards(List<CardScript> cards) { cardsOwnedByPlayer = cards; }
+    public void UpdateCards(List<CardScript> cards) { playerDeck = cards; }
 }
