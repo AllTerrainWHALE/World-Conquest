@@ -5,7 +5,6 @@ using System.Linq;
 using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
-using TMPro;
 using UnityEditor.Rendering;
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
@@ -30,16 +29,19 @@ public class RegionV2 : MonoBehaviour
     [SerializeField] Camera cam;
 
     [Header("Region Selection")]
-    [SerializeField] int countryID; //obsoleted by countryTag
+    [SerializeField] public int countryID; //obsoleted by countryTag
     // id of the continent this region belongs to
     [SerializeField] string continentID;
-    [SerializeField] String countryTag; //tag of region
-    [SerializeField] bool isSelected = false;
+    [SerializeField] public String countryTag => this.tag; //tag of region
+
+    [SerializeField] public bool isSelected = false;
+    [SerializeField] public bool isHighlighted { get; set; } = false;
+
     [SerializeField] float yRaise = 1.0f;
-    [SerializeField] Vector3 objectOriginalY = new Vector3(0,0,0);
-    [SerializeField] Vector3 objectRaisedY= new Vector3(0,0,0);
+    [SerializeField] Vector3 objectOriginalY = new Vector3(0, 0, 0);
+    [SerializeField] Vector3 objectRaisedY = new Vector3(0, 0, 0);
     //objectTargetY is used to lerp the object to the target position
-    [SerializeField] Vector3 objectTargetY= new Vector3(0,0,0);
+    [SerializeField] Vector3 objectTargetY = new Vector3(0, 0, 0);
 
     [Header("Adjacent Region(s) To Selected Regions")]
     // tags of all regions this region is adjacent to
@@ -48,6 +50,7 @@ public class RegionV2 : MonoBehaviour
     [Header("Troops")]
     // the number of troops inside the region
     [SerializeField] int numberOfTroops = 0;
+
     // prefabs of board tokens
     [SerializeField] GameObject infantryModel;
     [SerializeField] GameObject calvaryModel;
@@ -62,22 +65,19 @@ public class RegionV2 : MonoBehaviour
     [SerializeField] float radius;
     [SerializeField] Vector3 center;
 
-    private Animator regionPopUp;
 
-
-    private void OnMouseUp(){
+    private void OnMouseUp()
+    {
+        if (cameraController == null || cameraController.isClickLocked) return;
 
         RaycastHit hit;
-        Debug.Log("Mouse Clicked");
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         //Check if the region is clicked
         if (Physics.Raycast(ray, out hit) && hit.transform == transform)
         {
-            regionPopUp.Play("region_Pop_Up");
-            GameObject.Find("region_Text").GetComponent<TextMeshProUGUI>().text = transform.name;
-            
-            
-            if (cameraController != null){
+            Debug.Log(transform.tag);
+            if (cameraController != null)
+            {
                 cameraController.targetPosition = transform.position;
                 //Set the selected country
                 cameraController.selectedCountry = countryID;
@@ -96,68 +96,62 @@ public class RegionV2 : MonoBehaviour
         // Finds center
         // center = findCenter();
 
-
-
-        //Puts the region name pop up ui animator into the "regionPopUp" variable so it can be triggered.
-        regionPopUp = GameObject.Find("region_Pop_Up").GetComponent<Animator>();
+        System.Random rnd = new System.Random();
+        numberOfTroops = rnd.Next(1, 21);
     }
 
     // Update is called once per frame
     void Update()
     {
         //Lerp the object to the target position
-        if (cameraController != null){
+        if (cameraController != null)
+        {
             //Check if the country is selected
-            if (countryID == cameraController.selectedCountry) {
+            if (countryID == cameraController.selectedCountry)
+            {
                 isSelected = true;
                 //Raise the object
                 objectTargetY = objectRaisedY;
             }
-            else {
+            else
+            {
                 //Lower the object
                 isSelected = false;
                 objectTargetY = objectOriginalY;
             }
             //Lerp the object to the target position
-            if (isSelected){
+            if (isSelected)
+            {
                 float timeModifier = 2.5f;
                 float heightModifier = 0.15f;
                 //Move the object up and down
-                objectTargetY.y += Mathf.Sin(Time.time * timeModifier ) * heightModifier;
+                objectTargetY.y += Mathf.Sin(Time.time * timeModifier) * heightModifier;
             }
             //Raise the object if the country is selected
             if (countryID >= 0)
                 transform.position = Vector3.Lerp(transform.position, objectTargetY, Time.deltaTime * 5);
         }
 
-        if(isSelected)
+        // Authors: Harvey & Bradley
+        // Makes the country flash brighter and darker if "isHighlighted" is set to TRUE
+        Material uniqueMaterial = GetComponent<Renderer>().material;
+        float metalicValue = uniqueMaterial.GetFloat("_Metallic");
+        if (isHighlighted)
         {
-            if (Input.GetKeyDown(KeyCode.P))
+            float timeModifier = 2.5f;
+            float highlightBrightness = 0.2f;
+
+            metalicValue = 0.4f + Mathf.Sin(Time.time * timeModifier) * highlightBrightness;
+            uniqueMaterial.SetFloat("_Metallic", metalicValue);
+        }
+        else
+        {
+            if (metalicValue != 0.4f)
             {
-                Debug.Log("P detected");
-                Debug.Log("TEST: " + gameObject.GetComponent<MeshRenderer>().bounds);
-                addTroop();
-                //add one troop
-            }
-            else if(Input.GetKeyDown(KeyCode.Q))
-            {
-                Debug.Log("Q detected");
-                removeTroop();
-                //remove one troop
-            }
-            else if(Input.GetKeyDown(KeyCode.O))
-            {
-                Debug.Log("O detected");
-                removeTroop(5);
-                //removes 5 troops
-            }
-            else if(Input.GetKeyDown(KeyCode.B))
-            {
-                Debug.Log("B detected");
-                addTroop(5);
-                //adds 5 troops
+                uniqueMaterial.SetFloat("_Metallic", 0.4f);
             }
         }
+        isHighlighted = false;
     }
 
     // Author: Eoin Howard Scully
@@ -166,7 +160,7 @@ public class RegionV2 : MonoBehaviour
     //
     // In future prototypes this will also interact 
     // with the 'meta' object to keep a record of selected objects
-    public void selectRegion() 
+    public void selectRegion()
     {
         //flips selected
         isSelected = !isSelected;
@@ -191,20 +185,23 @@ public class RegionV2 : MonoBehaviour
         int calvaryCount = (totalTroops % artilleryVal) / calvaryVal;
         int infantryCount = ((totalTroops % artilleryVal) % calvaryVal) / infantryVal;
 
-        while(artilleryList.Count != artilleryCount)
+        while (artilleryList.Count != artilleryCount)
         {
             // Defines a circle and picks a random point inside it to place the troop
             artilleryList.Add(placeInCircle(artilleryModel));
 
         }
 
-        while(calvaryList.Count != calvaryCount)
+        while (calvaryList.Count != calvaryCount)
         {
-            if(calvaryList.Count < calvaryCount) {
+            if (calvaryList.Count < calvaryCount)
+            {
                 // Adds one calvary until the amount of the board matches the calculated amount
                 calvaryList.Add(placeInCircle(calvaryModel));
 
-            } else {
+            }
+            else
+            {
                 // Removes one calvary until the amount on the board matches the calculated amount
                 Destroy(calvaryList[0]);
                 calvaryList.Remove(calvaryList[0]);
@@ -212,13 +209,16 @@ public class RegionV2 : MonoBehaviour
             }
         }
 
-        while(infantryList.Count != infantryCount)
+        while (infantryList.Count != infantryCount)
         {
-            if(infantryList.Count < infantryCount) {
+            if (infantryList.Count < infantryCount)
+            {
                 // Adds one infantry until the amount of the board matches the calculated amount
                 infantryList.Add(placeInCircle(infantryModel));
 
-            } else {
+            }
+            else
+            {
                 // Removes one infantry until the amount on the board matches the calculated amount
                 Destroy(infantryList[0]);
                 infantryList.Remove(infantryList[0]);
@@ -234,16 +234,17 @@ public class RegionV2 : MonoBehaviour
     // This method removes a number of troops from the board
     // Returns false if the reduction results in negative troops
     // 
-    bool removeTroop(int troopNum = 1)
+    public bool removeTroop(int troopNum = 1)
     {
         // Logs an error if the user tries to remove too many troops
-        if ((numberOfTroops - troopNum) < 0) {
+        if ((numberOfTroops - troopNum) < 0)
+        {
             Debug.LogError("You are trying to remove more troops than exist in this region");
             return false;
         }
-        
+
         // Calculates the ideal number of each token that should be on the board
-        
+
         int infantryVal = (int)TroopTypes.Infantry;
         int calvaryVal = (int)TroopTypes.Cavalry;
         int artilleryVal = (int)TroopTypes.Artillery;
@@ -254,24 +255,30 @@ public class RegionV2 : MonoBehaviour
         int calvaryCount = (totalTroops % artilleryVal) / calvaryVal;
         int infantryCount = ((totalTroops % artilleryVal) % calvaryVal) / infantryVal;
 
-        while(artilleryList.Count != artilleryCount)
+        while (artilleryList.Count != artilleryCount)
         {
             // Defines a circle and picks a random point inside it to place the troop
-            if(artilleryList.Count < artilleryCount) {
+            if (artilleryList.Count < artilleryCount)
+            {
                 artilleryList.Add(placeInCircle(artilleryModel));
-            } else {
+            }
+            else
+            {
                 Destroy(artilleryList[0]);
                 artilleryList.Remove(artilleryList[0]);
             }
         }
 
-        while(calvaryList.Count != calvaryCount)
+        while (calvaryList.Count != calvaryCount)
         {
-            if(calvaryList.Count < calvaryCount) {
+            if (calvaryList.Count < calvaryCount)
+            {
                 // Adds one calvary until the amount of the board matches the calculated amount
-                
+
                 calvaryList.Add(placeInCircle(calvaryModel));
-            } else {
+            }
+            else
+            {
                 // Removes one calvary until the amount on the board matches the calculated amount
 
                 Destroy(calvaryList[0]);
@@ -279,12 +286,15 @@ public class RegionV2 : MonoBehaviour
             }
         }
 
-        while(infantryList.Count != infantryCount)
+        while (infantryList.Count != infantryCount)
         {
-            if(infantryList.Count < infantryCount) {
+            if (infantryList.Count < infantryCount)
+            {
                 // Adds one calvary until the amount of the board matches the calculated amount
                 infantryList.Add(placeInCircle(infantryModel));
-            } else {
+            }
+            else
+            {
                 // Removes one calvary until the amount on the board matches the calculated amount
                 Debug.Log(infantryList.Count);
                 Destroy(infantryList[0]);
@@ -376,7 +386,8 @@ public class RegionV2 : MonoBehaviour
     // This method places one object in a circlular area above the current object
     // It exits to reduce duplicate code
     //
-    private GameObject placeInCircle(GameObject objectToPlace) {
+    private GameObject placeInCircle(GameObject objectToPlace)
+    {
 
         // Defines a circle and picks a random point inside it to place the troop
 
@@ -384,8 +395,8 @@ public class RegionV2 : MonoBehaviour
 
         radius = 5;
 
-        float randX = UnityEngine.Random.Range(0 , (radius * Mathf.Cos(theta)));
-        float randZ = UnityEngine.Random.Range(0 , (radius * Mathf.Sin(theta)));
+        float randX = UnityEngine.Random.Range(0, (radius * Mathf.Cos(theta)));
+        float randZ = UnityEngine.Random.Range(0, (radius * Mathf.Sin(theta)));
         float newY = 1.0f;
 
         var dist = new Vector3(randX, newY, randZ);
@@ -412,17 +423,20 @@ public class RegionV2 : MonoBehaviour
         return adjacentRegions;
     }
 
+    // Author: Bradley & Harvey
+    public bool isAdjacentRegion(string regionTag) => getAdjacentRegions().Contains(regionTag);
+
     // Author: Eoin Howard Scully
     //
     // 'Moves' a certain number of troops from this region to another region
     // Moving is simulated by removing troops here and making new ones in the target region
     //
-    public void MoveTroops(RegionV2 targetRegion, int numOfTroops) 
+    public void MoveTroops(RegionV2 targetRegion, int numOfTroops)
     {
-        if (numOfTroops <= numberOfTroops) {
+        if (numOfTroops <= numberOfTroops)
+        {
             removeTroop(numOfTroops);
             targetRegion.addTroop(numOfTroops);
         }
     }
 }
-
