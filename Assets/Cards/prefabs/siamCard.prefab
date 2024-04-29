@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1801384012871886865}
   - component: {fileID: 7344636104476336079}
   - component: {fileID: 9053062045336439602}
-  - component: {fileID: 4309620959559294981}
+  - component: {fileID: 3059534045018553605}
   m_Layer: 5
   m_Name: siamCard
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4309620959559294981
+--- !u!114 &3059534045018553605
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2935302445230412124}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2db3c3a797015a24d83c88dfabedf82a, type: 3}
+  m_Script: {fileID: 11500000, guid: b1825fcde7f1f0c458424edc2e774681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   region: Siam

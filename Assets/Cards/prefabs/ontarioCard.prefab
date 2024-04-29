@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 33498545652198793}
   - component: {fileID: 4256531994989985689}
   - component: {fileID: 1742017648329145979}
-  - component: {fileID: 7958895935236404524}
+  - component: {fileID: 2596428053722749787}
   m_Layer: 5
   m_Name: ontarioCard
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7958895935236404524
+--- !u!114 &2596428053722749787
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 583262906254049821}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2db3c3a797015a24d83c88dfabedf82a, type: 3}
+  m_Script: {fileID: 11500000, guid: b1825fcde7f1f0c458424edc2e774681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   region: Ontario
