@@ -53,6 +53,8 @@ public class GameLoop : MonoBehaviour
         }
     }
 
+    public void incrementPhase() { phaseNumber += 1; }
+
     public void SetPlayerList(List<Player> newPlayers)
     {
         playerList = newPlayers;
