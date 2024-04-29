@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using TMPro.Examples;
 using UnityEngine;
 
-public class Player
+public class Player : MonoBehaviour
 {
 
     // Identifier for each player, can be replaced with a username

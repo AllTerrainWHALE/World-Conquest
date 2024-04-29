@@ -4,10 +4,12 @@ using System.Globalization;
 using System.Linq;
 using System.Runtime.InteropServices;
 using JetBrains.Annotations;
+using TMPro;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SetupPhase
+public class SetupPhase : MonoBehaviour
 {
 
     private int turnCounter;
@@ -20,6 +22,11 @@ public class SetupPhase
     [SerializeField] GameLoop gameLoopScript;
     [SerializeField] OrbitalCamera cameraScript;
 
+    [Header("UI stuff")]
+    [SerializeField] GameObject phaseNumberUI;
+    [SerializeField] GameObject playerTurnCounterUI;
+    [SerializeField] GameObject troopSliderUI;
+
     //Author: Eoin
     //
     // Initialises object
@@ -29,6 +36,10 @@ public class SetupPhase
         gameLoopScript = Gameloop.GetComponent<GameLoop>();
         camera_ = GameObject.FindGameObjectWithTag("MainCamera");
         cameraScript = camera_.GetComponent<OrbitalCamera>();
+
+        //getting UI bits
+
+        phaseNumberUI = GameObject.FindGameObjectWithTag("PhaseNameUI");
 
         //getting number of players
 
@@ -43,11 +54,21 @@ public class SetupPhase
     public void PhaseLoop()
     {
 
+        Debug.Log(phaseNumberUI);
+        Debug.Log(phaseNumberUI.GetComponents(typeof(TextMeshPro)));
+        TextMeshPro textMesh = phaseNumberUI.GetComponent<TextMeshPro>();
+        Debug.Log(textMesh);
+        Debug.Log(textMesh.text);
+        textMesh.text = "Setup Phase";
+
         //get current player
 
         if(cameraScript.selectedCountry != -99){
 
             int currentPlayerIndex = turnCounter % playerList.Count();
+
+            TextMeshPro playerText = playerTurnCounterUI.GetComponent<TextMeshPro>();
+            playerText.text = "Player " + (currentPlayerIndex + 1);
 
             GameObject currentlySelectedRegion = GameObject.FindGameObjectWithTag(cameraScript.selectedCountryTag);
             RegionV2 currentlySelectedRegionScript = currentlySelectedRegion.GetComponent<RegionV2>();
@@ -137,6 +158,12 @@ public class SetupPhase
         if( !(currentPlayer.getOwnedRegions().Contains(regionTag)) ) { return false; }
 
         return true;
+    }
+
+    private void updateUI(int PlayerNum, int numOfTroopsLeftToPlace) {
+
+
+
     }
 
 }
