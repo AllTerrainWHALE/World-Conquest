@@ -30,7 +30,7 @@ TagManager:
   - Madagascar
   - NorthAfrica
   - SouthAfrica
-  - Afganistan
+  - Afghanistan
   - China
   - India
   - Irkutsk
@@ -52,6 +52,13 @@ TagManager:
   - Africa
   - Asia
   - Australia
+  - Sector4
+  - Sector2
+  - Sector6
+  - Sector3
+  - Sector5
+  - Sector1
+  - Undefined
   - Game_Loop
   layers:
   - Default

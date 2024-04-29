@@ -29,11 +29,14 @@ public class RegionV2 : MonoBehaviour
     [SerializeField] Camera cam;
 
     [Header("Region Selection")]
-    [SerializeField] int countryID; //obsoleted by countryTag
+    [SerializeField] public int countryID; //obsoleted by countryTag
     // id of the continent this region belongs to
     [SerializeField] string continentID;
-    [SerializeField] String countryTag; //tag of region
-    [SerializeField] bool isSelected = false;
+    [SerializeField] public String countryTag => this.tag; //tag of region
+
+    [SerializeField] public bool isSelected = false;
+    [SerializeField] public bool isHighlighted { get; set; } = false;
+
     [SerializeField] float yRaise = 1.0f;
     [SerializeField] Vector3 objectOriginalY = new Vector3(0,0,0);
     [SerializeField] Vector3 objectRaisedY= new Vector3(0,0,0);
@@ -47,6 +50,7 @@ public class RegionV2 : MonoBehaviour
     [Header("Troops")]
     // the number of troops inside the region
     [SerializeField] int numberOfTroops = 0;
+
     // prefabs of board tokens
     [SerializeField] GameObject infantryModel;
     [SerializeField] GameObject calvaryModel;
@@ -63,8 +67,9 @@ public class RegionV2 : MonoBehaviour
 
 
     private void OnMouseUp(){
+        if (cameraController == null || cameraController.isClickLocked) return;
+
         RaycastHit hit;
-        Debug.Log("Mouse Clicked");
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         //Check if the region is clicked
         if (Physics.Raycast(ray, out hit) && hit.transform == transform)
@@ -88,6 +93,9 @@ public class RegionV2 : MonoBehaviour
         objectTargetY = objectOriginalY;
         // Finds center
         // center = findCenter();
+
+        System.Random rnd = new System.Random();
+        numberOfTroops = rnd.Next(1, 21);
     }
 
     // Update is called once per frame
@@ -117,6 +125,25 @@ public class RegionV2 : MonoBehaviour
             if (countryID >= 0)
                 transform.position = Vector3.Lerp(transform.position, objectTargetY, Time.deltaTime * 5);
         }
+
+        // Authors: Harvey & Bradley
+        // Makes the country flash brighter and darker if "isHighlighted" is set to TRUE
+        Material uniqueMaterial = GetComponent<Renderer>().material;
+        float metalicValue = uniqueMaterial.GetFloat("_Metallic");
+        if (isHighlighted) {
+            float timeModifier = 2.5f;
+            float highlightBrightness = 0.2f;
+
+            metalicValue = 0.4f + Mathf.Sin(Time.time * timeModifier) * highlightBrightness;
+            uniqueMaterial.SetFloat("_Metallic", metalicValue);
+        }
+        else {
+            if (metalicValue != 0.4f)
+            {
+                uniqueMaterial.SetFloat("_Metallic", 0.4f);
+            }
+        }
+        isHighlighted = false;
     }
 
     // Author: Eoin Howard Scully
@@ -193,7 +220,7 @@ public class RegionV2 : MonoBehaviour
     // This method removes a number of troops from the board
     // Returns false if the reduction results in negative troops
     // 
-    bool removeTroop(int troopNum = 1)
+    public bool removeTroop(int troopNum = 1)
     {
         // Logs an error if the user tries to remove too many troops
         if ((numberOfTroops - troopNum) < 0) {
@@ -370,6 +397,9 @@ public class RegionV2 : MonoBehaviour
     {
         return adjacentRegions;
     }
+
+    // Author: Bradley & Harvey
+    public bool isAdjacentRegion(string regionTag) => getAdjacentRegions().Contains(regionTag);
 
     // Author: Eoin Howard Scully
     //

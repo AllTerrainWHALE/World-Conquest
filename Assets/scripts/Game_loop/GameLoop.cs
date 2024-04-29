@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameLoop : MonoBehaviour
@@ -8,9 +7,9 @@ public class GameLoop : MonoBehaviour
 
     // The current phase and turn number
     [SerializeField] int phaseNumber;
-    [SerializeField] int turnNumber;
+    [SerializeField] int turnNumber = 0;
 
-    [SerializeField] List<Player> playerList = new List<Player>();
+    [SerializeField] List<Player> playerList;
 
     // The phases have been split into induvidual classes
     // This is to help support paralell development
@@ -33,13 +32,26 @@ public class GameLoop : MonoBehaviour
         switch (phaseNumber)
         {
             case 0:
-                Debug.Log(Setup);
                 Setup.PhaseLoop();
+                break;
+
+            case 1:
+                Deployment.PhaseLoop();
+                break;
+
+            case 2:
+                Attack.PhaseLoop(playerList[turnNumber]);
+                break;
+
+            case 3:
+                Fortify.PhaseLoop();
+                break;
+
+            default:
+                phaseNumber = 0;
                 break;
         }
     }
-
-    public void incrementPhase() { phaseNumber += 1; }
 
     public void SetPlayerList(List<Player> newPlayers)
     {

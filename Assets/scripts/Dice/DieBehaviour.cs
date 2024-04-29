@@ -58,6 +58,6 @@ public class DieBehaviour : MonoBehaviour
     /// <returns>
     /// A boolean value declaring whether the die is settled or not
     /// </returns>
-    public bool IsSettled() => rb.velocity.magnitude <= 0.05f;
+    public bool IsSettled() => rb.velocity.magnitude <= 0.05f && transform.position.y <= 10;
 
 }
