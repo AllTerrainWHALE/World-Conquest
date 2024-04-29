@@ -11530,6 +11530,7 @@ MonoBehaviour:
   mouseSpeed: 3
   orbitDamping: 10
   targetPosition: {x: 0, y: 0, z: 0}
+  targetPosition: {x: 0, y: 0, z: 0}
   actualPosition: {x: 0, y: 0, z: 0}
   localRotation: {x: 0, y: 0, z: 0}
   selectedCountry: -99
@@ -17064,3 +17065,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
+--- !u!4 &4809705236031037363 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8388728170751785502, guid: d55f2bd098adebe4aab2ee6f9ed42f38, type: 3}
+  m_PrefabInstance: {fileID: 3951133236218799533}
+  m_PrefabAsset: {fileID: 0}
