@@ -18,16 +18,19 @@ public class DieBehaviour : MonoBehaviour
     public Rigidbody rb;
     public int rollVal;
 
+    private float timeSinceSpawn;
+    public float maxRollingTime = 10.0f;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        timeSinceSpawn = Time.time;
     }
 
     // Update is called once per frame
     void Update()
-    {
-        
+    { 
+
     }
 
     /// <summary>
@@ -58,6 +61,8 @@ public class DieBehaviour : MonoBehaviour
     /// <returns>
     /// A boolean value declaring whether the die is settled or not
     /// </returns>
-    public bool IsSettled() => rb.velocity.magnitude <= 0.05f && transform.position.y <= 10;
+    public bool IsSettled() =>
+        (rb.velocity.magnitude <= 0.05f && transform.position.y <= 10); // || 
+        //(Time.time - timeSinceSpawn > maxRollingTime);
 
 }

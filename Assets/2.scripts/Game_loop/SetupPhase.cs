@@ -23,9 +23,10 @@ public class SetupPhase : MonoBehaviour
     [SerializeField] OrbitalCamera cameraScript;
 
     [Header("UI stuff")]
-    [SerializeField] GameObject phaseNumberUI;
+    //[SerializeField] GameObject phaseNumberUI;
     [SerializeField] GameObject playerTurnCounterUI;
-    [SerializeField] GameObject troopSliderUI;
+    //[SerializeField] GameObject troopSliderUI;
+    //[SerializeField] GameObject troopSliderScript;
 
     //Author: Eoin
     //
@@ -37,9 +38,11 @@ public class SetupPhase : MonoBehaviour
         camera_ = GameObject.FindGameObjectWithTag("MainCamera");
         cameraScript = camera_.GetComponent<OrbitalCamera>();
 
+        //troopsSliderScript = troopsSliderUI.GetComponent<SliderController>();
+
         //getting UI bits
 
-        phaseNumberUI = GameObject.FindGameObjectWithTag("PhaseNameUI");
+        //phaseNumberUI = GameObject.FindGameObjectWithTag("PhaseNameUI");
 
         //getting number of players
 
@@ -53,21 +56,53 @@ public class SetupPhase : MonoBehaviour
     //Author: Eoin
     public void PhaseLoop()
     {
+        int currentPlayerIndex = turnCounter % playerList.Count();
 
-        Debug.Log(phaseNumberUI);
-        Debug.Log(phaseNumberUI.GetComponents(typeof(TextMeshPro)));
-        TextMeshPro textMesh = phaseNumberUI.GetComponent<TextMeshPro>();
-        Debug.Log(textMesh);
-        Debug.Log(textMesh.text);
-        textMesh.text = "Setup Phase";
+        //Debug.Log(phaseNumberUI);
+        //Debug.Log(phaseNumberUI.GetComponents(typeof(TextMeshPro)));
+        //TextMeshPro textMesh = phaseNumberUI.GetComponent<TextMeshPro>();
+        //Debug.Log(textMesh);
+        //Debug.Log(textMesh.text);
+        //textMesh.text = "Setup Phase";
 
         //get current player
 
-        if(cameraScript.selectedCountry != -99){
+        // Author: Bradley (just the one line) | Highlight all unclaimed countries (I know, it's disgusting)
+        if (turnCounter < 42)
+        {
+            // Get all GameObject tags, and filter out only those assigned to countries
+            List<string> allTags = UnityEditorInternal.InternalEditorUtility.tags.ToList();
+            GameObject gameObject;
+            RegionV2 countryScript;
+            foreach (string tag in allTags)
+            {
+                // Check if the tag is assigned to an object
+                gameObject = GameObject.FindGameObjectWithTag(tag);
+                if (gameObject == null) continue;
 
-            int currentPlayerIndex = turnCounter % playerList.Count();
+                // Check if verified object holds a RegionV2 script (confirm it's a country)
+                countryScript = gameObject.GetComponent<RegionV2>();
+                if (countryScript == null) continue;
 
-            TextMeshPro playerText = playerTurnCounterUI.GetComponent<TextMeshPro>();
+                // Highlight verified country
+                countryScript.isHighlighted = true;
+            }
+
+            // Disable highlighting for claimed countries
+            playerList.ForEach(p => p
+                .GetOwnedRegions()
+                .ForEach(r => GameObject
+                    .FindGameObjectWithTag(r)
+                    .GetComponent<RegionV2>().isHighlighted = false
+                    )
+                );
+        }
+        else playerList[currentPlayerIndex].GetOwnedRegions().ForEach(r => GameObject.FindGameObjectWithTag(r).GetComponent<RegionV2>().isHighlighted = true);
+        // End Author: Bradley
+
+        if (cameraScript.selectedCountry != -99){
+
+            TMP_Text playerText = playerTurnCounterUI.GetComponent<TMP_Text>();
             playerText.text = "Player " + (currentPlayerIndex + 1);
 
             GameObject currentlySelectedRegion = GameObject.FindGameObjectWithTag(cameraScript.selectedCountryTag);
@@ -75,8 +110,8 @@ public class SetupPhase : MonoBehaviour
 
             if(turnCounter < 42){
                 // stage in the setup where players choose regions
-                
-                if(ValidateCountrySelection_picking(cameraScript.selectedCountryTag)){
+
+                if (ValidateCountrySelection_picking(cameraScript.selectedCountryTag)){
                     // selected region valid
                     // (not already owned)
 
@@ -89,8 +124,9 @@ public class SetupPhase : MonoBehaviour
                     Debug.Log("(1)Current player:"+ currentPlayerIndex +" "+ playerList[currentPlayerIndex]);
                     Debug.Log("(1)Selected Country Script: "+currentlySelectedRegionScript);
 
-                    currentlySelectedRegionScript.addTroop();
+                    currentlySelectedRegionScript.addTroop(playerList[currentPlayerIndex].team);
                     playerList[currentPlayerIndex].addRegion(cameraScript.selectedCountryTag);
+                    currentlySelectedRegionScript.SetRulingPlayer(playerList[currentPlayerIndex]);
                     turnCounter += 1;
 
                 } else {
@@ -106,12 +142,12 @@ public class SetupPhase : MonoBehaviour
             } else {
                 // stage in the setup where players place remaining troops
 
-                if(ValidateRegionSelection_reinforcing(cameraScript.selectedCountryTag, currentPlayerIndex)) {
+                if (ValidateRegionSelection_reinforcing(cameraScript.selectedCountryTag, currentPlayerIndex)) {
                     // region selected is valid
                     // (owned by the current player)
 
-                    currentlySelectedRegionScript.addTroop();
-                    playerList[currentPlayerIndex].addRegion(cameraScript.selectedCountryTag);
+                    currentlySelectedRegionScript.addTroop(playerList[currentPlayerIndex].team);
+                    //playerList[currentPlayerIndex].addRegion(cameraScript.selectedCountryTag);
                     turnCounter += 1;
 
                 } else {
@@ -140,7 +176,7 @@ public class SetupPhase : MonoBehaviour
         //check if region unowned
 
         foreach(Player p in playerList) {
-            if(p.GetOwnedRegions().Contains(regionTag)) {return false;}
+            if(p.GetOwnedRegions().Contains(regionTag)) return false;
         }
 
         return true;
