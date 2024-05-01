@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   region: India
-  typeOfTroops: 0
+  typeOfTroops: 2
   cardType: 0
 --- !u!114 &614569732844226252
 MonoBehaviour:

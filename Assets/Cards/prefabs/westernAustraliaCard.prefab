@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   region: Western Australia
-  typeOfTroops: 0
+  typeOfTroops: 1
   cardType: 0
 --- !u!114 &7426791213683484195
 MonoBehaviour:

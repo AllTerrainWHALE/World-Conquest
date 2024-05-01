@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   region: Southern Europe
-  typeOfTroops: 0
+  typeOfTroops: 1
   cardType: 0
 --- !u!114 &4643106428310540545
 MonoBehaviour:

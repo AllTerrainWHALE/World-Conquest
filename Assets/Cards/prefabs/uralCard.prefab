@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   region: Ural
-  typeOfTroops: 0
+  typeOfTroops: 2
   cardType: 0
 --- !u!114 &3280887772327565755
 MonoBehaviour:

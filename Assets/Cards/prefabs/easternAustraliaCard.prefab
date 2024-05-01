@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   region: Eastern Australia
-  typeOfTroops: 0
+  typeOfTroops: 1
   cardType: 0
 --- !u!114 &-833631676338590411
 MonoBehaviour:

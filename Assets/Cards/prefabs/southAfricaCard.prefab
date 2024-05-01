@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   region: South Africa
-  typeOfTroops: 0
+  typeOfTroops: 1
   cardType: 0
 --- !u!114 &3552108239617418276
 MonoBehaviour:

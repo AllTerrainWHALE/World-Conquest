@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   region: Central America
-  typeOfTroops: 0
+  typeOfTroops: 1
   cardType: 0
 --- !u!114 &922465013695327399
 MonoBehaviour:

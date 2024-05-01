@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   region: Madagascar
-  typeOfTroops: 0
+  typeOfTroops: 2
   cardType: 0
 --- !u!114 &-5469903233143168805
 MonoBehaviour:

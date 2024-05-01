@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   region: Japan
-  typeOfTroops: 0
+  typeOfTroops: 1
   cardType: 0
 --- !u!114 &-4026874344364418640
 MonoBehaviour:

@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   region: Brazil
-  typeOfTroops: 0
+  typeOfTroops: 1
   cardType: 0
 --- !u!114 &-7543798233995217572
 MonoBehaviour:

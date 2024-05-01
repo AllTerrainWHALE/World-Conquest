@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   region: Ukraine
-  typeOfTroops: 0
+  typeOfTroops: 2
   cardType: 0
 --- !u!114 &221460581020430153
 MonoBehaviour:

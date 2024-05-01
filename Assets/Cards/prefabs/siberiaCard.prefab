@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   region: Siberia
-  typeOfTroops: 0
+  typeOfTroops: 2
   cardType: 0
 --- !u!114 &2279567765079411375
 MonoBehaviour:

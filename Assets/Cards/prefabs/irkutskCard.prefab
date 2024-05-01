@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   region: Irkutsk
-  typeOfTroops: 0
+  typeOfTroops: 2
   cardType: 0
 --- !u!114 &-4037853291928945273
 MonoBehaviour:

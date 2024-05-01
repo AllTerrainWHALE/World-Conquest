@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   region: Alberta
-  typeOfTroops: 0
+  typeOfTroops: 2
   cardType: 0
 --- !u!114 &7122353802165388867
 MonoBehaviour:
