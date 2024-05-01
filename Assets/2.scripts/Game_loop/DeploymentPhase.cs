@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor.ShortcutManagement;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,11 +17,13 @@ public class DeploymentPhase : MonoBehaviour
     private SliderController armiesSliderScript => // slider for troops armies deployment
         armiesSlider.GetComponent<SliderController>();
     [SerializeField] GameObject armiesDeployButton;
+    [SerializeField] GameObject useCardsButton;
 
     [Header("")]
     [SerializeField] int subPhaseNumber = 0;
+    [SerializeField] int cardsSetsTradedIn = 0;
 
-    CardCombinationChecker CardChecker = new CardCombinationChecker();
+    // CardChecker CardChecker = new CardChecker();
 
     void Start()
     {
@@ -46,6 +49,7 @@ public class DeploymentPhase : MonoBehaviour
                     GetNewArmies();
                     CheckIf5Cards();
                     armiesSliderScript.maxValue = troopsToDeploy;
+                    if (player.playerDeck.Count > 3) useCardsButton.SetActive(true);
                 }
                 else throw new System.Exception("Player object undefinded");
                 subPhaseNumber += 1;
@@ -72,6 +76,7 @@ public class DeploymentPhase : MonoBehaviour
                 if (troopsToDeploy <= 0)
                 {
                     subPhaseNumber = 0;
+                    useCardsButton.SetActive(false);
                     gameLoop.incrementPhase();
                 }
 
@@ -101,7 +106,7 @@ public class DeploymentPhase : MonoBehaviour
     {
         if(player.playerDeck.Count >= 5)
         {
-            CardChecker.CheckForValidCombination(player.playerDeck, out CardCombinationChecker.CardCombination combination);
+            CardChecker.CheckForValidCombination(player.playerDeck, out CardChecker.CardCombination combination);
             troopsToDeploy += UseCards(combination);
         }
     }
@@ -112,17 +117,17 @@ public class DeploymentPhase : MonoBehaviour
     public void CheckCards()
     {
         if(CardChecker.CheckForValidCombination(player.playerDeck, 
-        out CardCombinationChecker.CardCombination combination))
+        out CardChecker.CardCombination combination))
         {
             troopsToDeploy += UseCards(combination);
         }
     }
 
     // method to give troops for having certain combination and remove cards from player
-    int UseCards(CardCombinationChecker.CardCombination combination)
+    int UseCards(CardChecker.CardCombination combination)
     {
         // Three different types and wild card combination
-        if (combination == CardCombinationChecker.CardCombination.ThreeDifferentTypes || combination == CardCombinationChecker.CardCombination.WildCardCombination)
+        if (combination == CardChecker.CardCombination.ThreeDifferentTypes || combination == CardChecker.CardCombination.WildCardCombination)
         {
             List<CardScript.TypeOfTroops> types = new List<CardScript.TypeOfTroops>();
             int counter = 1;
@@ -137,8 +142,9 @@ public class DeploymentPhase : MonoBehaviour
                     counter++;
                 }
             }
+            cardsSetsTradedIn++;
         // three same types
-        }else if(combination == CardCombinationChecker.CardCombination.ThreeSameTypes)
+        }else if(combination == CardChecker.CardCombination.ThreeSameTypes)
         {
             var typeCounts = new Dictionary<CardScript.TypeOfTroops, int>(); // stores how many of each type player has
             foreach (var card in player.playerDeck)
@@ -164,17 +170,19 @@ public class DeploymentPhase : MonoBehaviour
                     }
                 }
             }
+            cardsSetsTradedIn++;
         }
         player.UpdateCards(player.playerDeck);
-        
+        player.RefreshCardDisplay();
+
         // points formula
-        if (gameLoop.cardsSetsTradedIn == 5)
+        if (cardsSetsTradedIn == 5)
         {
             return 15;
-        }else if (gameLoop.cardsSetsTradedIn > 5)
+        }else if (cardsSetsTradedIn > 5)
         {
-            return 15 + (gameLoop.cardsSetsTradedIn - 5) * 5;
+            return 15 + (cardsSetsTradedIn - 5) * 5;
         }
-        return 4 + gameLoop.cardsSetsTradedIn * 2;
+        return 4 + cardsSetsTradedIn * 2;
     }
 }

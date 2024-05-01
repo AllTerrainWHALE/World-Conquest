@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CardCombinationChecker : MonoBehaviour
+public class CardChecker : MonoBehaviour
 {
     // combinations
     public enum CardCombination
@@ -13,7 +13,7 @@ public class CardCombinationChecker : MonoBehaviour
     }
 
     // method to check for valid card combinations
-    public bool CheckForValidCombination(List<CardScript> playerCards, out CardCombination combination)
+    public static bool CheckForValidCombination(List<CardScript> playerCards, out CardCombination combination)
     {
 
         int infantryCount = 0;
@@ -56,9 +56,10 @@ public class CardCombinationChecker : MonoBehaviour
         }
 
         // Check for a combination with wild cards
-        if ((infantryCount >= 1 && artilleryCount >= 1 && wildCardCount >= 1) ||
-            (infantryCount >= 1 && cavalryCount >= 1 && wildCardCount >= 1) ||
-            (artilleryCount >= 1 && cavalryCount >= 1 && wildCardCount >= 1))
+        if (infantryCount+cavalryCount+artilleryCount >= 2 && wildCardCount >= 1)
+            //(infantryCount >= 1 && artilleryCount >= 1 && wildCardCount >= 1) ||
+            //(infantryCount >= 1 && cavalryCount >= 1 && wildCardCount >= 1) ||
+            //(artilleryCount >= 1 && cavalryCount >= 1 && wildCardCount >= 1))
         {
             combination = CardCombination.WildCardCombination;
             return true;

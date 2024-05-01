@@ -25,6 +25,7 @@ public class SetupPhase : MonoBehaviour
     [Header("UI stuff")]
     //[SerializeField] GameObject phaseNumberUI;
     [SerializeField] GameObject playerTurnCounterUI;
+    private TMP_Text playerTurnCounterText;
     //[SerializeField] GameObject troopSliderUI;
     //[SerializeField] GameObject troopSliderScript;
 
@@ -37,6 +38,8 @@ public class SetupPhase : MonoBehaviour
         gameLoopScript = Gameloop.GetComponent<GameLoop>();
         camera_ = GameObject.FindGameObjectWithTag("MainCamera");
         cameraScript = camera_.GetComponent<OrbitalCamera>();
+
+        playerTurnCounterText = playerTurnCounterUI.GetComponent<TMP_Text>();
 
         //troopsSliderScript = troopsSliderUI.GetComponent<SliderController>();
 
@@ -57,6 +60,7 @@ public class SetupPhase : MonoBehaviour
     public void PhaseLoop()
     {
         int currentPlayerIndex = turnCounter % playerList.Count();
+        playerTurnCounterText.text = playerList[currentPlayerIndex].name;
 
         //Debug.Log(phaseNumberUI);
         //Debug.Log(phaseNumberUI.GetComponents(typeof(TextMeshPro)));
@@ -101,9 +105,6 @@ public class SetupPhase : MonoBehaviour
         // End Author: Bradley
 
         if (cameraScript.selectedCountry != -99){
-
-            TMP_Text playerText = playerTurnCounterUI.GetComponent<TMP_Text>();
-            playerText.text = "Player " + (currentPlayerIndex + 1);
 
             GameObject currentlySelectedRegion = GameObject.FindGameObjectWithTag(cameraScript.selectedCountryTag);
             RegionV2 currentlySelectedRegionScript = currentlySelectedRegion.GetComponent<RegionV2>();

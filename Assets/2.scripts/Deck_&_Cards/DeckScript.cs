@@ -9,13 +9,13 @@ public class DeckScript : MonoBehaviour
     [SerializeField] Transform cardSpawnPoint; //point where cards appears. set through inspector
 
     // will get random card from the list and remove it
-    GameObject GetRandomCard()
+    public GameObject GetRandomCard()
     {
         if(cards.Count == 0)
         {
             return null;
         }else{
-            int randomCard = Random.Range(0,cards.Count-1);
+            int randomCard = Random.Range(0, cards.Count);
             RemoveCard(randomCard);
             return cards[randomCard];
         }

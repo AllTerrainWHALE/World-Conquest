@@ -6,6 +6,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    // Default player names to randomly select from
+    public static List<string> defaultPlayerNames = new()
+    {
+        "Ben", "Bradley", "Eoin", "Harvey", "Ilja", "Wei",
+        "Kingsley Sage", "Quentin Raffles", "Jack Speat", "Tom Dent"
+    };
 
     // Identifier for each player, can be replaced with a username
     [SerializeField] int PlayerID;
@@ -18,6 +24,8 @@ public class Player : MonoBehaviour
     [SerializeField] public List<CardScript> playerDeck; // Ilja: I think someone created temporary empty card scripts, but now we have finished ones
     // The bonus to be used in the setup/deployment phases
     [SerializeField] int bonus;
+
+    private GameObject playerDeckContainer => GameObject.Find("player_Deck_Container");
 
     // Start is called before the first frame update
     void Start()
@@ -53,5 +61,15 @@ public class Player : MonoBehaviour
     public int GetBonus() => bonus;
     public void SetBonus(int newBonus) => bonus = newBonus;
 
-    public void UpdateCards(List<CardScript> cards) { playerDeck = cards; }
+    public void UpdateCards(List<CardScript> cards) => playerDeck = cards;
+    public void GiveCard(CardScript card) => playerDeck.Add(card);
+
+    public void DisplayCards() => playerDeck.ForEach(c => Instantiate(c, playerDeckContainer.transform));
+    public void HideCards()
+    {
+        for (int i = 0; i < playerDeckContainer.transform.childCount; i++)
+            Destroy(playerDeckContainer.transform.GetChild(i).gameObject);
+        Debug.Log("Wooo?");
+    }
+    public void RefreshCardDisplay() { HideCards(); DisplayCards(); }
 }

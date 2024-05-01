@@ -25,6 +25,7 @@ public class AttackPhase : MonoBehaviour
     [SerializeField] GameObject troopsSlider;
     [SerializeField] SliderController troopsSliderScript =>
         troopsSlider.GetComponent<SliderController>();
+    [SerializeField] DeckScript mainDeck;
 
     [Header("Battling Troops")]
     [SerializeField] Player currentPlayer;
@@ -33,6 +34,7 @@ public class AttackPhase : MonoBehaviour
 
     [Header("")]
     [SerializeField] bool isRolling = false;
+    [SerializeField] bool rewardedCard = false;
 
 
     // Start is called before the first frame update
@@ -55,6 +57,11 @@ public class AttackPhase : MonoBehaviour
 
         switch (subPhaseNumber)
         {
+            case -1: // Setup for the attack phase
+                rewardedCard = false;
+                subPhaseNumber = 0;
+                break;
+
             case 0: // Attacking and Defending country selection
                 SelectCountries();
                 break;
@@ -180,6 +187,11 @@ public class AttackPhase : MonoBehaviour
             {
                 defendingCountry.SetRulingPlayer(currentPlayer);
                 attackingCountry.MoveTroops(defendingCountry, attackingTroops);
+                if (!rewardedCard)
+                {
+                    currentPlayer.GiveCard(mainDeck.GetRandomCard().GetComponent<CardScript>());
+                    rewardedCard = true;
+                }
             }
 
             subPhaseNumber += 1;
