@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 217935532558570321}
   - component: {fileID: 5820488239467828669}
   - component: {fileID: 2161583660453046359}
-  - component: {fileID: -6726546055525354819}
+  - component: {fileID: 1587376549629743127}
   m_Layer: 5
   m_Name: icelandCard
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &-6726546055525354819
+--- !u!114 &1587376549629743127
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4375190588693445601}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2db3c3a797015a24d83c88dfabedf82a, type: 3}
+  m_Script: {fileID: 11500000, guid: b1825fcde7f1f0c458424edc2e774681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   region: Iceland

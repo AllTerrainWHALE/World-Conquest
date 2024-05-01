@@ -20,6 +20,8 @@ public class DiceCluster : MonoBehaviour
     public GameObject defenderDie;
     private List<GameObject> defenderDice = new();
 
+    public Vector3 spawnOrigin = new Vector3(0, 60, 0);
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,12 +34,12 @@ public class DiceCluster : MonoBehaviour
         
     }
 
-    /* Testing purposes only
+    /* Testing purposes only*/
     public void SpawnDice()
     {
-        SpawnDice(5, 2);
+        SpawnDice(3, 2);
     }
-    */
+    /**/
 
     /// <summary>
     /// Spawns a collection of dice for the attacker and defender, using the passed in values.
@@ -69,9 +71,9 @@ public class DiceCluster : MonoBehaviour
         {
             attackerDice.Add(Instantiate(attackerDie,
                 new Vector3(
-                    transform.position.x,
-                    transform.position.y,
-                    transform.position.z
+                    spawnOrigin.x,
+                    spawnOrigin.y,
+                    spawnOrigin.z
                 ),
                 Quaternion.Euler(
                     Random.Range(0, 360),
@@ -87,9 +89,9 @@ public class DiceCluster : MonoBehaviour
         {
             defenderDice.Add(Instantiate(defenderDie,
                 new Vector3(
-                    transform.position.x,
-                    transform.position.y,
-                    transform.position.z
+                    spawnOrigin.x,
+                    spawnOrigin.y,
+                    spawnOrigin.z
                 ),
                 Quaternion.Euler(
                     Random.Range(0, 360),

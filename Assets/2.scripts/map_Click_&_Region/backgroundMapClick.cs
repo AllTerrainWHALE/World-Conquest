@@ -21,6 +21,8 @@ public class backgroundMapClick : MonoBehaviour
 
     void Update()
     {
+        if (cameraController == null || cameraController.isClickLocked) return;
+
         //Handle the click event on the regions
         if (Input.GetMouseButtonDown(0))
         {
@@ -45,7 +47,7 @@ public class backgroundMapClick : MonoBehaviour
                 if (clickCount == 3)
                 {
                     cameraController.targetPosition = transform.position;
-                    cameraController.selectedCountry = -1;
+                    cameraController.selectedCountry = -99;
                     clickCount = 0;
                 }
             }

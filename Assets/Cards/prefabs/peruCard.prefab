@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9135879331413093469}
   - component: {fileID: 9022647856011390593}
   - component: {fileID: 8201002586420284678}
-  - component: {fileID: 2354095839042275592}
+  - component: {fileID: 6495423939015101555}
   m_Layer: 5
   m_Name: peruCard
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2354095839042275592
+--- !u!114 &6495423939015101555
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7611340249930258813}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2db3c3a797015a24d83c88dfabedf82a, type: 3}
+  m_Script: {fileID: 11500000, guid: b1825fcde7f1f0c458424edc2e774681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   region: Peru

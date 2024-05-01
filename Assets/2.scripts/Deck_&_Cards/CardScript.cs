@@ -13,7 +13,7 @@ public class CardScript : MonoBehaviour
     {
         Infatry,
         Artillery,
-        cavalry,
+        Cavalry,
         WildCard
 
     };

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4472888589097318935}
   - component: {fileID: 1782792572235971096}
   - component: {fileID: 3588353262861888491}
-  - component: {fileID: -3477582600923218864}
+  - component: {fileID: 875596646018808670}
   m_Layer: 5
   m_Name: northAfricaCard
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &-3477582600923218864
+--- !u!114 &875596646018808670
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,9 +85,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4234082612239173801}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2db3c3a797015a24d83c88dfabedf82a, type: 3}
+  m_Script: {fileID: 11500000, guid: b1825fcde7f1f0c458424edc2e774681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   region: North Africa
-  typeOfTroops: 0
+  typeOfTroops: 2
   cardType: 0

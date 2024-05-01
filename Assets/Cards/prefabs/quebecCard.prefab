@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5663876639665701578}
   - component: {fileID: 5225369336944951637}
   - component: {fileID: 1394265946632455118}
-  - component: {fileID: -9051924893838060912}
+  - component: {fileID: 1447810808857550520}
   m_Layer: 5
   m_Name: quebecCard
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &-9051924893838060912
+--- !u!114 &1447810808857550520
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3480666728121006024}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2db3c3a797015a24d83c88dfabedf82a, type: 3}
+  m_Script: {fileID: 11500000, guid: b1825fcde7f1f0c458424edc2e774681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   region: Quebec
