@@ -158,22 +158,25 @@ public class DeploymentPhase : MonoBehaviour
                     typeCounts[card.typeOfTroops] = 1;
                 }
             }
+
             // removes cards
-            foreach (var type in typeCounts.Keys)
+            int counter = 0;
+            foreach (CardScript.TypeOfTroops type in typeCounts.Keys)
             {
                 for (int i = player.playerDeck.Count - 1; i >= 0 && typeCounts[type] > 0; i--)
                 {
-                    if (player.playerDeck[i].typeOfTroops == type)
+                    if (player.playerDeck[i].typeOfTroops == type && counter < 3)
                     {
-                        player.playerDeck.RemoveAt(i);
-                        typeCounts[type]--;
+                        player.playerDeck.Remove(player.playerDeck[i]); // remove from original collection
+                        counter++;
                     }
                 }
             }
             cardsSetsTradedIn++;
         }
+        Debug.Log("Passed all ifs");
         player.UpdateCards(player.playerDeck);
-        player.RefreshCardDisplay();
+        //player.RefreshCardDisplay();
 
         // points formula
         if (cardsSetsTradedIn == 5)
