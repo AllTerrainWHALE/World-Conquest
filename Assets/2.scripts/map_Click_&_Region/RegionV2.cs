@@ -408,7 +408,9 @@ public class RegionV2 : MonoBehaviour
 
         var dist = new Vector3(randX, newY, randZ);
 
-        GameObject newToken = Instantiate(objectToPlace, transform.position + dist, transform.rotation);
+        var _rotation = transform.rotation * Quaternion.Euler(90, 0, 0);
+
+        GameObject newToken = Instantiate(objectToPlace, transform.position + dist, _rotation);
 
         //newToken.transform.parent = transform;
 
