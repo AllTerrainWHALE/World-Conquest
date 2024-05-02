@@ -11,9 +11,9 @@ public class FortifyPhase : MonoBehaviour
 
     [Header("Game Objects")]
     [SerializeField] OrbitalCamera cameraScript;
-    [SerializeField] GameObject troopsSliderUIGroup;
-    [SerializeField] GameObject troopsUISlider;
-    [SerializeField] GameObject troopsUIText;
+    [SerializeField] GameObject troopsSlider;
+    private SliderController troopsSliderScript =>
+        troopsSlider.GetComponent<SliderController>();
     [SerializeField] GameObject confirmButton;
 
     [Header("Fortifying Troops")]
@@ -37,21 +37,24 @@ public class FortifyPhase : MonoBehaviour
         {
             SelectCountries(currentPlayer);
         }
-        else
-        {
-            FortifyTroops();
-        }
     }
 
     private void SelectCountries(Player currentPlayer)
     {
-        if (cameraScript.selectedCountry < 0) return;
+        if (fromCountry == null)
+            currentPlayer.GetOwnedRegions().ForEach(r => GameObject.FindGameObjectWithTag(r).GetComponent<RegionV2>().isHighlighted = true);
+
+        if (cameraScript.selectedCountry < 0)
+        { 
+            fromCountry = null;
+            return;
+        }
 
         bool isOwned = currentPlayer.isOwnedRegion(cameraScript.selectedCountryTag);
 
         if (isOwned)
         {
-            if (fromCountry == null)
+            if (fromCountry == null || !fromCountry.isAdjacentRegion(cameraScript.selectedCountryTag))
             {
                 fromCountry = GameObject.FindGameObjectWithTag(cameraScript.selectedCountryTag).GetComponent<RegionV2>();
 
@@ -61,7 +64,7 @@ public class FortifyPhase : MonoBehaviour
                         GameObject.FindGameObjectWithTag(countryTag).GetComponent<RegionV2>().isHighlighted = true;
                 }
             }
-            else if (fortifiedCountry == null)
+            else if (fortifiedCountry == null || fromCountry.isAdjacentRegion(cameraScript.selectedCountryTag))
             {
                 fortifiedCountry = GameObject.FindGameObjectWithTag(cameraScript.selectedCountryTag).GetComponent<RegionV2>();
 
@@ -76,6 +79,7 @@ public class FortifyPhase : MonoBehaviour
                 }
             }
         }
+        else cameraScript.selectedCountry = -99;
 
         if (fromCountry != null && fortifiedCountry != null)
         {
@@ -87,29 +91,29 @@ public class FortifyPhase : MonoBehaviour
     private void SetupFortifyUI()
     {
         cameraScript.isClickLocked = true;
-        troopsSliderUIGroup.SetActive(true);
+        troopsSlider.SetActive(true);
         confirmButton.SetActive(true);
 
-        troopsUISlider.GetComponent<Slider>().maxValue = fromCountry.getTroopNum() - 1;
-        troopsUISlider.GetComponent<Slider>().value = 1;
-        troopsUIText.GetComponent<Text>().text = "1";
+        troopsSliderScript.maxValue = fromCountry.getTroopNum() - 1;
+        troopsSliderScript.minValue = 0;
+        troopsSliderScript.value = 1;
     }
 
-    private void FortifyTroops()
+    public void FortifyTroops()
     {
-        if (troopsSliderUIGroup.activeSelf)
-        {
-            int sliderValue = (int)troopsUISlider.GetComponent<Slider>().value;
-            troopsUIText.GetComponent<Text>().text = sliderValue.ToString();
-        }
+        //if (troopsSlider.activeSelf)
+        //{
+        //    int sliderValue = (int)troopsSliderScript.value;
+        //    troopsUIText.GetComponent<Text>().text = sliderValue.ToString();
+        //}
 
-        if (Input.GetButtonDown("Confirm"))
-        {
-            troopsToMove = (int)troopsUISlider.GetComponent<Slider>().value;
-            fromCountry.MoveTroops(fortifiedCountry, troopsToMove);
+        //if (Input.GetButtonDown("Confirm"))
+        //{
+        troopsToMove = (int)troopsSliderScript.value;
+        fromCountry.MoveTroops(fortifiedCountry, troopsToMove);
 
-            ResetFortifyPhase();
-        }
+        ResetFortifyPhase();
+        //}
     }
 
     private void ResetFortifyPhase()
@@ -118,9 +122,10 @@ public class FortifyPhase : MonoBehaviour
         fromCountry = null;
         fortifiedCountry = null;
         troopsToMove = 0;
+        cameraScript.selectedCountry = -99;
 
         cameraScript.isClickLocked = false;
-        troopsSliderUIGroup.SetActive(false);
+        troopsSlider.SetActive(false);
         confirmButton.SetActive(false);
     }
 }

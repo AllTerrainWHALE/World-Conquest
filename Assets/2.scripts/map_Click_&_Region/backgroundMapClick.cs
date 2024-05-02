@@ -6,7 +6,7 @@ public class backgroundMapClick : MonoBehaviour
 {
     // Start is called before the first frame update
     public OrbitalCamera cameraController;
-    public int countryID;
+    // public int countryID;
 
 
     

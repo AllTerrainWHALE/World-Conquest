@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 4092462}
   m_Layer: 0
   m_Name: Siberia
-  m_TagString: Siberia
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -290,6 +290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 50072716}
+  - component: {fileID: 50072717}
   m_Layer: 0
   m_Name: south_America
   m_TagString: SouthAmerica
@@ -316,6 +317,24 @@ Transform:
   - {fileID: 809470673}
   m_Father: {fileID: 507051779}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &50072717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50072715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 651e8b85a51e7304389e7a1f14d74d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regionObjects:
+  - {fileID: 1502470428}
+  - {fileID: 665534081}
+  - {fileID: 1443521789}
+  - {fileID: 90421917}
+  bonus: 2
 --- !u!1 &89087171
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +408,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 40
   continentID: 
-  countryTag: NewGuinea
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -399,12 +417,11 @@ MonoBehaviour:
   - Indonesia
   - WesternAustralia
   - EasternAustralia
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -531,7 +548,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 12
   continentID: 
-  countryTag: Venezuela
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -541,12 +557,11 @@ MonoBehaviour:
   - CentralAmerica
   - Peru
   - Brazil
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -706,7 +721,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 36
   continentID: 
-  countryTag: Ural
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -717,12 +731,11 @@ MonoBehaviour:
   - Afganistan
   - China
   - Siberia
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -849,7 +862,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 39
   continentID: 
-  countryTag: Indonesia
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -859,12 +871,11 @@ MonoBehaviour:
   - Siam
   - NewGuinea
   - WesternAustralia
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -959,6 +970,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 117376603}
+  - component: {fileID: 117376604}
   m_Layer: 0
   m_Name: north_America
   m_TagString: NorthAmerica
@@ -990,6 +1002,29 @@ Transform:
   - {fileID: 626651921}
   m_Father: {fileID: 507051779}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &117376604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117376602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 651e8b85a51e7304389e7a1f14d74d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regionObjects:
+  - {fileID: 1859767789}
+  - {fileID: 1288028456}
+  - {fileID: 1419723943}
+  - {fileID: 618023562}
+  - {fileID: 1283273657}
+  - {fileID: 1012814753}
+  - {fileID: 1963540446}
+  - {fileID: 1193487204}
+  - {fileID: 886016201}
+  bonus: 5
 --- !u!1 &117955641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,7 +1098,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 37
   continentID: 
-  countryTag: Yakutsk
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -1073,12 +1107,11 @@ MonoBehaviour:
   - Siberia
   - Irkutsk
   - Kamchatka
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -1145,7 +1178,7 @@ GameObject:
   - component: {fileID: 131688199}
   m_Layer: 0
   m_Name: Irkutsk
-  m_TagString: Irkutsk
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1288,7 +1321,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 23
   continentID: 
-  countryTag: Madagascar
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -1297,12 +1329,11 @@ MonoBehaviour:
   adjacentRegions:
   - SouthAfrica
   - EastAfrica
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -1754,7 +1785,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 16
   continentID: 
-  countryTag: Scandinavia
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -1765,12 +1795,11 @@ MonoBehaviour:
   - GreatBritain
   - NorthernEurope
   - Ukraine
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -1873,6 +1902,64 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: c99530dd1b0e57341820b7e94305199f, type: 2}
+--- !u!1 &205429098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 205429099}
+  - component: {fileID: 205429100}
+  m_Layer: 0
+  m_Name: attack_Phase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &205429099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205429098}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 511723876}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &205429100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205429098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8f73ba89a399c49a2982e86674b832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackingCountry: {fileID: 0}
+  defendingCountry: {fileID: 0}
+  subPhaseNumber: 0
+  cameraScript: {fileID: 1006289347}
+  diceCluster: {fileID: 2007794813}
+  rollDiceButton: {fileID: 2083865368}
+  nextPhaseButton: {fileID: 1895268829}
+  troopsSlider: {fileID: 2051250175}
+  mainDeck: {fileID: 0}
+  currentPlayer: {fileID: 0}
+  attackingTroops: 0
+  defendingTroops: 0
+  isRolling: 0
+  rewardedCard: 0
 --- !u!1 &224865354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1886,7 +1973,7 @@ GameObject:
   - component: {fileID: 224865356}
   m_Layer: 0
   m_Name: China
-  m_TagString: China
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1969,7 +2056,7 @@ GameObject:
   - component: {fileID: 255532534}
   m_Layer: 0
   m_Name: Irkutsk
-  m_TagString: Irkutsk
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2390,7 +2477,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 41
   continentID: 
-  countryTag: WesternAustralia
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -2400,12 +2486,11 @@ MonoBehaviour:
   - EasternAustralia
   - NewGuinea
   - Indonesia
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -2459,6 +2544,95 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 292895640}
   m_Mesh: {fileID: 3987681723241872604, guid: fa5909eb794dc21499f3ab43a0611e5e, type: 3}
+--- !u!1 &315952648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 315952649}
+  - component: {fileID: 315952650}
+  m_Layer: 0
+  m_Name: main_Deck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &315952649
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315952648}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1602446934}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &315952650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315952648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7141e15e7b44e49478881d97f1f397be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cards:
+  - {fileID: 868236670098080466, guid: fcb5011f297b50b4d98d749d8f22cc60, type: 3}
+  - {fileID: 5094949471791656642, guid: 14ecbe594b7799648a047c948adcd309, type: 3}
+  - {fileID: 6004762983370653064, guid: ca9f6b9224f576a4d9de2a8f16ba9254, type: 3}
+  - {fileID: 6974988067776704985, guid: 862a837086a9f984a924778e6315646a, type: 3}
+  - {fileID: 1700249206848087627, guid: 7d5a59b0f4b93ce4e896f4116ddc422b, type: 3}
+  - {fileID: 3726743762128993016, guid: f03c38bfe56bf554d896fc8482fab6e2, type: 3}
+  - {fileID: 3225603641482430397, guid: 059ee52e89b47754bad7ec9531cbe1a8, type: 3}
+  - {fileID: 3741535166219286390, guid: a1be0522a1b713e40b3f86d2bff9de87, type: 3}
+  - {fileID: 608134593163904835, guid: 1b8fdbcec194446459d6fe20fc77e7ca, type: 3}
+  - {fileID: 1460185977961247175, guid: 52dadb27137e45e49a7c216c6018e230, type: 3}
+  - {fileID: 1852206323409965161, guid: d576681558249ee469e9d84a5c79aed3, type: 3}
+  - {fileID: 2451069289112103857, guid: b3a6a737f46875c43aa31b8c8d8c8d56, type: 3}
+  - {fileID: 7951469059893090573, guid: 326cf68b20f68c34786efa406faf77cc, type: 3}
+  - {fileID: 4977758624593848722, guid: 82cc770a93ecb4a488d73fd24d4af7c5, type: 3}
+  - {fileID: 4375190588693445601, guid: d824661cf03972c40b117b882322832e, type: 3}
+  - {fileID: 6570213338834257946, guid: 8ded3c7e79c9ac24b9fe8777e36b7f3b, type: 3}
+  - {fileID: 1612771588430897783, guid: fc5fbe3edf2d79e4898799067659d7ee, type: 3}
+  - {fileID: 1381462419308730327, guid: 19a52349aa55f6745aea464ac57544e8, type: 3}
+  - {fileID: 7280520361802199248, guid: 64114a0e471cb474ab05e8c556ee5ebe, type: 3}
+  - {fileID: 177601965518492147, guid: b9e8764043486714685edd321bbe73c2, type: 3}
+  - {fileID: 4110809921624250672, guid: fd4128cb2fb919e4cbf7fedb55bbd715, type: 3}
+  - {fileID: 6140249904312130082, guid: 7073ff5227656c74e8a4fa715ee94463, type: 3}
+  - {fileID: 4781729332113713180, guid: 4fe6b94415c49bd4585ecde4c0e79425, type: 3}
+  - {fileID: 4867898124057151099, guid: 0f4d1fa5f1a3ac44691d8831fd310e62, type: 3}
+  - {fileID: 4234082612239173801, guid: d6a3327c1f7b453438040424851fb218, type: 3}
+  - {fileID: 2534349793521623325, guid: caf277e51da5e154ea081b5019c04d1b, type: 3}
+  - {fileID: 6411050574903810771, guid: 8dac7d24f102a844f879532c46849fb9, type: 3}
+  - {fileID: 583262906254049821, guid: af1de96c4220a3448a68e82fdfb534f1, type: 3}
+  - {fileID: 7611340249930258813, guid: 7b4a6ce20eb42204dafd03cb683fc62f, type: 3}
+  - {fileID: 3480666728121006024, guid: 363d34f1964fd09428b2dda7a14fe8a2, type: 3}
+  - {fileID: 6636216238661354288, guid: 23ec962c7b2c51d4ea05a5b8b87262a0, type: 3}
+  - {fileID: 2935302445230412124, guid: da387233f440bff469d3535c7a052fef, type: 3}
+  - {fileID: 7112908814968928158, guid: 06f1b0b4ab3e41247a0e1d5c175a377c, type: 3}
+  - {fileID: 7825057665853260424, guid: a96b7b49b7864c9488339c9f8b936f15, type: 3}
+  - {fileID: 1842929321644425827, guid: ea8508bbedfd139448486a95aff5d369, type: 3}
+  - {fileID: 7973159868988063323, guid: 7ec37d57d1f102644a387e695b56c735, type: 3}
+  - {fileID: 6148708665057094595, guid: 1cd45e5c162028941ad8f1124d5c22f5, type: 3}
+  - {fileID: 8500103389173765219, guid: 29a8e10dd3c380145a5a2e105ecb7d9d, type: 3}
+  - {fileID: 6611003940373959567, guid: 62222f4f7689c804d8315476b42e6de7, type: 3}
+  - {fileID: 8731054453178940953, guid: 4c8968e40182ac743a8d0ce36cc4c923, type: 3}
+  - {fileID: 8562570736827394700, guid: 24fe02c454f87604fb96e3c773e82be2, type: 3}
+  - {fileID: 7749264897396638381, guid: 84dcb6620fdbacb4797246d594190608, type: 3}
+  - {fileID: 29581546395452284, guid: 46993eb5547004549a1fa6ca00e2f68b, type: 3}
+  cardSpawnPoint: {fileID: 0}
 --- !u!1 &320822020
 GameObject:
   m_ObjectHideFlags: 0
@@ -2594,6 +2768,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2051250174}
+  - {fileID: 337818935}
+  - {fileID: 1057533797}
   - {fileID: 1006897888}
   m_Father: {fileID: 1149358151}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2704,6 +2881,139 @@ Transform:
   - {fileID: 1805936176}
   m_Father: {fileID: 533672850}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &337818931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 337818935}
+  - component: {fileID: 337818934}
+  - component: {fileID: 337818933}
+  - component: {fileID: 337818932}
+  m_Layer: 5
+  m_Name: deploy_Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &337818932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337818931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 337818933}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1112866758}
+        m_TargetAssemblyTypeName: DeploymentPhase, Assembly-CSharp
+        m_MethodName: Deploy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &337818933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337818931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &337818934
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337818931}
+  m_CullTransparentMesh: 1
+--- !u!224 &337818935
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337818931}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 722627812}
+  m_Father: {fileID: 326890692}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 184.6}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &357876292
 GameObject:
   m_ObjectHideFlags: 0
@@ -2785,7 +3095,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 29
   continentID: 
-  countryTag: Irkutsk
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -2796,12 +3105,11 @@ MonoBehaviour:
   - Mongolia
   - Kamchatka
   - Yakutsk
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -2975,7 +3283,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 1006289347}
-  countryID: 0
 --- !u!1 &365155920
 GameObject:
   m_ObjectHideFlags: 0
@@ -3379,6 +3686,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411586733}
   m_CullTransparentMesh: 1
+--- !u!1 &415696988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 415696989}
+  m_Layer: 0
+  m_Name: player_Deck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &415696989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415696988}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1602446934}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &420508873
 GameObject:
   m_ObjectHideFlags: 0
@@ -3452,7 +3790,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 13
   continentID: 
-  countryTag: GreatBritain
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -3463,12 +3800,11 @@ MonoBehaviour:
   - Scandinavia
   - NorthernEurope
   - WesternEurope
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -3663,7 +3999,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 34
   continentID: 
-  countryTag: Siam
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -3673,12 +4008,11 @@ MonoBehaviour:
   - India
   - China
   - Indonesia
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -3982,6 +4316,42 @@ Transform:
   - {fileID: 1072856078}
   m_Father: {fileID: 507051779}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &511723875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 511723876}
+  m_Layer: 0
+  m_Name: game_Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &511723876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511723875}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 754688699}
+  - {fileID: 1767526353}
+  - {fileID: 1112866757}
+  - {fileID: 205429099}
+  - {fileID: 832100032}
+  m_Father: {fileID: 1778308655}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &523796625
 GameObject:
   m_ObjectHideFlags: 0
@@ -3999,7 +4369,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &523796626
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4098,6 +4468,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 533672850}
+  - component: {fileID: 533672851}
   m_Layer: 0
   m_Name: europe
   m_TagString: Europe
@@ -4127,6 +4498,27 @@ Transform:
   - {fileID: 2002101197}
   m_Father: {fileID: 507051779}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &533672851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533672849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 651e8b85a51e7304389e7a1f14d74d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regionObjects:
+  - {fileID: 420508873}
+  - {fileID: 731836620}
+  - {fileID: 1073189212}
+  - {fileID: 174578612}
+  - {fileID: 1805936175}
+  - {fileID: 1292124065}
+  - {fileID: 1945247854}
+  bonus: 5
 --- !u!1 &579484166
 GameObject:
   m_ObjectHideFlags: 0
@@ -4213,7 +4605,7 @@ GameObject:
   - component: {fileID: 581168689}
   m_Layer: 0
   m_Name: China
-  m_TagString: China
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4322,7 +4714,7 @@ GameObject:
   - component: {fileID: 610377664}
   m_Layer: 0
   m_Name: Siberia
-  m_TagString: Siberia
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4465,7 +4857,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 3
   continentID: 
-  countryTag: EasternUSA
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -4476,12 +4867,11 @@ MonoBehaviour:
   - WesternUSA
   - Ontario
   - Quebec
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -4903,7 +5293,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 24
   continentID: 
-  countryTag: NorthAfrica
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -4916,12 +5305,11 @@ MonoBehaviour:
   - Egypt
   - EastAfrica
   - Congo
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -4988,7 +5376,7 @@ GameObject:
   - component: {fileID: 647948316}
   m_Layer: 0
   m_Name: Siberia
-  m_TagString: Siberia
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5131,7 +5519,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 10
   continentID: 
-  countryTag: Brazil
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -5142,12 +5529,11 @@ MonoBehaviour:
   - Peru
   - Argentina
   - NorthAfrica
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -5274,7 +5660,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 30
   continentID: 
-  countryTag: Japan
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -5283,12 +5668,11 @@ MonoBehaviour:
   adjacentRegions:
   - Kamchatka
   - Mongolia
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -5379,7 +5763,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 117.540405, y: -44.223083}
+  m_AnchoredPosition: {x: 117.54028, y: -44.223145}
   m_SizeDelta: {x: 235.0809, y: 88.4463}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &671006733
@@ -5533,7 +5917,7 @@ GameObject:
   - component: {fileID: 676672629}
   m_Layer: 0
   m_Name: Siberia
-  m_TagString: Siberia
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5714,7 +6098,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 25
   continentID: 
-  countryTag: SouthAfrica
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -5724,12 +6107,11 @@ MonoBehaviour:
   - Congo
   - EastAfrica
   - Madagascar
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -5849,6 +6231,37 @@ Transform:
   - {fileID: 1283273658}
   m_Father: {fileID: 117376603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &704768268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 704768269}
+  m_Layer: 0
+  m_Name: Players
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &704768269
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704768268}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1778308655}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &707518036
 GameObject:
   m_ObjectHideFlags: 0
@@ -5862,7 +6275,7 @@ GameObject:
   - component: {fileID: 707518038}
   m_Layer: 0
   m_Name: China
-  m_TagString: China
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6005,7 +6418,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 38
   continentID: 
-  countryTag: EasternAustralia
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -6014,12 +6426,11 @@ MonoBehaviour:
   adjacentRegions:
   - NewGuinea
   - WesternAustralia
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -6073,6 +6484,140 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 707713679}
   m_Mesh: {fileID: 8967025543267633630, guid: fd9633091c712fb44b71c72ab59534b1, type: 3}
+--- !u!1 &722627811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 722627812}
+  - component: {fileID: 722627814}
+  - component: {fileID: 722627813}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &722627812
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722627811}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 337818935}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 3.3}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &722627813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722627811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Deploy
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: efcccc6a1d0724e4c919c9f3b8779384, type: 2}
+  m_sharedMaterial: {fileID: 9077842728475080609, guid: efcccc6a1d0724e4c919c9f3b8779384, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &722627814
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722627811}
+  m_CullTransparentMesh: 1
 --- !u!1 &725216024
 GameObject:
   m_ObjectHideFlags: 0
@@ -6221,7 +6766,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 14
   continentID: 
-  countryTag: Iceland
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -6231,12 +6775,11 @@ MonoBehaviour:
   - GreenLand
   - GreatBritain
   - Scandinavia
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -6303,7 +6846,7 @@ GameObject:
   - component: {fileID: 734452395}
   m_Layer: 0
   m_Name: Irkutsk
-  m_TagString: Irkutsk
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6386,7 +6929,7 @@ GameObject:
   - component: {fileID: 739089566}
   m_Layer: 0
   m_Name: Siberia
-  m_TagString: Siberia
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6467,7 +7010,7 @@ GameObject:
   - component: {fileID: 754688699}
   - component: {fileID: 754688700}
   m_Layer: 0
-  m_Name: Game_Loop
+  m_Name: game_Loop
   m_TagString: Game_Loop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6481,12 +7024,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 754688698}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1778308655}
+  m_Father: {fileID: 511723876}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &754688700
 MonoBehaviour:
@@ -6502,9 +7045,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   phaseNumber: 0
   turnNumber: 0
-  Deployment: {fileID: 0}
-  Attack: {fileID: 0}
-  Fortify: {fileID: 0}
+  Setup: {fileID: 1767526354}
+  Deployment: {fileID: 1112866758}
+  Attack: {fileID: 205429100}
+  Fortify: {fileID: 832100031}
+  playerDeckContainer: {fileID: 1409026272}
+  uiPhaseText: {fileID: 0}
+  uiPhaseOneIndicator: {fileID: 0}
+  uiPhaseTwoIndicator: {fileID: 0}
+  uiPhaseThreeIndicator: {fileID: 0}
+  uiNextPhaseButton: {fileID: 0}
+  playerGO: {fileID: 7184291784273338881, guid: 4361e6aa6d561c14aad20ddf74b05797, type: 3}
+  playerList:
+  - {fileID: 0}
+  - {fileID: 0}
+  playerTurnIndicator: {fileID: 0}
+  continents:
+  - {fileID: 117376604}
+  - {fileID: 50072717}
+  - {fileID: 533672851}
+  - {fileID: 1050712432}
+  - {fileID: 1925153801}
+  - {fileID: 1528930162}
 --- !u!1 &767044266
 GameObject:
   m_ObjectHideFlags: 0
@@ -6781,7 +7343,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 32
   continentID: 
-  countryTag: MiddleEast
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -6794,12 +7355,11 @@ MonoBehaviour:
   - India
   - Afganistan
   - Ukraine
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -6926,7 +7486,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 22
   continentID: 
-  countryTag: Egypt
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -6937,12 +7496,11 @@ MonoBehaviour:
   - MiddleEast
   - NorthAfrica
   - EastAfrica
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -7069,7 +7627,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 21
   continentID: 
-  countryTag: EastAfrica
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -7082,12 +7639,11 @@ MonoBehaviour:
   - Congo
   - SouthAfrica
   - Madagascar
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -7204,6 +7760,56 @@ Transform:
   m_Children:
   - {fileID: 90421918}
   m_Father: {fileID: 50072716}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &832100030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 832100032}
+  - component: {fileID: 832100031}
+  m_Layer: 0
+  m_Name: fortify_Phase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &832100031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832100030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7f3c885e0c6ebe4b8df08cc05c42d5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fromCountry: {fileID: 0}
+  fortifiedCountry: {fileID: 0}
+  cameraScript: {fileID: 1006289347}
+  troopsSlider: {fileID: 2051250175}
+  confirmButton: {fileID: 1057533793}
+  troopsToMove: 0
+--- !u!4 &832100032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832100030}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 511723876}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &834005014
 GameObject:
@@ -7450,7 +8056,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1409026273}
+  - {fileID: 1115034883}
   m_Father: {fileID: 1149358151}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
@@ -7569,7 +8177,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 8
   continentID: 
-  countryTag: WesternUSA
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -7580,12 +8187,11 @@ MonoBehaviour:
   - Ontario
   - EasternUSA
   - CentralAmerica
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -8763,7 +9369,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 5
   continentID: 
-  countryTag: NorthWestTerritory
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -8774,12 +9379,11 @@ MonoBehaviour:
   - Alberta
   - Ontario
   - GreenLand
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -8878,7 +9482,7 @@ GameObject:
   - component: {fileID: 1030124657}
   m_Layer: 0
   m_Name: Siberia
-  m_TagString: Siberia
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9218,7 +9822,7 @@ GameObject:
   - component: {fileID: 1050033690}
   m_Layer: 0
   m_Name: Siberia
-  m_TagString: Siberia
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9297,6 +9901,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1050712431}
+  - component: {fileID: 1050712432}
   m_Layer: 0
   m_Name: africa
   m_TagString: Africa
@@ -9325,6 +9930,26 @@ Transform:
   - {fileID: 675254969}
   m_Father: {fileID: 507051779}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1050712432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050712430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 651e8b85a51e7304389e7a1f14d74d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regionObjects:
+  - {fileID: 1238403573}
+  - {fileID: 794691158}
+  - {fileID: 793575513}
+  - {fileID: 137032297}
+  - {fileID: 640590852}
+  - {fileID: 683309216}
+  bonus: 3
 --- !u!1 &1055030219
 GameObject:
   m_ObjectHideFlags: 0
@@ -9400,6 +10025,139 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055030219}
   m_CullTransparentMesh: 1
+--- !u!1 &1057533793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1057533797}
+  - component: {fileID: 1057533796}
+  - component: {fileID: 1057533795}
+  - component: {fileID: 1057533794}
+  m_Layer: 5
+  m_Name: fortify_Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1057533794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057533793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 832100031}
+        m_TargetAssemblyTypeName: FortifyPhase, Assembly-CSharp
+        m_MethodName: FortifyTroops
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1057533795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057533793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1057533796
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057533793}
+  m_CullTransparentMesh: 1
+--- !u!224 &1057533797
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057533793}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1628247546}
+  m_Father: {fileID: 326890692}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 184.6}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1072174879
 GameObject:
   m_ObjectHideFlags: 0
@@ -9653,7 +10411,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 15
   continentID: 
-  countryTag: NorthernEurope
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -9665,12 +10422,11 @@ MonoBehaviour:
   - WesternEurope
   - SouthernEurope
   - Ukraine
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -9913,7 +10669,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 1006289347}
-  countryID: 0
 --- !u!1 &1088851803
 GameObject:
   m_ObjectHideFlags: 0
@@ -9946,6 +10701,192 @@ Transform:
   - {fileID: 794691159}
   m_Father: {fileID: 1050712431}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1112866756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1112866757}
+  - component: {fileID: 1112866758}
+  m_Layer: 0
+  m_Name: deployment_Phase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1112866757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112866756}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 511723876}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1112866758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112866756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 653190711b7aa94418bb23c584341420, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  troopsToDeploy: 0
+  player: {fileID: 0}
+  gameLoop: {fileID: 754688700}
+  cameraScript: {fileID: 1006289347}
+  armiesSlider: {fileID: 2051250175}
+  armiesDeployButton: {fileID: 337818931}
+  useCardsButton: {fileID: 1115034882}
+  subPhaseNumber: 0
+  cardsSetsTradedIn: 0
+--- !u!1 &1115034882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1115034883}
+  - component: {fileID: 1115034886}
+  - component: {fileID: 1115034885}
+  - component: {fileID: 1115034884}
+  m_Layer: 5
+  m_Name: use_Cards
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1115034883
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115034882}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1744462240}
+  m_Father: {fileID: 875525494}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -344, y: 230}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1115034884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115034882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1115034885}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1112866758}
+        m_TargetAssemblyTypeName: DeploymentPhase, Assembly-CSharp
+        m_MethodName: CheckCards
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1115034885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115034882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1115034886
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115034882}
+  m_CullTransparentMesh: 1
 --- !u!1 &1125563356
 GameObject:
   m_ObjectHideFlags: 0
@@ -9959,7 +10900,7 @@ GameObject:
   - component: {fileID: 1125563358}
   m_Layer: 0
   m_Name: Irkutsk
-  m_TagString: Irkutsk
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10102,7 +11043,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 33
   continentID: 
-  countryTag: Mongolia
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -10114,12 +11054,11 @@ MonoBehaviour:
   - Japan
   - Kamchatka
   - Irkutsk
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -10230,7 +11169,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ATTACK
+  m_text: SETUP
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: efcccc6a1d0724e4c919c9f3b8779384, type: 2}
   m_sharedMaterial: {fileID: 9077842728475080609, guid: efcccc6a1d0724e4c919c9f3b8779384, type: 2}
@@ -10358,7 +11297,7 @@ GameObject:
   - component: {fileID: 1175026092}
   m_Layer: 0
   m_Name: Irkutsk
-  m_TagString: Irkutsk
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10501,7 +11440,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 7
   continentID: 
-  countryTag: Quebec
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -10511,12 +11449,11 @@ MonoBehaviour:
   - Ontario
   - EasternUSA
   - GreenLand
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -10862,7 +11799,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 20
   continentID: 
-  countryTag: Congo
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -10872,12 +11808,11 @@ MonoBehaviour:
   - NorthAfrica
   - EastAfrica
   - SouthAfrica
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -11218,7 +12153,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 4
   continentID: 
-  countryTag: GreenLand
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -11229,12 +12163,11 @@ MonoBehaviour:
   - Ontario
   - Quebec
   - Iceland
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -11532,7 +12465,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 1
   continentID: 
-  countryTag: Alberta
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -11543,12 +12475,11 @@ MonoBehaviour:
   - NorthWestTerritory
   - Ontario
   - WesternUSA
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -11653,7 +12584,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 18
   continentID: 
-  countryTag: Ukraine
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -11666,12 +12596,11 @@ MonoBehaviour:
   - MiddleEast
   - Afganistan
   - Ural
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -11760,7 +12689,7 @@ GameObject:
   - component: {fileID: 1296730769}
   m_Layer: 0
   m_Name: Siberia
-  m_TagString: Siberia
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12612,6 +13541,66 @@ Transform:
   - {fileID: 137032298}
   m_Father: {fileID: 1050712431}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1409026272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1409026273}
+  - component: {fileID: 1409026274}
+  m_Layer: 5
+  m_Name: player_Deck_Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1409026273
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409026272}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 875525494}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -344, y: 90}
+  m_SizeDelta: {x: 766.7433, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1409026274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409026272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 100, y: 100}
+  m_Spacing: {x: 55, y: 0}
+  m_Constraint: 2
+  m_ConstraintCount: 1
 --- !u!1 &1419723943
 GameObject:
   m_ObjectHideFlags: 0
@@ -12685,7 +13674,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 2
   continentID: 
-  countryTag: CentralAmerica
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -12695,12 +13683,11 @@ MonoBehaviour:
   - WesternUSA
   - EasternUSA
   - Venezuela
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -12827,7 +13814,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 11
   continentID: 
-  countryTag: Peru
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -12837,12 +13823,11 @@ MonoBehaviour:
   - Venezuela
   - Brazil
   - Argentina
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -13103,7 +14088,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 31
   continentID: 
-  countryTag: Kamchatka
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -13115,12 +14099,11 @@ MonoBehaviour:
   - Mongolia
   - Alaska
   - Japan
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -13187,7 +14170,7 @@ GameObject:
   - component: {fileID: 1486585021}
   m_Layer: 0
   m_Name: Irkutsk
-  m_TagString: Irkutsk
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13345,7 +14328,7 @@ GameObject:
   - component: {fileID: 1501185842}
   m_Layer: 0
   m_Name: Irkutsk
-  m_TagString: Irkutsk
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13488,7 +14471,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 9
   continentID: 
-  countryTag: Argentina
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -13497,12 +14479,11 @@ MonoBehaviour:
   adjacentRegions:
   - Peru
   - Brazil
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -13588,6 +14569,63 @@ Transform:
   - {fileID: 1419723944}
   m_Father: {fileID: 117376603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1526637086
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1778308655}
+    m_Modifications:
+    - target: {fileID: 3443918187715971237, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+      propertyPath: m_Name
+      value: Dice Cluster
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
 --- !u!1 &1528930160
 GameObject:
   m_ObjectHideFlags: 0
@@ -13597,6 +14635,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1528930161}
+  - component: {fileID: 1528930162}
   m_Layer: 0
   m_Name: australia
   m_TagString: Australia
@@ -13623,6 +14662,24 @@ Transform:
   - {fileID: 1029576972}
   m_Father: {fileID: 507051779}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1528930162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528930160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 651e8b85a51e7304389e7a1f14d74d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regionObjects:
+  - {fileID: 707713679}
+  - {fileID: 113266814}
+  - {fileID: 89087171}
+  - {fileID: 292895640}
+  bonus: 2
 --- !u!1 &1533301104
 GameObject:
   m_ObjectHideFlags: 0
@@ -14025,52 +15082,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547200765}
   m_CullTransparentMesh: 1
---- !u!1 &1554957026
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1554957028}
-  - component: {fileID: 1554957027}
-  m_Layer: 0
-  m_Name: dice_Cluster
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1554957027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554957026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 097eaa281e3be9445b8d55ab2e525f58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackerDie: {fileID: 0}
-  defenderDie: {fileID: 0}
---- !u!4 &1554957028
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554957026}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.349409, y: 66.49659, z: -8.504993}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1778308655}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1556048303
 GameObject:
   m_ObjectHideFlags: 0
@@ -14222,7 +15233,7 @@ GameObject:
   - component: {fileID: 1576551059}
   m_Layer: 0
   m_Name: Irkutsk
-  m_TagString: Irkutsk
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14292,6 +15303,173 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576551057}
   m_Mesh: {fileID: 2534964839176971238, guid: 627fd13d5a434054199a20cbffe155ff, type: 3}
+--- !u!1 &1602446933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1602446934}
+  m_Layer: 0
+  m_Name: Decks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1602446934
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602446933}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 315952649}
+  - {fileID: 415696989}
+  m_Father: {fileID: 1778308655}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1628247545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1628247546}
+  - component: {fileID: 1628247548}
+  - component: {fileID: 1628247547}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1628247546
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628247545}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1057533797}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 3.3}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1628247547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628247545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Confirm
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: efcccc6a1d0724e4c919c9f3b8779384, type: 2}
+  m_sharedMaterial: {fileID: 9077842728475080609, guid: efcccc6a1d0724e4c919c9f3b8779384, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1628247548
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628247545}
+  m_CullTransparentMesh: 1
 --- !u!1 &1636472296
 GameObject:
   m_ObjectHideFlags: 0
@@ -14400,7 +15578,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 27
   continentID: 
-  countryTag: China
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -14413,12 +15590,11 @@ MonoBehaviour:
   - Mongolia
   - Siberia
   - Ural
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -14974,7 +16150,7 @@ GameObject:
   - component: {fileID: 1688239585}
   m_Layer: 0
   m_Name: Siberia
-  m_TagString: Siberia
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15132,7 +16308,7 @@ GameObject:
   - component: {fileID: 1700211628}
   m_Layer: 0
   m_Name: Siberia
-  m_TagString: Siberia
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15577,6 +16753,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741230647}
   m_CullTransparentMesh: 1
+--- !u!1 &1744462239
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1744462240}
+  - component: {fileID: 1744462242}
+  - component: {fileID: 1744462241}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1744462240
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744462239}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1115034883}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1744462241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744462239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Use Cards
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: efcccc6a1d0724e4c919c9f3b8779384, type: 2}
+  m_sharedMaterial: {fileID: 9077842728475080609, guid: efcccc6a1d0724e4c919c9f3b8779384, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1744462242
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744462239}
+  m_CullTransparentMesh: 1
 --- !u!1 &1744756758
 GameObject:
   m_ObjectHideFlags: 0
@@ -15700,6 +17010,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1748431780}
   m_CullTransparentMesh: 1
+--- !u!1 &1767526352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1767526353}
+  - component: {fileID: 1767526354}
+  m_Layer: 0
+  m_Name: setup_Phase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1767526353
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767526352}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 511723876}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1767526354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767526352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a52a02c53765584fb750bb31c3c33cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numOfTroopsToPlace: 0
+  Gameloop: {fileID: 0}
+  camera_: {fileID: 0}
+  gameLoopScript: {fileID: 0}
+  cameraScript: {fileID: 0}
+  playerTurnCounterUI: {fileID: 1902726391}
 --- !u!1 &1773217952
 GameObject:
   m_ObjectHideFlags: 0
@@ -15839,8 +17199,11 @@ Transform:
   - {fileID: 1006289346}
   - {fileID: 1665904202}
   - {fileID: 182784875}
-  - {fileID: 1554957028}
   - {fileID: 162677666}
+  - {fileID: 2007794814}
+  - {fileID: 1602446934}
+  - {fileID: 704768269}
+  - {fileID: 511723876}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1792516854
@@ -15990,7 +17353,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 35
   continentID: 
-  countryTag: Siberia
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -16002,12 +17364,11 @@ MonoBehaviour:
   - Mongolia
   - Irkutsk
   - Yakutsk
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -16134,7 +17495,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 17
   continentID: 
-  countryTag: SouthernEurope
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -16147,12 +17507,11 @@ MonoBehaviour:
   - MiddleEast
   - NorthAfrica
   - Egypt
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -16526,7 +17885,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 0
   continentID: 
-  countryTag: Alaska
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -16536,12 +17894,11 @@ MonoBehaviour:
   - NorthWestTerritory
   - Alberta
   - Kamchatka
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -16744,7 +18101,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 26
   continentID: 
-  countryTag: Afganistan
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -16756,12 +18112,11 @@ MonoBehaviour:
   - India
   - China
   - Ural
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -16919,7 +18274,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1895268830}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 754688700}
+        m_TargetAssemblyTypeName: GameLoop, Assembly-CSharp
+        m_MethodName: incrementPhase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 523796625}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1895268830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17031,7 +18410,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 28
   continentID: 
-  countryTag: India
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -17042,12 +18420,11 @@ MonoBehaviour:
   - Afganistan
   - China
   - Siam
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -17244,6 +18621,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1925153800}
+  - component: {fileID: 1925153801}
   m_Layer: 0
   m_Name: asia
   m_TagString: Asia
@@ -17278,6 +18656,32 @@ Transform:
   - {fileID: 1368956427}
   m_Father: {fileID: 507051779}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1925153801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925153799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 651e8b85a51e7304389e7a1f14d74d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regionObjects:
+  - {fileID: 1886733661}
+  - {fileID: 1648309930}
+  - {fileID: 1898629162}
+  - {fileID: 357876292}
+  - {fileID: 669982275}
+  - {fileID: 1484048112}
+  - {fileID: 785538163}
+  - {fileID: 1138541068}
+  - {fileID: 427945143}
+  - {fileID: 1805847579}
+  - {fileID: 110448982}
+  - {fileID: 117955641}
+  bonus: 7
 --- !u!1 &1945247854
 GameObject:
   m_ObjectHideFlags: 0
@@ -17351,7 +18755,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 19
   continentID: 
-  countryTag: WesternEurope
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -17362,12 +18765,11 @@ MonoBehaviour:
   - NorthernEurope
   - SouthernEurope
   - NorthAfrica
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -17526,7 +18928,6 @@ MonoBehaviour:
   cam: {fileID: 1006289343}
   countryID: 6
   continentID: 
-  countryTag: Ontario
   isSelected: 0
   yRaise: 1
   objectOriginalY: {x: 0, y: 0, z: 0}
@@ -17539,12 +18940,11 @@ MonoBehaviour:
   - EasternUSA
   - NorthWestTerritory
   - Alberta
+  rulingPlayer: {fileID: 0}
   numberOfTroops: 0
-  infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  troopModels: {fileID: 8942094940087808894, guid: 3d8e1dd8abe6a0140b7427c862f9e295, type: 3}
   infantryList: []
-  calvaryList: []
+  cavalryList: []
   artilleryList: []
   radius: 0
   center: {x: 0, y: 0, z: 0}
@@ -17615,7 +19015,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1969282859
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17737,6 +19137,169 @@ Transform:
   - {fileID: 1945247855}
   m_Father: {fileID: 533672850}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2007794813 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -9072691422524963614, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+  m_PrefabInstance: {fileID: 1526637086}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 097eaa281e3be9445b8d55ab2e525f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2007794814 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6882638970829365291, guid: ca19953f461034b4eb6474c64f7e3190, type: 3}
+  m_PrefabInstance: {fileID: 1526637086}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2051250173
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 326890692}
+    m_Modifications:
+    - target: {fileID: 977932332886444046, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_Name
+      value: ui_Troops_Selection_Slider
+      objectReference: {fileID: 0}
+    - target: {fileID: 977932332886444046, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1068357673696580239, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1771062015946475146, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_characterSpacing
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1771062015946475146, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9823201
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.9823201
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.9823201
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6496830818948337893, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 107.6915
+      objectReference: {fileID: 0}
+    - target: {fileID: 6496830818948337893, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 125.84567
+      objectReference: {fileID: 0}
+    - target: {fileID: 7506890677119824059, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+--- !u!224 &2051250174 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5130842834401463868, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+  m_PrefabInstance: {fileID: 2051250173}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2051250175 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 977932332886444046, guid: ee4cc5cf82880d64e847833c8310e751, type: 3}
+  m_PrefabInstance: {fileID: 2051250173}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2059784017
 GameObject:
   m_ObjectHideFlags: 0
@@ -18051,11 +19614,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disable
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2083865370}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 205429100}
+        m_TargetAssemblyTypeName: AttackPhase, Assembly-CSharp
+        m_MethodName: RollDice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2094330413
 GameObject:
   m_ObjectHideFlags: 0
@@ -18922,6 +20497,6 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1778308655}
   - {fileID: 171909056}
   - {fileID: 94495686}
+  - {fileID: 1778308655}

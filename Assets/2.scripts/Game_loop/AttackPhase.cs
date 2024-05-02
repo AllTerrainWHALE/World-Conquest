@@ -20,23 +20,28 @@ public class AttackPhase : MonoBehaviour
     [SerializeField] OrbitalCamera cameraScript;
     [SerializeField] DiceCluster diceCluster;
     [SerializeField] GameObject rollDiceButton;
+    [SerializeField] Button nextPhaseButton;
 
-    [SerializeField] GameObject troopsSliderUIGroup;
-    [SerializeField] GameObject troopsUISlider;
-    [SerializeField] GameObject troopsUIText;
+    [SerializeField] GameObject troopsSlider;
+    [SerializeField] SliderController troopsSliderScript =>
+        troopsSlider.GetComponent<SliderController>();
+    [SerializeField] DeckScript mainDeck;
 
     [Header("Battling Troops")]
+    [SerializeField] Player currentPlayer;
     [SerializeField] int attackingTroops = 0;
     [SerializeField] int defendingTroops = 0;
 
     [Header("")]
     [SerializeField] bool isRolling = false;
+    [SerializeField] bool rewardedCard = false;
 
 
     // Start is called before the first frame update
     void Start()
     {
-       // cameraScript = GetComponent<Camera>().GetComponent<OrbitalCamera>();
+        // cameraScript = GetComponent<Camera>().GetComponent<OrbitalCamera>();
+        // troopsSliderScript = troopsSlider.GetComponent<SliderController>();
     }
 
     // Update is called once per frame
@@ -46,15 +51,23 @@ public class AttackPhase : MonoBehaviour
     }
 
     // Author: 
-    public void PhaseLoop(Player currentPlayer)
+    public void PhaseLoop(Player _currentPlayer)
     {
+        currentPlayer = _currentPlayer;
+
         switch (subPhaseNumber)
         {
+            case -1: // Setup for the attack phase
+                rewardedCard = false;
+                subPhaseNumber = 0;
+                break;
+
             case 0: // Attacking and Defending country selection
-                SelectCountries(currentPlayer);
+                SelectCountries();
                 break;
 
             case 1: // Inter-phase processes
+
                 cameraScript.isClickLocked = true;
                 cameraScript.selectedCountry = defendingCountry.countryID;
                 cameraScript.distance = cameraScript.distanceMin;
@@ -62,10 +75,12 @@ public class AttackPhase : MonoBehaviour
                 diceCluster.spawnOrigin.x = defendingCountry.transform.position.x;
                 diceCluster.spawnOrigin.z = defendingCountry.transform.position.z;
 
-                troopsSliderUIGroup.SetActive(true);
+                troopsSlider.SetActive(true);
                 rollDiceButton.GetComponent<Button>().interactable = true;
 
-                troopsUISlider.GetComponent<Slider>().maxValue = attackingCountry.getTroopNum() - 1;
+                nextPhaseButton.interactable = false;
+
+                troopsSliderScript.maxValue = attackingCountry.getTroopNum() - 1;
                 defendingTroops = defendingCountry.getTroopNum();
 
                 subPhaseNumber += 1;
@@ -84,6 +99,8 @@ public class AttackPhase : MonoBehaviour
 
                 rollDiceButton.GetComponent<Button>().interactable = false;
 
+                nextPhaseButton.interactable = true;
+
                 attackingCountry = null;
                 defendingCountry = null;
 
@@ -93,9 +110,9 @@ public class AttackPhase : MonoBehaviour
     }
 
     // Author: Bradley & Harvey
-    private void SelectCountries(Player currentPlayer)
+    private void SelectCountries()
     {
-        if (cameraScript.selectedCountry < 0) return; // FUCKING WORKS!
+        if (cameraScript.selectedCountry < 0) return;
 
         bool isOwned = currentPlayer.isOwnedRegion(cameraScript.selectedCountryTag);
 
@@ -136,11 +153,11 @@ public class AttackPhase : MonoBehaviour
     // Author: Bradley & Harvey
     private void Attacking()
     {
-        if (troopsSliderUIGroup.active)
-        {
-            int sliderVal = (int) troopsUISlider.GetComponent<Slider>().value;
-            troopsUIText.GetComponent<TMP_Text>().SetText(sliderVal.ToString());
-        }
+        //if (troopsSliderUIGroup.active)
+        //{
+        //    int sliderVal = (int) troopsUISlider.GetComponent<Slider>().value;
+        //    troopsUIText.GetComponent<TMP_Text>().SetText(sliderVal.ToString());
+        //}
 
         if (diceCluster.AllDiceSettled() && isRolling) // && diceCluster.GetRollTotal() != (0,0))
         {
@@ -151,11 +168,11 @@ public class AttackPhase : MonoBehaviour
             {
                 if (attackerRolls.ElementAt(i) > defenderRolls.ElementAt(i))
                 {
-                    //defendingCountry.removeTroop();
+                    defendingCountry.removeTroop();
                     defendingTroops = Mathf.Max(defendingTroops - 1, 0);
                 } else
                 {
-                    //if (attackingTroops != 0) attackingCountry.removeTroop();
+                    if (attackingTroops != 0) attackingCountry.removeTroop();
                     attackingTroops = Mathf.Max(attackingTroops - 1, 0);
                 }
             }
@@ -164,9 +181,18 @@ public class AttackPhase : MonoBehaviour
             rollDiceButton.GetComponent<Button>().interactable = true;
         }
 
-        if ((attackingTroops <= 0 || defendingTroops/*defendingCountry.getTroopNum()*/ <= 0) && !troopsSliderUIGroup.active)
+        if ((attackingTroops <= 0 || defendingCountry.getTroopNum() <= 0) && !troopsSlider.active)
         {
-            //if (attackingTroops > 0) attackingCountry.MoveTroops(defendingCountry, attackingTroops);
+            if (attackingTroops > 0)
+            {
+                defendingCountry.SetRulingPlayer(currentPlayer);
+                attackingCountry.MoveTroops(defendingCountry, attackingTroops);
+                if (!rewardedCard)
+                {
+                    currentPlayer.GiveCard(mainDeck.GetRandomCard().GetComponent<CardScript>());
+                    rewardedCard = true;
+                }
+            }
 
             subPhaseNumber += 1;
         }
@@ -175,10 +201,10 @@ public class AttackPhase : MonoBehaviour
 
     public void RollDice()
     {
-        if (troopsSliderUIGroup.active)
+        if (troopsSlider.active)
         {
-            attackingTroops = (int) troopsUISlider.GetComponent<Slider>().value;
-            troopsSliderUIGroup.SetActive(false);
+            attackingTroops = (int) troopsSliderScript.value;
+            troopsSlider.SetActive(false);
         }
 
         if (diceCluster.AllDiceSettled())

@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4674898148361594698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6776026501120121966}
+  - component: {fileID: 8942094940087808894}
+  m_Layer: 0
+  m_Name: troop_Canister
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6776026501120121966
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4674898148361594698}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8942094940087808894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4674898148361594698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81179dc6b4db1434c8eeb7a8a51581c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blueInfantry: {fileID: 294270696511413706, guid: 1aaa6098c5eb89746a89cfb3d0bfee63, type: 3}
+  cyanInfantry: {fileID: 4221827646795204433, guid: 0239bf7c2c4f9874dbbe350b284dc309, type: 3}
+  greenInfantry: {fileID: 599284323319077836, guid: 08ffceca83c95344f973a50dbf4788b4, type: 3}
+  orangeInfantry: {fileID: 2109678298299464636, guid: 94aae864df4e89b4aa88ae4559df610c, type: 3}
+  pinkInfantry: {fileID: 7587781574877958856, guid: 2bb06cf0c0b98a34fb98150a5d1478b4, type: 3}
+  redInfantry: {fileID: 1860564416092869219, guid: 7ebd72cfdb3baa34e8b6a427af3fa6a7, type: 3}
+  blueCavalry: {fileID: 1138789514311210751, guid: 2c683c1af520a8f48b4624f150f96d7a, type: 3}
+  cyanCavalry: {fileID: 24747687864602452, guid: bac0db4067065d341b26d5ea047bd383, type: 3}
+  greenCavalry: {fileID: 3637160098904243870, guid: c5da161de431cb64fabbfd73203dbe05, type: 3}
+  orangeCavalry: {fileID: 1328457257516389360, guid: b3ff8f7bdc820934dbf641c0dd739613, type: 3}
+  pinkCavalry: {fileID: 7487496807124112679, guid: 3b706e79f1b35434f8a52db0eb4ebbaa, type: 3}
+  redCavalry: {fileID: 8210265362169716288, guid: 7617030b85a097147a3579328c688bf7, type: 3}
+  blueArtillery: {fileID: 2599136232064384204, guid: be3285132b9dae445885cfb78536adb6, type: 3}
+  cyanArtillery: {fileID: 5331977069838522551, guid: c9ed44b5c32c7664b9a17a6d00382240, type: 3}
+  greenArtillery: {fileID: 2865689714697928020, guid: 776d2b7f7d8f1524faa63952af93eeab, type: 3}
+  orangeArtillery: {fileID: 8893422612840502216, guid: 638e66c572667fb43a8787d659213d00, type: 3}
+  pinkArtillery: {fileID: 365760465106016563, guid: 439c405dd6ab9cc4ea5d9f55241d6a3a, type: 3}
+  redArtillery: {fileID: 2961395368441128655, guid: adf0f1f3604aeec41bbd8b82f818c680, type: 3}

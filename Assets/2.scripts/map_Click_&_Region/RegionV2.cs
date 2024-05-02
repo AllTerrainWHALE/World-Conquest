@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
+using TMPro;
 using UnityEditor.Rendering;
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
@@ -48,16 +49,18 @@ public class RegionV2 : MonoBehaviour
     [SerializeField] List<string> adjacentRegions;
 
     [Header("Troops")]
+    [SerializeField] Player rulingPlayer;
     // the number of troops inside the region
     [SerializeField] int numberOfTroops = 0;
 
     // prefabs of board tokens
-    [SerializeField] GameObject infantryModel;
-    [SerializeField] GameObject calvaryModel;
-    [SerializeField] GameObject artilleryModel;
+    //[SerializeField] GameObject Troop.Infantry(troopColour);
+    //[SerializeField] GameObject Troop.Cavalry(troopColour);
+    //[SerializeField] GameObject Troop.Artillery(troopColour);
+    [SerializeField] Troop troopModels;
     // lists containing game objects to represent board tokens
     [SerializeField] List<GameObject> infantryList = new List<GameObject>();
-    [SerializeField] List<GameObject> calvaryList = new List<GameObject>();
+    [SerializeField] List<GameObject> cavalryList = new List<GameObject>();
     [SerializeField] List<GameObject> artilleryList = new List<GameObject>();
 
     [Header("WIP")]
@@ -65,6 +68,7 @@ public class RegionV2 : MonoBehaviour
     [SerializeField] float radius;
     [SerializeField] Vector3 center;
 
+    private Animator regionPopUp;
 
     private void OnMouseUp()
     {
@@ -75,7 +79,9 @@ public class RegionV2 : MonoBehaviour
         //Check if the region is clicked
         if (Physics.Raycast(ray, out hit) && hit.transform == transform)
         {
-            Debug.Log(transform.tag);
+            regionPopUp.Play("region_Pop_Up");
+            GameObject.Find("region_Text").GetComponent<TextMeshProUGUI>().text = transform.name;
+
             if (cameraController != null)
             {
                 cameraController.targetPosition = transform.position;
@@ -96,8 +102,8 @@ public class RegionV2 : MonoBehaviour
         // Finds center
         // center = findCenter();
 
-        System.Random rnd = new System.Random();
-        numberOfTroops = rnd.Next(1, 21);
+        //Puts the region name pop up ui animator into the "regionPopUp" variable so it can be triggered.
+        regionPopUp = GameObject.Find("region_Pop_Up").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -170,41 +176,41 @@ public class RegionV2 : MonoBehaviour
     //
     // Method that adds a number of troops on top of an object
     //
-    public void addTroop(int troopNum = 1)
+    public void addTroop(TroopColour troopColour, int troopNum = 1)
     {
 
         // Calculates the ideal number of each token that should be on the board
 
         int infantryVal = (int)TroopTypes.Infantry;
-        int calvaryVal = (int)TroopTypes.Cavalry;
+        int cavalryVal = (int)TroopTypes.Cavalry;
         int artilleryVal = (int)TroopTypes.Artillery;
 
         int totalTroops = troopNum + numberOfTroops;
 
         int artilleryCount = totalTroops / artilleryVal;
-        int calvaryCount = (totalTroops % artilleryVal) / calvaryVal;
-        int infantryCount = ((totalTroops % artilleryVal) % calvaryVal) / infantryVal;
+        int cavalryCount = (totalTroops % artilleryVal) / cavalryVal;
+        int infantryCount = ((totalTroops % artilleryVal) % cavalryVal) / infantryVal;
 
         while (artilleryList.Count != artilleryCount)
         {
             // Defines a circle and picks a random point inside it to place the troop
-            artilleryList.Add(placeInCircle(artilleryModel));
+            artilleryList.Add(placeInCircle(troopModels.Artillery(troopColour)));
 
         }
 
-        while (calvaryList.Count != calvaryCount)
+        while (cavalryList.Count != cavalryCount)
         {
-            if (calvaryList.Count < calvaryCount)
+            if (cavalryList.Count < cavalryCount)
             {
-                // Adds one calvary until the amount of the board matches the calculated amount
-                calvaryList.Add(placeInCircle(calvaryModel));
+                // Adds one cavalry until the amount of the board matches the calculated amount
+                cavalryList.Add(placeInCircle(troopModels.Cavalry(troopColour)));
 
             }
             else
             {
-                // Removes one calvary until the amount on the board matches the calculated amount
-                Destroy(calvaryList[0]);
-                calvaryList.Remove(calvaryList[0]);
+                // Removes one cavalry until the amount on the board matches the calculated amount
+                Destroy(cavalryList[0]);
+                cavalryList.Remove(cavalryList[0]);
 
             }
         }
@@ -214,7 +220,7 @@ public class RegionV2 : MonoBehaviour
             if (infantryList.Count < infantryCount)
             {
                 // Adds one infantry until the amount of the board matches the calculated amount
-                infantryList.Add(placeInCircle(infantryModel));
+                infantryList.Add(placeInCircle(troopModels.Infantry(troopColour)));
 
             }
             else
@@ -244,23 +250,25 @@ public class RegionV2 : MonoBehaviour
         }
 
         // Calculates the ideal number of each token that should be on the board
-
         int infantryVal = (int)TroopTypes.Infantry;
-        int calvaryVal = (int)TroopTypes.Cavalry;
+        int cavalryVal = (int)TroopTypes.Cavalry;
         int artilleryVal = (int)TroopTypes.Artillery;
 
         int totalTroops = numberOfTroops - troopNum;
 
         int artilleryCount = totalTroops / artilleryVal;
-        int calvaryCount = (totalTroops % artilleryVal) / calvaryVal;
-        int infantryCount = ((totalTroops % artilleryVal) % calvaryVal) / infantryVal;
+        int cavalryCount = (totalTroops % artilleryVal) / cavalryVal;
+        int infantryCount = ((totalTroops % artilleryVal) % cavalryVal) / infantryVal;
+
+        // Finds the team colour for adding tokens
+        TroopColour troopColour = troopModels.GetTroopColour(infantryList.Concat(cavalryList).Concat(artilleryList).First());
 
         while (artilleryList.Count != artilleryCount)
         {
             // Defines a circle and picks a random point inside it to place the troop
             if (artilleryList.Count < artilleryCount)
             {
-                artilleryList.Add(placeInCircle(artilleryModel));
+                artilleryList.Add(placeInCircle(troopModels.Artillery(troopColour)));
             }
             else
             {
@@ -269,20 +277,20 @@ public class RegionV2 : MonoBehaviour
             }
         }
 
-        while (calvaryList.Count != calvaryCount)
+        while (cavalryList.Count != cavalryCount)
         {
-            if (calvaryList.Count < calvaryCount)
+            if (cavalryList.Count < cavalryCount)
             {
-                // Adds one calvary until the amount of the board matches the calculated amount
+                // Adds one cavalry until the amount of the board matches the calculated amount
 
-                calvaryList.Add(placeInCircle(calvaryModel));
+                cavalryList.Add(placeInCircle(troopModels.Cavalry(troopColour)));
             }
             else
             {
-                // Removes one calvary until the amount on the board matches the calculated amount
+                // Removes one cavalry until the amount on the board matches the calculated amount
 
-                Destroy(calvaryList[0]);
-                calvaryList.Remove(calvaryList[0]);
+                Destroy(cavalryList[0]);
+                cavalryList.Remove(cavalryList[0]);
             }
         }
 
@@ -290,13 +298,12 @@ public class RegionV2 : MonoBehaviour
         {
             if (infantryList.Count < infantryCount)
             {
-                // Adds one calvary until the amount of the board matches the calculated amount
-                infantryList.Add(placeInCircle(infantryModel));
+                // Adds one cavalry until the amount of the board matches the calculated amount
+                infantryList.Add(placeInCircle(troopModels.Infantry(troopColour)));
             }
             else
             {
-                // Removes one calvary until the amount on the board matches the calculated amount
-                Debug.Log(infantryList.Count);
+                // Removes one cavalry until the amount on the board matches the calculated amount
                 Destroy(infantryList[0]);
                 infantryList.Remove(infantryList[0]);
             }
@@ -436,7 +443,20 @@ public class RegionV2 : MonoBehaviour
         if (numOfTroops <= numberOfTroops)
         {
             removeTroop(numOfTroops);
-            targetRegion.addTroop(numOfTroops);
+            targetRegion.addTroop(rulingPlayer.team, numOfTroops);
         }
     }
+
+    // Author: Bradley
+    //
+    // Adjusts ownership of the region from the previous player to the new player,
+    // and adds the region to the new owners "ownedRegions" list (if it's not already there)
+    public void SetRulingPlayer(Player player)
+    {
+        if (rulingPlayer) rulingPlayer.removeRegion(countryTag);
+        rulingPlayer = player;
+        if (!rulingPlayer.isOwnedRegion(countryTag)) rulingPlayer.addRegion(countryTag);
+    }
+    // Retrieves the current owner of the region
+    public Player GetRulingPlayer() => rulingPlayer;
 }
