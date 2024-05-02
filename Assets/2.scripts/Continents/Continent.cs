@@ -5,6 +5,8 @@ using System.ComponentModel;
 using System.Linq;
 using UnityEngine;
 
+// Author: Bradley
+// Hold what countries are in which continent
 public class Continent : MonoBehaviour
 {
 
@@ -34,6 +36,7 @@ public class Continent : MonoBehaviour
 
     }
 
+    // Check if a player owns all contries in a continent
     public bool PlayerRulesContinent(Player player) =>
         playersInContinent.Count() == 1 && playersInContinent[0] == player;
 

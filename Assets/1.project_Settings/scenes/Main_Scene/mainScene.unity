@@ -7056,7 +7056,10 @@ MonoBehaviour:
   uiPhaseThreeIndicator: {fileID: 0}
   uiNextPhaseButton: {fileID: 0}
   playerGO: {fileID: 7184291784273338881, guid: 4361e6aa6d561c14aad20ddf74b05797, type: 3}
-  playerList: []
+  playerList:
+  - {fileID: 0}
+  - {fileID: 0}
+  playerTurnIndicator: {fileID: 0}
   continents:
   - {fileID: 117376604}
   - {fileID: 50072717}

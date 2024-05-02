@@ -64,6 +64,7 @@ public class Player : MonoBehaviour
     public void UpdateCards(List<CardScript> cards) => playerDeck = cards;
     public void GiveCard(CardScript card) => playerDeck.Add(card);
 
+    // Author: Bradley
     public void DisplayCards() => playerDeck.ForEach(c => Instantiate(c, playerDeckContainer.transform));
     public void HideCards()
     {

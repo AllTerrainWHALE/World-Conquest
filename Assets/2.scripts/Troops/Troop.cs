@@ -5,6 +5,9 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
+// Author: Bradley
+// One main object that holds all the troop types and colours
+// Removes the need to manually add each type and colour to each and every country
 class Troop : MonoBehaviour
 {
     [Header("Infantry")]
@@ -15,7 +18,7 @@ class Troop : MonoBehaviour
     [SerializeField] GameObject pinkInfantry;
     [SerializeField] GameObject redInfantry;
     public GameObject Infantry(TroopColour troopColour) => troopColour switch
-    {
+    { // Retrieve an Infantry object of a desired team colour
         TroopColour.Blue => blueInfantry,
         TroopColour.Cyan => cyanInfantry,
         TroopColour.Green => greenInfantry,
@@ -33,7 +36,7 @@ class Troop : MonoBehaviour
     [SerializeField] GameObject pinkCavalry;
     [SerializeField] GameObject redCavalry;
     public GameObject Cavalry(TroopColour troopColour) => troopColour switch
-    {
+    { // Retrieve an Cavalry object of a desired team colour
         TroopColour.Blue => blueCavalry,
         TroopColour.Cyan => cyanCavalry,
         TroopColour.Green => greenCavalry,
@@ -51,7 +54,7 @@ class Troop : MonoBehaviour
     [SerializeField] GameObject pinkArtillery;
     [SerializeField] GameObject redArtillery;
     public GameObject Artillery(TroopColour troopColour) => troopColour switch
-    {
+    { // Retrieve an Artillery object of a desired team colour
         TroopColour.Blue => blueArtillery,
         TroopColour.Cyan => cyanArtillery,
         TroopColour.Green => greenArtillery,
@@ -61,33 +64,7 @@ class Troop : MonoBehaviour
         _ => throw new InvalidEnumArgumentException(),
     };
 
-    //public TroopColour GetTroopColour(GameObject troop) => troopName switch
-    //{
-    //    blueInfantry.name => TroopColour.Blue,
-    //    blueCavalry.name => TroopColour.Blue,
-    //    blueArtillery.name => TroopColour.Blue,
-    //
-    //    cyanInfantry.name => TroopColour.Cyan,
-    //    cyanCavalry.name => TroopColour.Cyan,
-    //    cyanArtillery.name => TroopColour.Cyan,
-    //
-    //    greenInfantry.name => TroopColour.Green,
-    //    greenCavalry.name => TroopColour.Green,
-    //    greenArtillery.name => TroopColour.Green,
-    //
-    //    orangeInfantry.name => TroopColour.Orange,
-    //    orangeCavalry.name => TroopColour.Orange,
-    //    orangeArtillery.name => TroopColour.Orange,
-    //
-    //    pinkInfantry.name => TroopColour.Pink,
-    //    pinkCavalry.name => TroopColour.Pink,
-    //    pinkArtillery.name => TroopColour.Pink,
-    //
-    //    redInfantry.name => TroopColour.Red,
-    //    redCavalry.name => TroopColour.Red,
-    //    redArtillery.name => TroopColour.Red,
-    //};
-
+    // Find the team colour of a specified troop object
     public TroopColour GetTroopColour(GameObject troop)
     {
         string troopName = troop.name.Replace("(Clone)", "");

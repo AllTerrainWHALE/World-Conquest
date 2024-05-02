@@ -108,6 +108,7 @@ public class DeploymentPhase : MonoBehaviour
         {
             CardChecker.CheckForValidCombination(player.playerDeck, out CardChecker.CardCombination combination);
             troopsToDeploy += UseCards(combination);
+            armiesSliderScript.maxValue = troopsToDeploy;
         }
     }
 
@@ -120,6 +121,7 @@ public class DeploymentPhase : MonoBehaviour
         out CardChecker.CardCombination combination))
         {
             troopsToDeploy += UseCards(combination);
+            armiesSliderScript.maxValue = troopsToDeploy;
         }
     }
 
@@ -176,16 +178,22 @@ public class DeploymentPhase : MonoBehaviour
         }
         Debug.Log("Passed all ifs");
         player.UpdateCards(player.playerDeck);
-        //player.RefreshCardDisplay();
+        player.RefreshCardDisplay();
 
         // points formula
-        if (cardsSetsTradedIn == 5)
+        /*if (cardsSetsTradedIn == 5)
         {
             return 15;
         }else if (cardsSetsTradedIn > 5)
         {
             return 15 + (cardsSetsTradedIn - 5) * 5;
         }
-        return 4 + cardsSetsTradedIn * 2;
+        return 4 + cardsSetsTradedIn * 2;*/
+
+        // points formula
+        if (cardsSetsTradedIn < 6)
+            return (cardsSetsTradedIn + 1) * 2;
+        else //(cardsSetsTradedIn >= 6)
+            return (cardsSetsTradedIn - 3) * 5;
     }
 }
