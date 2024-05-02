@@ -79,6 +79,7 @@ public class GameLoop : MonoBehaviour
             .ToList();
 
         // Initialize the player objects, each with individual team colours
+        playerList = new();
         GameObject obj;
         Player script;
         for (int i = 0; i < selectedPlayerNames.Count; i++)
@@ -99,6 +100,7 @@ public class GameLoop : MonoBehaviour
         }
 
         phaseNumber = 0;
+        Debug.Log(string.Join(",",playerList.Select(p => p.name)));
 
         Setup.Init(playerList);
     }

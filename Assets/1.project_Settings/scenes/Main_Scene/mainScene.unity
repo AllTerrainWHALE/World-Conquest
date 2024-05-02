@@ -1954,7 +1954,7 @@ MonoBehaviour:
   rollDiceButton: {fileID: 2083865368}
   nextPhaseButton: {fileID: 1895268829}
   troopsSlider: {fileID: 2051250175}
-  mainDeck: {fileID: 0}
+  mainDeck: {fileID: 315952650}
   currentPlayer: {fileID: 0}
   attackingTroops: 0
   defendingTroops: 0
@@ -17055,8 +17055,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numOfTroopsToPlace: 0
-  Gameloop: {fileID: 0}
-  camera_: {fileID: 0}
+  Gameloop: {fileID: 754688698}
+  camera_: {fileID: 1006289342}
   gameLoopScript: {fileID: 0}
   cameraScript: {fileID: 0}
   playerTurnCounterUI: {fileID: 1902726391}
