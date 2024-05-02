@@ -3,12 +3,7 @@ guid: dcf3e2e37220b0540a659247f4ab66b6
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - cameraController: {instanceID: 0}
-  - cam: {instanceID: 0}
-  - infantryModel: {fileID: 8760456890105712720, guid: 99a0525352f36b0459d59e260127329a, type: 3}
-  - calvaryModel: {fileID: 8244121459665410675, guid: 26330d96d1afa5b41bdc1d82b211f8d8, type: 3}
-  - artilleryModel: {fileID: 6744271378676779210, guid: 39b44a188c1b23d41823a29412e92da6, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
