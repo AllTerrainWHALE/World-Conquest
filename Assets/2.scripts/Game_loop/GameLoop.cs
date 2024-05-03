@@ -11,6 +11,7 @@ using UnityEngine.UI;
 // and directs the flow of phases.
 public class GameLoop : MonoBehaviour
 {
+    public static readonly List<string> allTags = new() { "Untagged", "Respawn", "Finish", "EditorOnly", "MainCamera", "Player", "GameController", "Alaska", "Alberta", "CentralAmerica", "EasternUSA", "GreenLand", "NorthWestTerritory", "Ontario", "Quebec", "WesternUSA", "Argentina", "Brazil", "Peru", "Venezuela", "GreatBritain", "Iceland", "NorthernEurope", "Scandinavia", "SouthernEurope", "Ukraine", "WesternEurope", "Congo", "EastAfrica", "Egypt", "Madagascar", "NorthAfrica", "SouthAfrica", "Afghanistan", "China", "India", "Irkutsk", "Japan", "Kamchatka", "MiddleEast", "Mongolia", "Siam", "Siberia", "Ural", "Yakutsk", "EasternAustralia", "Indonesia", "NewGuinea", "WesternAustralia", "NorthAmerica", "SouthAmerica", "Europe", "Africa", "Asia", "Australia", "Sector4", "Sector2", "Sector6", "Sector3", "Sector5", "Sector1", "Undefined", "Game_Loop", "Afganistan" };
 
     [Header("Game Loop Controller")]
     // The current phase and turn number

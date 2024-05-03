@@ -75,10 +75,9 @@ public class SetupPhase : MonoBehaviour
         if (turnCounter < 42)
         {
             // Get all GameObject tags, and filter out only those assigned to countries
-            List<string> allTags = UnityEditorInternal.InternalEditorUtility.tags.ToList();
             GameObject gameObject;
             RegionV2 countryScript;
-            foreach (string tag in allTags)
+            foreach (string tag in GameLoop.allTags)
             {
                 // Check if the tag is assigned to an object
                 gameObject = GameObject.FindGameObjectWithTag(tag);
