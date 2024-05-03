@@ -406,9 +406,11 @@ public class RegionV2 : MonoBehaviour
         float randZ = UnityEngine.Random.Range(0, (radius * Mathf.Sin(theta)));
         float newY = 1.0f;
 
-        var dist = new Vector3(randX, newY, randZ);
+        var dist = new Vector3(randX, newY - 1.1f, randZ);
 
-        GameObject newToken = Instantiate(objectToPlace, transform.position + dist, transform.rotation);
+        var _rotation = transform.rotation * Quaternion.Euler(90, 0, 0);
+
+        GameObject newToken = Instantiate(objectToPlace, transform.position + dist, _rotation);
 
         //newToken.transform.parent = transform;
 
